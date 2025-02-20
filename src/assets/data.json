@@ -1,0 +1,767 @@
+{
+  "themes": [
+    {
+      "name": "UX",
+      "id": "ux",
+      "subthemes": [
+        {
+          "name": "Navigation & Wayfinding",
+          "id": "navigation_wayfinding",
+          "subsubthemes": [
+            {
+              "name": "Wayfinding",
+              "id": "wayfinding",
+              "guidelines": [
+                {
+                  "name": "Provide auditory feedback when transitioning between VR scenes",
+                  "descriptor": "When transitioning between VR scenes it can be unclear that the user is navigating to a different scene. Providing a form of auditory feedback for the user aids them in being made aware that a change is occurring (Abeele et al., 2021).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Points of interest or landmarks should be distinct and have a clear functionality",
+                  "descriptor": "Distinctive landmarks allow for users to more easily identify points of interest within the virtual environment, whilst the landmarks having a clear functionality aids in users realising they are significant and interactable (Vinson, 1999). Clear functionality of the landmark will additionally help users of different demographics and varying experience within XR technology, therefore contributing to accessibility for those demographics.",
+                  "references": "Reference Source X, 2019\nReference Source Y, 2018"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Presence",
+          "id": "presence",
+          "subsubthemes": [
+            {
+              "name": "Embodiment",
+              "id": "embodiment",
+              "guidelines": [
+                {
+                  "name": "Facilitate the user embodiment in the game character",
+                  "descriptor": "The user embodying the in-game character or role allows for the user to have a sense of identity (Zaki, Wook & Ahmad, 2017), contributing to a heightened presence within the virtual environment. Character embodiment should be facilitated (Desurvire & Kreminski, 2018), and this can be achieved by designing in-game character to mimic movements that are true to the real-world (Abeele et al., 2021).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Be mindful of the real-world user tracking approach taken",
+                  "descriptor": "Depending on the real-world tracking approach taken, consideration should be given to how distracting it may be to the user, and detrimental to the user presence (Wetzel et al., 2008).",
+                  "references": "Reference Source X, 2019\nReference Source Y, 2018"
+                }
+              ]
+            },
+            {
+              "name": "Environment",
+              "id": "environment",
+              "guidelines": [
+                {
+                  "name": "Collapse real-world distances to shorten travel time in the virtual environment",
+                  "descriptor": "Using real-world scales in mixed reality experiences can mean that there is a large distance between game elements, leading to user boredom and a break in user presence (Wetzel et al., 2008). Therefore, it is recommended to avoid leaving large amounts of space between game elements when utilizing real-world scales (Wetzel et al., 2008).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Provide consistency for object behaviours and scenes",
+                  "descriptor": "The design of in-game object behaviour needs to keep consistent throughout the virtual experience to maintain user presence. Similarly, the objects, soundscapes and scene detailing should relate to the role of the user to maintain user presence (Abeele et al., 2021).",
+                  "references": "Reference Source X, 2019\nReference Source Y, 2018"
+                }
+              ]
+            },
+            {
+              "name": "Sound",
+              "id": "sound",
+              "guidelines": [
+                {
+                  "name": "Provide dynamic and interactive sounds",
+                  "descriptor": "Allowing sound design within virtual environments to change as well as having triggerable sound cues for user interactions, allows for enhanced user experience via the users enjoyment of auditory elements within the virtual experience (Abeele et al., 2021). Although, sound cues will should be used accordingly as more of them can reduce ambiguity, whilst having less sound cues can enhance the learning experience of a serious game (Ariffin, Ahmad, & Sulaiman, 2015).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Use appropriate types of audio dependant on the purpose",
+                  "descriptor": "Exaggerated sounds can be applied within the virtual environment design to allow for feelings of presence to be contributed toward (Abeele et al., 2021). However, Kailas & Tiwari, (2023) details that it is still necessary to include realistic sounds to avoid a negative user experience. Understanding the context of audio within the virtual environment and its intended audience is important when including sounds that contain realism (Kailas & Tiwari, 2023). Kailas & Tiwari, (2023) also detail that adding unnecessary auditory elements is discouraged to prevent the user experience from being negatively impacted. ",
+                  "references": "Reference Source X, 2019\nReference Source Y, 2018"
+                }
+              ]
+            },
+            {
+              "name": "Comfort",
+              "id": "comfort",
+              "guidelines": [
+                {
+                  "name": "Design to prevent or limit cybersickness, stress, and frustration for increased user comfort",
+                  "descriptor": "Issues mapping between a users vision and their perceived movement or location of body parts can lead to motion sickness (Serafin et al., 2016), therefore leading to a sense of discomfort. Efforts should be made to prevent and limit any form of cybersickness (Serafin et al., 2016; Moore et al., 2024; Baldoni et al., 2024; Shahu, Kinzer & Michahelles, 2023), such as providing more control to the user (Baldoni et al., 2024), or alternatively allow the user to familiarize themselves with the virtual environment to limit cybersickness as well as user stress and frustration (Shahu, Kinzer & Michahelles, 2023).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Immersion",
+          "id": "immersion",
+          "guidelines": [
+            {
+              "name": "Immerse the user in the virtual environment via storytelling and personalisation of content within the experience",
+              "descriptor": "Design the storytelling of the experience initially, and base the surrounding content thereafter to aid in immersing the user within the narrative of the virtual environment (Kersting et al., 2024). To further aid with user immersion, allowing the user to customize the virtual environment, gameplay elements, or characters allows for an improved user experience of the game as the user being able to achieve a sense of immersion (Tsikinas & Xinogalos, 2019).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "Immerse the user by utilizing their body, emotions, and real-world context of their environment",
+              "descriptor": "It is important to create immersive environments if wanting to evoke user reaction (Menck et al., 2023). By accounting for the context of the user’s real-world environment and designing components of the AR virtual environment around it, the user mood can be manipulated. This could consider aspects of the real-world environment such as the atmosphere, structures, and objects blending with the virtual environment (Wetzel et al., 2008). The user mood and immersion can be influenced further by using visuals that will evoke emotional experiences. Inclusion of user bodily action within the virtual environment aids in immersing the user as well (Kersting et al., 2024).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "UI",
+          "id": "ui",
+          "subsubthemes": [
+            {
+              "name": "Acceptability",
+              "id": "acceptability",
+              "guidelines": [
+                {
+                  "name": "Design a minimalistic UI",
+                  "descriptor": "During the design of the user interface, minimalism should be adhered to for elements of the interface as more complexity diminishes from the overall acceptance of the user experience (Zaki, Wook & Ahmad, 2017).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Meaningfulness",
+              "id": "meaningfulness",
+              "guidelines": [
+                {
+                  "name": "UI design should be meaningful to the user",
+                  "descriptor": "Meaning can be applied to icons and graphical representations (Zaki, Wook & Ahmad, 2017), such meaning could be derived from the icon replacing or accompanying text within the virtual environment (Valenza, Gasparini & Hounsell, 2019). If the user interface can be more meaningful toward the user, then their user experience will be improved.",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Informative",
+              "id": "informative",
+              "guidelines": [
+                {
+                  "name": "Information displayed on the UI should be relevant",
+                  "descriptor": "Relevant information should only be displayed on the user interface to improve information visibility to the user (Florescu, Waschull & Emmanouilidis, 2023), contributing to their user experience. Providing the ability to toggle areas of the UI on and off would aid in achieving this (Florescu, Waschull & Emmanouilidis, 2023).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Show user status and world state",
+                  "descriptor": "Within a virtual environment it is important to provide and maintain information visibility regarding the current user status and the world state (Desurvire & Kreminski, 2018).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Ease of Use",
+              "id": "ease_of_use",
+              "guidelines": [
+                {
+                  "name": ": The UI should be easy to use",
+                  "descriptor": "To contribute to a positive user experience, the UI should be familiar (Chakravorty and Rowe, 2018; Zaki, Wook & Ahmad, 2017; Valenza, Gasparini & Hounsell, 2019) and simple to use (de Belen and Bednarz, 2019; Dabor, Longford & Walker, 2019; Ciccarelli et al., 2022) whilst the UI elements must have purpose and functionality (Zaki, Wook & Ahmad, 2017), allowing for the user benefit from the design of efficient interaction mechanisms (Valenza, Gasparini & Hounsell, 2019). Additionally, design of the UI should be consistent throughout the virtual environment to avoid confusion and frustration (Zaki, Wook & Ahmad, 2017; Ciccarelli et al., 2022), whilst consistency should also be maintained with UI design conventions already known to users (Valenza, Gasparini & Hounsell, 2019).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Clarity",
+              "id": "clarity",
+              "guidelines": [
+                {
+                  "name": "The UI should be clear",
+                  "descriptor": "For the UI to be clear for the user, aspects such as the visibility of UI elements and text are important (Shukri, Arshad & Abidin, 2017; Florescu, Waschull & Emmanouilidis, 2023; Ciccarelli et al., 2022), whilst also giving consideration to their positioning, appearance (Rolim et al., 2015) and affordances (Ejaz et al., 2019). For example, essential UI information should persist on the interface, whilst non-essential elements could be toggleable (Florescu, Waschull & Emmanouilidis, 2023). This moves toward the idea that the UI should avoid cluttering (Zaki, Wook & Ahmad, 2017) and overwhelming the user (Ciccarelli et al., 2022). Lastly, balancing colour contrasts within the UI is important to consider (Ariffin, Ahmad, & Sulaiman, 2015) to ensure sufficient contrast between foreground and background within a serious game (Zaki, Wook & Ahmad, 2017).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Prompting",
+              "id": "prompting",
+              "guidelines": [
+                {
+                  "name": "Use the UI to prompt users",
+                  "descriptor": "The user experience can be improved by using the UI to prompt the user to engage with an in-world element (Zaki, Wook & Ahmad, 2017; Valenza, Gasparini & Hounsell, 2019). An approach to prompting would be to utilize a visual or auditory effect when the user focuses on the targeted part of the UI (Valenza, Gasparini & Hounsell, 2019).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Guidance",
+              "id": "guidance",
+              "guidelines": [
+                {
+                  "name": "Design the UI to guide user interaction",
+                  "descriptor": "A user initializing a task should have guidance provided by the UI to ensure they do not stray from the intended task focus (Zaki, Wook & Ahmad, 2017), and the overall user experience is not negatively impacted. Additionally, this guidance requires to be clear and understandable when directly giving instructions (Florescu, Waschull & Emmanouilidis, 2023).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Personalization",
+              "id": "personalization",
+              "guidelines": [
+                {
+                  "name": "Allow for UI personalization ",
+                  "descriptor": "Allowing for toggleable elements of the UI within MR experiences will let the user customize the interface so that it is more aligned with their preference (Dabor, Longford & Walker, 2019), allowing for a positive contribution toward the user experience as a result of the adaptability of the UI based on the needs of the user or the context of use (Ciccarelli et al., 2022).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Usefulness",
+          "id": "usefulness",
+          "guidelines": [
+            {
+              "name": "Design the VR experience to have value to the user",
+              "descriptor": "A VR experience should be designed so that there is perceived value to there user (Moore et al., 2024).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Usability",
+          "id": "usability",
+          "subsubthemes": [
+            {
+              "name": "Accessibility",
+              "id": "accessibility",
+              "guidelines": [
+                {
+                  "name": "Consider physical aspects of user accessibility when designing XR experiences",
+                  "descriptor": "The user experience needs to be designed so that it is accessible with regard to the user’s current scenario (Chakravorty and Rowe, 2018), otherwise there is a likelihood that the application will have limited usage due to lack of comfort or even strain (Ejaz et al., 2019). Design considerations should take aspects of the user’s physical environment into account such as lighting and sound, as these factors have potential to interfere with the application (Chakravorty and Rowe, 2018). Ergonomics of input devices and calibration processes should be considered as well (Ciccarelli et al., 2022, Abeele et al., 2021), to accommodate for lack of physical ability of the user, while also giving thought to whether the experience can be seated (Abeele et al., 2021). Additionally, the user experience should aim to be flexible for users by using multiple sensory modalities when possible (Pfeuffer, Gellersen & Gonzalez-Franco, 2024), to allow preferred interaction methods (Ejaz et al., 2019), giving a sense of control (Ciccarelli et al., 2022), and benefiting users that have deteriorated senses (Abeele et al., 2021; Chakravorty and Rowe, 2018).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Onboarding",
+              "id": "onboarding",
+              "guidelines": [
+                {
+                  "name": "Include onboarding and training for the user",
+                  "descriptor": "Both training and onboarding are important for the usability of a serious game (Zaki, Wook & Ahmad, 2017) and an immersive experience (de Belen & Bednarz, 2019; Farizi et al., 2021; Santos et al., 2016; Shukri, Arshad & Abidin, 2017) as the user can build understanding on how to use an application (Shukri, Arshad & Abidin, 2017) and its purpose (Santos et al., 2016).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "During training and onboarding provide demonstrations on how to use the XR experience",
+                  "descriptor": "There should be demonstrations on how to use the experience (Desurvire & Kreminski, 2018) that are clear and repeatable (Zaki, Wook & Ahmad, 2017). Gameplay within immersive virtual environments can have demonstrations delivered whilst the user is playing to allow them to practice immediately as they learn (Desurvire & Kreminski, 2018). Through the use of demonstrations, a less tiresome user experience is achieved when promoting visuals opposed to text (Valenza, Gasparini & Hounsell, 2019).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Use a multi-modal approach to deliver information and guidance ",
+                  "descriptor": "Design visual features when delivering instructions within AR virtual environments (Jeffri and Ramblli, 2020; Rolim et al., 2015). The visual of the instruction within AR should give consideration to the physical environment the user is within (Rolim et al., 2015). Visual representations of instructions may not be appropriate in every design scenario. Therefore, when providing information in a text-based form, the accompaniment of audio can aid user comprehension (Valenza, Gasparini & Hounsell, 2019). ",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Information and guidance provided should be clear and easy to find",
+                  "descriptor": "Information and guidance should be given throughout the game (Ariffin, Ahmad, & Sulaiman, 2015; Zaki, Wook & Ahmad, 2017), while the presentation of it should be clear (Zaki, Wook & Ahmad, 2017) and easy to find (Valenza, Gasparini & Hounsell, 2019). If in-game guidance is confusing to find or understand then it will negatively impact the user experience.",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Provide opportunities for the user to familiarize themselves with tasks within XR applications",
+                  "descriptor": "It is important to allow the user to gain task familiarity within VR applications as user proficiency for performing tasks improves in terms of their reaction time (Baldoni et al., 2024). The user experience is positively effected by being able to perform tasks with increased understanding and speed.",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Interaction",
+              "id": "interaction",
+              "guidelines": [
+                {
+                  "name": "Prioritise natural input over complex input schemes",
+                  "descriptor": "To make the design of user input more universally usable (Valenza, Gasparini & Hounsell, 2019) and simple to understand (Wetzel et al., 2008), complex input methods should be discouraged when possible (Valenza, Gasparini & Hounsell, 2019; Wetzel et al., 2008) to avoid sensory input overload of the user (Kersting et al., 2024). Consideration can be given to natural input approaches such as user body motion or gesturing within XR virtual environments (Moore et al., 2024; Serafin et al., 2016; Shukri, Arshad & Abidin, 2017; Menck et al., 2023) to improve familiarity with the virtual scenario and therefore user immersion (Menck et al., 2023). For AR experiences specifically, touch-screen interaction within AR virtual experiences is an approach that can prove easier to understand due to familiarity of the user input (Li et al., 2022). Using this form of simplified user input can aid in resolving user fatigue that is an attribute of lengthy tasks in XR virtual environments (Baldoni et al., 2024). ",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Use natural user interactions that are familiar to the user",
+                  "descriptor": "The use of natural user interactions familiar to the user within XR experiences can aid usability (Serafin et al., 2016; Shukri, Arshad & Abidin, 2017), due to there being appropriate interaction affordances (Ciccarelli et al., 2022) and interactions being intuitive (Florescu, Waschull & Emmanouilidis, 2023; Santos et al., 2016; Serafin et al., 2016). Natural interactions are constrained by the user’s physical environment, such as the laws of physics or limitations of human anatomy (Serafin et al., 2016), and a diversity of input modalities should imitate the user environment (Moore et al., 2024). Natural inputs can be considered as user movement, gestures, touch interaction (Abeele et al., 2021) or verbal commands (Moore et al., 2024) dependant on the hardware available for the XR experience.",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Ensure the system is responsive to interactions",
+                  "descriptor": "User interactions within a XR environment should have minimal response latency (Serafin et al., 2016; Pfeuffer, Gellersen & Gonzalez-Franco, 2024) to positively contribute to the overall usability. The reduction of any interaction response latency can help promote user engagement when performing interactions (Zaki, Wook & Ahmad, 2017).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Allow users to undo and correct mistakes within the experience",
+                  "descriptor": "The user should be made aware of errors they make during a task, to allow for them to learn from the feedback provided and also correct their mistake (Valenza, Gasparini & Hounsell, 2019; Ciccarelli et al., 2022). The user experience is positively impacted by mitigating user frustration from not being able to amend mistakes made.",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Ensure visuals do not occlude interactable elements",
+                  "descriptor": "There should not be visuals that hide or obstruct elements that are core to the XR virtual environment as this can hinder or distract the user from performing a task (Tanprasert & Yoon, 2022) and negatively impact the user experience as a result of degraded application usability.",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Feedback",
+              "id": "feedback",
+              "guidelines": [
+                {
+                  "name": "Use multi-modal feedback",
+                  "descriptor": "Designing feedback mechanisms that have differing sensory modalities involved (Tsikinas & Xinogalos, 2019; Egea-Vivancos & Arias-Ferrer, 2020), such as sound, visual and touch feedback alongside user proprioception (Serafin et al., 2016) allows for stimuli of the user to be greater and also their retention of information (Egea-Vivancos & Arias-Ferrer, 2020). An example being the use of sound and visual forms of feedback when wanting to enable increased communication between the user and the serious game (Tsikinas & Xinogalos, 2019).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Feedback should be accurate, fast, and clear",
+                  "descriptor": "Regardless of the modality of feedback provided, the feedback should be clear commencing and completing a task or activity (Moore et al., 2024; Abeele et al., 2021), for instance, sound should be audible and distinguishable so users are clear on what they represent (Zaki, Wook & Ahmad, 2017) while coupled with other feedback modalities (Florescu, Waschull & Emmanouilidis, 2023). The speed of feedback needs to be given shortly after user interaction, otherwise there is potential for confusion (Valenza, Gasparini & Hounsell, 2019) and influence of a negative user experience.",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Allow for feedback to be given when an interaction occurs or event is triggered within the experience",
+                  "descriptor": "It is important to allow for consistent feedback to be given (Zaki, Wook & Ahmad, 2017) that is informative and effective when the user interacts with the virtual environment (de Belen & Bednarz, 2019; Ciccarelli et al., 2022), or if an event occurs automatically then the user will require feedback to be made aware of something taking place (Santos et al., 2016). By providing informative and effective feedback the user will better understand interactions taking place within the virtual environment, contributing to a positive user experience.",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Use exogenous cues for simple tasks and endogenous cues for complex tasks",
+                  "descriptor": "It is important to draw attention to areas or objects of focus within an AR virtual environment (Santos et al., 2016; Shukri, Arshad & Abidin, 2017; Chakravorty and Rowe, 2018) to mitigate uncertainty and encourage interaction of the user to improve their user experience. For simpler tasks exogenous cues are recommended (Jeffri and Ramblli, 2020; Ejaz et al., 2019), such as providing visuals with high contrast or sudden movement to draw user attention. For complex tasks endogenous cues are recommend (Jeffri and Ramblli, 2020) to allow the user to be guided through visual elements such as arrows or highlights. ",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Cognition",
+              "id": "cognition",
+              "guidelines": [
+                {
+                  "name": "Make sure that the system adapts to the user cognitive abilities",
+                  "descriptor": "The serious game should be capable of determining the user’s cognitive ability in relation to the tasks they are performing (Zaki, Wook & Ahmad, 2017), because if the user is not capable of performing a task then there is potential for limited progression and therefore negatively impact the user experience of the serious game. ",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Prefer visual representations over text descriptions",
+                  "descriptor": "Using visuals can help reducing the cognitive load (Zaki, Wook & Ahmad, 2017; de Belen & Bednarz, 2019). The visuals should have sufficient contrast to the virtual environment background as well as optimized positioning to help reduce cognitive load (Shukri, Arshad & Abidin, 2017). Additionally, the visuals can serve as memory aids for the user helps them capitalise on prior knowledge and helps reduce cognitive load (de Belen & Bednarz, 2019).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Attention",
+              "id": "attention",
+              "guidelines": [
+                {
+                  "name": "Limit task complexity to promote user attention ",
+                  "descriptor": "The user experience is diminished if the user is not paying attention, this can be caused by tasks being too complex and fatiguing the user (Baldoni et al., 2024). Dependant on the needs of the application it is recommended to limit the quantity of complex tasks a user must perform to avoid fatigue (Baldoni et al., 2024).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Physical User Abilities",
+              "id": "physical_user_abilities",
+              "guidelines": [
+                {
+                  "name": "Let the user adapt the experience to their physical abilities",
+                  "descriptor": "Movement of the user in the physical environment that is being mapped to the virtual environment should be considered during the design of the virtual experience (Farizi et al., 2021). By considering how the user can interact based on their physical ability (Abeele et al., 2021), the user experience will be improved as it is tailored to suit them (Paraskevopoulos et al., 2014).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Design the virtual experience to be adaptable to the physical spatial requirements of the user",
+                  "descriptor": "The virtual experience should give consideration toward the intended users physical environment, how it can accommodate for users with sensory limitations, and how these considerations can be compatible for differing hardware devices (de Belen & Bednarz, 2019).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Keep ergonomics considerations in mind when designing the XR experience",
+                  "descriptor": "The usability of the virtual experience may be improved if the user can feel more comfortable (Serafin et al., 2016; Florescu, Waschull & Emmanouilidis, 2023). Therefore, consideration should be given to the movements and length of time a user is utilizing the required hardware, as the weight or extended use could induce strain on the user (Serafin et al., 2016).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            },
+            {
+              "name": "Recognition",
+              "id": "recognition",
+              "guidelines": [
+                {
+                  "name": "Favour recognition over recall",
+                  "descriptor": "The user should be focused on their task rather than mastering other areas of the application such as the UI (Ejaz et al., 2019), however, it is recommended to not commit complex tasks to memory as they can overwhelm the user’s cognitive load (Zaki, Wook & Ahmad, 2017). Similarly, to help reduce cognitive load the serious game tasks should not be lengthy to complete (Valenza, Gasparini & Hounsell, 2019).",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                },
+                {
+                  "name": "Encourage recognition instead of recall",
+                  "descriptor": "User recognition should be promoted opposed to user recall within the virtual environment (Dabor, Longford & Walker, 2019; Zaki, Wook & Ahmad, 2017; Valenza, Gasparini & Hounsell, 2019; Ejaz et al., 2019; Ciccarelli et al., 2022) for interfaces, objects, actions, events (Zaki, Wook & Ahmad, 2017;  Valenza, Gasparini & Hounsell, 2019). Tasks performed by the user should be understood, allowing for recognition and a lower quantity of memorized steps to complete a task (Dabor, Longford & Walker, 2019). Usability and the user experience is positively impacted through the user being able to interact with the virtual environment more effectively, by not spending time attempting to recall information.",
+                  "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Drive",
+      "id": "drive",
+      "subthemes": [
+        {
+          "name": "Stimulation",
+          "id": "stimulation",
+          "guidelines": [
+            {
+              "name": "Stimulate the user by using activities that are challenging and imagination provoking",
+              "descriptor": "Stimulating the user within a serious game can be achieved through providing relevant activities that provoke the imagination, additionally stimulation can occur from providing a challenge to the user (Zaki, Wook & Ahmad, 2017). Within a virtual environment a user can be stimulated by facilitating creative inspiration if appropriate to the context of the virtual experience (Desurvire & Kreminski, 2018). By effectively stimulating the user, the drive of the user can be positively impacted.",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Flow",
+          "id": "flow",
+          "guidelines": [
+            {
+              "name": "Design for a user state of flow",
+              "descriptor": "The design of the serious game should allow for the user to enter a psychological state of flow (Zaki, Wook & Ahmad, 2017), to allow for the user to be completely focused on a task or activity. By designing the layout of the virtual environment to be simplistic, user concentration can be increased (Zaki, Wook & Ahmad, 2017).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Engagement",
+          "id": "engagement",
+          "guidelines": [
+            {
+              "name": "Design for interactions within the virtual environment that encourage user engagement",
+              "descriptor": "Interactions that are designed to provide feedback to the user, as well as using natural input methods allow for the user to feel more engaged within the XR virtual experience (Desurvire & Kreminski, 2018). The user being more engaged with the virtual experience can positively influence the drive of the user.",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "Design the aesthetic of the virtual environment to encourage user engagement ",
+              "descriptor": "The design of the UI should be aesthetically pleasing and fun (Ciccarelli et al., 2022), while the virtual environment aesthetic should engage the user (Chen, 2019), for instance, using detailed visual cues that have realism during user training will effectively impact their engagement (Shahu, Kinzer & Michahelles, 2023). However, for younger audiences the opposite is recommended, through providing an animated character to guide, encourage and entertain the user within the virtual environment to promote engagement (Zaki, Wook & Ahmad, 2017).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "To engage the user the experience should be fun from within moments of starting ",
+              "descriptor": "Within the initial moments of entering the experience, the gameplay should be fun to provide the user with immediate enjoyment and immerse the user within the virtual experience to broaden the appeal of the game and keep them engaged (King, 2021).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "Provide clear goals within the experience to engage the user",
+              "descriptor": "Within the experience the user should be provided with goals to engage them and to maintain user focus throughout the game (Zaki, Wook & Ahmad, 2017). Keeping the user focused through the use of goals also aids the user to enter a flow state, which positively influences the drive of the user.",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "Allow user customization of the experience to improve user engagement",
+              "descriptor": "The user is more likely to stay engaged with the serious game and negate slight discomfort if the game contains rewards that provided personal motivation to the individual user (Paraskevopoulos et al., 2014).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Interest",
+          "id": "interest",
+          "guidelines": [
+            {
+              "name": "Maintain user interest by introducing new activities and challenges",
+              "descriptor": "The experience should be fun (Zaki, Wook & Ahmad, 2017) and provide thought provoking activities and challenges (Valenza, Gasparini & Hounsell, 2019) that allow for the user to retain interest. Additionally, the experience should introduce new elements, challenges, and surprises to rejuvenate the user interest (Chen, 2019). ",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Motivation",
+          "id": "motivation",
+          "guidelines": [
+            {
+              "name": "Maintain intrinsic motivation of the user",
+              "descriptor": "Discovery of intrinsic motivators can be found letting the end user participate within the design process of the game (Chen, 2019). An approach of facilitating intrinsic motivation is ensuring the user feels challenged during a serious game to have their interest stimulated (Tsikinas & Xinogalos, 2019), driving them to overcome the presented difficulty. Therefore, it is important to adapt the difficulty of the game in accordance with the user ability (Paraskevopoulos et al., 2014; Tsikinas & Xinogalos, 2019), to allow them to maintain their motivation to play it. Adapting the difficulty can be achieved through in-game competition with other users or computer agents (Paraskevopoulos et al., 2014). Additionally, to avoid eroding intrinsic motivation of the user, the game mechanics should not bribe the user with incentives (Chen, 2019).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "Provide the user with personal and shared goals as a form of motivation in multi-user experiences",
+              "descriptor": "Dependant on the intended amount of collectivism within the experience, the design of the experience should incorporate shared goals for users for high amounts of collectivism, while focusing on personal goals for the user in instances of low collectivism (Ariffin, Ahmad, & Sulaiman, 2015). Goals given to the user should be challenging but achievable, to allow them to be motivated (Paraskevopoulos et al., 2014) and positively impacting their drive. Moreover, the challenges should have clarity, which can be achieved by making game challenges brief so that they are understood by the user (Valenza, Gasparini & Hounsell, 2019).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "Reveal the experience content gradually to maintain user motivation",
+              "descriptor": "As the user progresses through the experience, the experience content should be delivered gradually to the user so that they do not become overwhelmed or demotivated (Valenza, Gasparini & Hounsell, 2019). By avoiding negative aspects of the user feeling overwhelmed or demotivated, this allows for the user’s overall drive to be positively impacted.",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Rewards",
+          "id": "rewards",
+          "guidelines": [
+            {
+              "name": "Provide rewards relevant to the user to encourage the drive of the user",
+              "descriptor": "Providing rewards is an approach to stimulate user interest (Chen, 2019) and it is a users’ incentive to play the game. The rewards obtainable by the user should be based on their performance in the game (King, 2021; Valenza, Gasparini & Hounsell, 2019), allowing for the reward to be more personalized to the user. Personalizing the reward provides the user with something that is more meaningful to them – the design of the game should allow for the reward to be provided immediately after fulfilling the criteria to achieve it (Zaki, Wook & Ahmad, 2017).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Purpose",
+          "id": "purpose",
+          "guidelines": [
+            {
+              "name": "The game content should be purposeful and meaningful to the user",
+              "descriptor": "Designing a game that provides a clear purpose that is distinct to the user (Tanprasert & Yoon, 2022), and includes visuals to present something meaningful toward the user is an approach of stimulating interest (Wetzel et al., 2008), and therefore positively influencing the user’s drive.",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Learning",
+      "id": "learning",
+      "subthemes": [
+        {
+          "name": "Collaboration",
+          "id": "collaboration",
+          "guidelines": [
+            {
+              "name": "Promote collaboration between users in multi-user XR experiences",
+              "descriptor": "Designing a serious game to incorporate social interactions can enhance the learning experience of the user (Zaki, Wook & Ahmad, 2017; Li et al., 2022). Collaboration amongst users is a form of social interaction and can create the opportunity for users to help one another in the game with difficulties, in-turn allowing for improved user understanding of the game and enhancing their learning experience (Li et al., 2022; Kersting et al., 2024). ",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Competition",
+          "id": "competition",
+          "guidelines": [
+            {
+              "name": "Promote real-time competition",
+              "descriptor": "Designing a serious game to incorporate competition between users allows for increased concentration and can lead towards quicker task completion when learning (Li et al., 2022).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Effectiveness",
+          "id": "effectiveness",
+          "guidelines": [
+            {
+              "name": "Incorporate multiple sensory modalities and relevant content for effective learning ",
+              "descriptor": "To allow for more effective learning for users, it is encouraged to use relevant content in a virtual environment that is applicable alongside normal in-person learning (Egea-Vivancos & Arias-Ferrer, 2020). Moreover, utilising different modalities in conjunction with one another such as auditory and visual elements within the learning experience (Zaki, Wook & Ahmad, 2017), can help to provide the user a greater stimuli and make the learning experience more effective.",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "Promote active interaction for users within XR experiences for effective learning ",
+              "descriptor": "When designing the users engagement within an XR experience, allow for active interactions throughout the experience to aid in effective learning for the user (Shahu, Kinzer & Michahelles, 2023). Active learning is concerned with the user’s ability to engage with and influence the virtual environment with actions such as, selection, manipulation, locomotion, and social interaction.",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Learning Difficulty",
+          "id": "learning_difficulty",
+          "guidelines": [
+            {
+              "name": "Design the difficulty of learning to be tailored to the user",
+              "descriptor": "Designing the difficulty of the game to be dynamic in relation to the user, allows for content to be altered as the user’s needs change as they gain knowledge through the virtual experience (Chen, 2019; Shahu, Kinzer & Michahelles, 2023; Egea-Vivancos & Arias-Ferrer, 2020). Moreover, designing a game with user-specific content allows for a more customized learning experience (Kim & Song, 1997). Similarly to dynamic game difficulty, the level of information presented to the user will need to be in-line with the content and learning goals that are presented for their learning development (Valenza, Gasparini & Hounsell, 2019).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Cognition",
+          "id": "cognition",
+          "guidelines": [
+            {
+              "name": "Avoid or limit cognitive overload of the user when learning",
+              "descriptor": "The amount of choice presented to a user within a serious game should be limited when already being presented with large amounts of information and complex tasks, as this contributes to cognitive overload (Li et al., 2022). By limiting the quantity of choice the user’s mental capacity is less overwhelmed, aiding them to process and retain information more effectively, which positively impacts their learning effectiveness. Moreover, mitigation of the user feeling overwhelmed can be further achieved through gradually increasing the complexity of the task (Johnson-Glenberg, 2018), as well as easing the user into tasks by providing worked examples for them to study, then providing tasks that are partially worked (Andersen et al., 2016).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Task & Assessment",
+          "id": "task_and_assessment",
+          "guidelines": [
+            {
+              "name": "Maintain interest and engagement during tasks",
+              "descriptor": "Designing the tasks in a serious game to mimic their real-world equivalents, aids the users familiarization and thus their ability to problem solve within the virtual environment (Zaki, Wook & Ahmad, 2017). Additionally, being able to provide a variety of tasks will contribute to keeping user interest (Zaki, Wook & Ahmad, 2017), while user engagement can be improved through providing clear tasks and goals to the user and where possible coupling tests of user knowledge to application of technical skills (Egea-Vivancos & Arias-Ferrer, 2020).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "Use the XR experience as a form of formative and summative feedback",
+              "descriptor": "XR should be used as a formative form of assessment (Johnson-Glenberg, 2018), as this allows for the user to improve their task comprehension as they are informed about the correctness of their in-progress task that involves real-world physical movement. Additionally, summative assessment should be provided after the task to further assess user comprehension (Johnson-Glenberg, 2018).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Feedback",
+          "id": "feedback",
+          "guidelines": [
+            {
+              "name": "Present clear, immediate, and reflective feedback",
+              "descriptor": "The user should be presented with clear feedback on their performance as they progress within the serious game (Valenza, Gasparini & Hounsell, 2019), as well as having a more detailed overview of their performance at the end of the game – giving comparison to previous game sessions if applicable (Paraskevopoulos et al., 2014). Providing immediate, actionable feedback throughout gameplay (Johnson-Glenberg, 2018) and offering methods for user reflection on their tasks (Haj-Bolouri and Rossi, 2022) is crucial for improving performance in real-time and promoting deeper understanding. Interactive cues within the IVR environment should enhance feedback by delivering additional information when necessary (Haj-Bolouri and Rossi, 2022). Performance feedback is essential for aiding the user in understanding their current ability levels, identifying areas for improvement, and supporting more effective learning.",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Onboarding",
+          "id": "onboarding",
+          "guidelines": [
+            {
+              "name": "Provide opportunities for receiving assistance in the XR experience  ",
+              "descriptor": "Consideration should be given to users that are new to XR technology and how they will require help understanding how to use the technology before being able to have time to familiarize themselves with the virtual environment (Shahu, Kinzer & Michahelles, 2023). Additionally, professional training tasks can be complex and comprehensive feedback from in-person assistance and guidance may be necessary when the user encounters challenges (Shahu, Kinzer & Michahelles, 2023). Guided exploration is an approach to provide additional user support and can be delivered via exogeneous and endogenous cues (Johnson-Glenberg, 2018), such as attention-grabbing object changes and signposting respectively. Using guided exploration opposed to free exploration allows for less cognitive load, more effective learning, and increased retention of information (Kirschner et al., 2010).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Learning Consolidation",
+          "id": "learning_consolidation",
+          "guidelines": [
+            {
+              "name": "Provide opportunities for repetition and practice",
+              "descriptor": "Learning consolidation can be achieved through repetition and practice of the learning content, while there should also be opportunity to apply new skills when the user faces challenges that they cannot overcome (Zaki, Wook & Ahmad, 2017). ",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "Provide opportunities for making mistakes",
+              "descriptor": "Enabling users to make mistakes through challenging trial-and-error scenarios reinforces learning by allowing them to learn from errors and make better decisions (Haj-Bolouri and Rossi, 2022). ",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "Provide opportunities for reflection",
+              "descriptor": "Incorporating opportunities for reflection, whether through short quizzes, discussions, or self-assessment, can solidify cognitive understanding and promote deeper learning (Johnson-Glenberg, 2018).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Learning Facilitation",
+          "id": "learning_facilitation",
+          "guidelines": [
+            {
+              "name": "Design to facilitate for a learning experience for the user",
+              "descriptor": "Facilitation of a learning experience is multifaceted and considers the game content (Chen, 2019), user interaction (Kim & Song, 1997), and the utilized hardware (Shahu, Kinzer & Michahelles, 2023). Game content should provide meaningful choices within the game to provide the user with purpose when engaging with content (Chen, 2019). Furthermore, to facilitate user engagement with learning activities, there should be a high level of user interaction (Kim & Song, 1997). User training on how to maintain hardware is necessary to ensure its ongoing usage and therefore allow for learning to take place in future game sessions (Shahu, Kinzer & Michahelles, 2023). Additionally, it can be advantageous to use the latest XR technology available when looking to improve the user experience in terms of their immersion and presence whilst learning (Shahu, Kinzer & Michahelles, 2023). Visual cues, such as lighting and depth techniques, should be integrated to encourage users to explore virtual objects and environments, enhancing immersion and interaction (Chakravorty and Rowe, 2018). Designers should also clearly indicate when representations are scientifically accurate and when artistic interpretation is used to communicate an idea (Kersting et al., 2024). Incorporating gestures, such as VR hand controls, can promote learning, enhance user agency, and reduce simulator sickness (Johnson-Glenberg, 2018).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Privacy and Safety",
+      "id": "privacy_safety",
+      "subthemes": [
+        {
+          "name": "Privacy",
+          "id": "privacy",
+          "guidelines": [
+            {
+              "name": "Maintain the user’s privacy",
+              "descriptor": "The user’s privacy should be maintained to keep details of the user confidential and align with privacy regulations (Moore et al., 2024). Therefore, any user data that is collected should be stored in a secure place and not be distributed elsewhere (King, 2021). The implication of maintaining privacy of the user and their related data is that it allows for user confidence in the application to also be maintained.",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Safety",
+          "id": "safety",
+          "guidelines": [
+            {
+              "name": "Maintain the user’s safety within the XR experience and in the physical environment ",
+              "descriptor": "Designing for safety in a virtual environment should include an escape area within the experience (Desurvire & Kreminski, 2018) if applicable, moreover, the user should feel safe to learn in the virtual environment with no overwhelmingly negative consequences (Kersting et al., 2024; Desurvire & Kreminski, 2018) to allow for the user to comfortably continue engaging with learning content. In the physical environment the user should operate the XR technology within a space that is considered safe to do so (Desurvire & Kreminski, 2018) and be aware of potential hazards surrounding them (de Belen & Bednarz, 2019). Additional prompts could be given in the virtual environment to assist with safety in the physical environment in the form of feedback when moving (de Belen & Bednarz, 2019). Designing for user safety allows for continued use for the virtual experience.",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Storytelling",
+      "id": "storytelling",
+      "subthemes": [
+        {
+          "name": "Theme",
+          "id": "name",
+          "guidelines": [
+            {
+              "name": "Maintain the name of the experience consistently through the design",
+              "descriptor": "Throughout the game the theming of the content should be clear (King, 2021) and remain consistent (Wetzel et al., 2008), content such as visual attributes of objects or text to indicate similarity in their meaning to the user (Zaki, Wook & Ahmad, 2017). ",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "The mechanics should support and link to the name of the experience",
+              "descriptor": "The experience mechanics should also consistently link toward the name of the game (King, 2021).",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Narrative",
+          "id": "narrative",
+          "guidelines": [
+            {
+              "name": "Present the core narrative of the experience to the user",
+              "descriptor": "The narrative of the experience should be clear to the user (King, 2021; Paraskevopoulos et al., 2014) and engaging (Chen, 2019), which can be achieved by immediately presenting them with a core part of the narrative (Valenza, Gasparini & Hounsell, 2019). ",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "Consider visual and auditory stimuli to maintain an engaging narrative",
+              "descriptor": "Improving the user enjoyment of the experience narrative engages the user. Considering design elements such as visual stimuli and audio output within the experience (Paraskevopoulos et al., 2014) can help achieve the narrative enjoyment.",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            },
+            {
+              "name": "Integrate the game narrative into real-world when applicable",
+              "descriptor": "Designing an XR experience that can augment objects in the physical environment with elements that relate to the narrative of the experience aids the user with a sense of accomplishment (Li et al., 2022). By doing so, the user gains a greater connection with the experience (Li et al., 2022), positively contributing user engagement with the narrative and allowing for more effective storytelling.",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        },
+        {
+          "name": "Dialogue",
+          "id": "dialogue",
+          "guidelines": [
+            {
+              "name": "Consider the type of user that will interact with the experience when designing experience dialogue ",
+              "descriptor": "The design of the game dialogue should be considered in terms of the formality, encouragement, and how related the dialogue is to the content of the experience (Ariffin, Ahmad, & Sulaiman, 2015). Designing the dialogue without understanding of the intended user can potentially deter engagement through ineffective storytelling.",
+              "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Realism",
+      "id": "realism",
+      "guidelines": [
+        {
+          "name": "Design the game to be realistic",
+          "descriptor": "Designing serious games to closely resemble real-world objects or behaviours aids to enhance user understanding and engagement (Valenza, Gasparini & Hounsell, 2019). Considerations should be given to the virtual environment, objects (Farizi et al., 2021), tasks (Moore et al., 2024), and the interfaces the user will interact with (Valenza, Gasparini & Hounsell, 2019).",
+          "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+        }
+      ]
+    },
+    {
+      "name": "Social",
+      "id": "social",
+      "guidelines": [
+        {
+          "name": "Facilitate shared experiences within the virtual environment",
+          "descriptor": "Shared experiences can be between the user and trainers, experts (Abeele et al., 2021), or other users (Serafin et al., 2016; Wetzel et al., 2008). Facilitating shared experiences allows the user to gain insight and guidance from discussions and interactions that take place between the multiple parties within the virtual experience (Abeele et al., 2021).",
+          "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+        }
+      ]
+    },
+    {
+      "name": "Equality, Diversity and Inclusion",
+      "id": "equality_diversity_inclusion",
+      "guidelines": [
+        {
+          "name": "Design the game to support equality, diversity and inclusion",
+          "descriptor": "The game design should consider the ability of differing users to allow it to allow for it to be as inclusive as possible (Desurvire & Kreminski, 2018). Consideration should also be given to ethnic representation within the game (Ariffin, Ahmad, & Sulaiman, 2015), as it can promote cultural understanding and respect for users of the game. Lastly, the game should be accessible to users in their native language as it supports equality by providing equal access, and inclusivity by respecting and acknowledging the diversity of languages among users.",
+          "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+        }
+      ]
+    },
+    {
+      "name": "Game Balance",
+      "id": "game_balance",
+      "guidelines": [
+        {
+          "name": "Allow for game difficulty to be balanced based on user performance",
+          "descriptor": "Gradual difficulty scaling for challenges within the game (Desurvire & Kreminski, 2018; King, 2021) prevents users from being overwhelmed and promotes enhanced learning, interest, creativity, and social interaction (King, 2021). Furthermore, the game pacing and difficulty should be balanced based on the user performance (Zaki, Wook & Ahmad, 2017; Valenza, Gasparini & Hounsell, 2019; King, 2021), as this aids in mitigating user frustration while enhancing their learning (King, 2021).",
+          "references": "Reference Source 1, 2023\nReference Source 2, 2022"
+        }
+      ]
+    }
+  ]
+}

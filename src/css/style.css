@@ -1,0 +1,125 @@
+#home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+#title {
+    position: absolute;
+    /* top: 368px;
+    left: 236px; */
+    top:45%;
+    left:50%;
+    transform :translate(-50%,-50%);
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    /*font-size: 300%;*/
+    font-size:calc(50% + 2vw);
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+#guide {
+    position: absolute;
+    width: 393px;
+    top:140%;
+    left:50%;
+    transform :translate(-50%,-50%);
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #b9b9b9;
+    font-size: calc(25% + 1vw);
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+#citeas{
+    position: absolute;
+    width: auto;
+    bottom: 1%;
+    left: 43px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 400;
+    color: #b9b9b9;
+    font-size: calc(50% + .25vw);
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+#CCTLogo {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    top: 8px;
+    left: 11px;
+    object-fit: cover;
+}
+
+#diagram {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform :translate(-50%,-50%);
+    width: 50%;
+    max-width: 950px;
+    aspect-ratio: 1;
+}
+
+.item {
+    position: absolute;
+    width: 20%;
+    aspect-ratio: 1;
+    transition: all 0.2s ease;
+}
+
+.item:hover {
+    transform: scale(1.2);
+}
+
+#circle {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #d9d9d9;
+    border-radius: 100%;
+}
+
+#text-wrapper {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform :translate(-50%,-50%);
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: calc(50% + 1.5vw);
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+/* 
+@media (max-width: 900px) {
+
+    #title {
+        font-size:calc(50% + 2vw);
+    }
+    
+    #guide {
+        font-size: calc(25% + 1vw);
+    }
+    
+    #citeas{
+        font-size: calc(50% + 2vw);
+        right: 20px;
+        left: 20px;
+    }
+    
+    #diagram {
+        width: 100%;
+    }
+} */
