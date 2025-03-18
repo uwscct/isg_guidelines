@@ -129,14 +129,29 @@ fetch('./assets/data.json')
             var textDiv = document.createElement('div');
             textDiv.id = 'text-wrapper';
             textDiv.innerHTML += itemName;
-
             circleDiv.appendChild(textDiv);
             itemDiv.appendChild(circleDiv);
             document.getElementById("diagram").appendChild(itemDiv);
 
             positionItem(index, lenght, itemDiv);
-
             return itemDiv;
+        }
+
+        function computeCirlceRadius(itemDiv) {
+
+            if (window.innerWidth >= window.innerHeight) {
+                itemDiv.setAttribute("style", "width: 20%");
+            }
+            else {
+                itemDiv.setAttribute("style", "width: 35%");
+            }
+        }
+
+        function computePosRadius() {
+            if (window.innerWidth < window.innerHeight)
+                return 0.3 * window.innerWidth;
+            else
+                return 0.35 * window.innerHeight;
         }
 
         function positionItem(index, lenght, itemDiv) {
@@ -144,7 +159,7 @@ fetch('./assets/data.json')
             var centreY = (itemDiv.parentElement.clientHeight - itemDiv.clientWidth) * .5;
 
             var angle = (2 * index / lenght + 1.5) * Math.PI;
-            var radius = 0.75 * itemDiv.parentElement.clientWidth * .5;
+            var radius = computePosRadius();
             var X = Math.cos(angle) * radius + centreX;
             var Y = Math.sin(angle) * radius + centreY;
 
@@ -166,11 +181,11 @@ fetch('./assets/data.json')
         if (urlParams.has('st') && urlParams.has('sst')) {
             var st = urlParams.get('st');
             var sst = urlParams.get('sst');
-            document.getElementById("title").getElementsByTagName("p")[0].innerHTML=data.themes[st].subthemes[sst].name;
+            document.getElementById("title").getElementsByTagName("p")[0].innerHTML = data.themes[st].subthemes[sst].name;
             createItems(data.themes[st].subthemes[sst].subsubthemes);
         } else if (urlParams.has('st')) {
             var st = urlParams.get('st');
-            document.getElementById("title").getElementsByTagName("p")[0].innerHTML=data.themes[st].name;
+            document.getElementById("title").getElementsByTagName("p")[0].innerHTML = data.themes[st].name;
             createItems(data.themes[st].subthemes);
         } else {
             createItems(data.themes);
@@ -185,6 +200,9 @@ fetch('./assets/data.json')
             return function (event) {
                 if (urlParams.has('st')) {
                     if (urlParams.has('sst')) {
+                        var st = urlParams.get('st');
+                        var sst = urlParams.get('sst');
+                        createGuidelinesPage(data.themes[st].subthemes[sst].subsubthemes[i].guidelines);
                         console.log('guidelines');
                     } else {
                         var st = urlParams.get('st');
@@ -192,6 +210,7 @@ fetch('./assets/data.json')
                             location.href = url + 'st=' + st + '&sst=' + i;
                         }
                         else {
+                            createGuidelinesPage(data.themes[st].subthemes[i].guidelines);
                             console.log('guidelines');
                         }
                     }
@@ -199,13 +218,78 @@ fetch('./assets/data.json')
                     location.href = url + 'st=' + i;
                 }
                 else {
+                    createGuidelinesPage(data.themes[i].guidelines);
                     console.log('guidelines');
                 }
             }
         }
 
-        window.addEventListener('resize', function (event) {
-            this.location.reload();
-        }, true);
+        function createGuidelinesPage(guidelines) {
+            document.getElementById("home").removeChild(document.getElementById("diagram"));
 
+            var guidDiv = document.createElement('div');
+            guidDiv.id = "gl";
+
+            var scrollableDiv = document.createElement('div');
+            scrollableDiv.id = 'scroll';
+            scrollableDiv.className = 'scroll';
+
+            var guidelineShow = document.createElement('div');
+            guidelineShow.id = 'show';
+            guidelineShow.className = 'show';
+
+            guidDiv.appendChild(scrollableDiv);
+            guidDiv.appendChild(guidelineShow);
+            document.getElementById("home").appendChild(guidDiv);
+
+            var ul = document.createElement("ul");
+            guidelines.forEach(function (el, i) {
+                let gl = document.createElement('li');
+                gl.id = 'gl-name';
+                gl.innerHTML = el.name;
+                gl.addEventListener('click', showGuideline(el));
+                ul.append(gl);
+            });
+            scrollableDiv.append(ul);
+            function showGuideline(guideline) {
+                return function () {
+                    // if(document.getElementById("gln")!= undefined)
+                    //     guidelineShow.remove(document.getElementById("gln"));
+
+                    let gltitle = document.createElement('div');
+                    gltitle.id = 'gl-title';
+                    gltitle.innerHTML = guideline.name;
+
+                    let gldesc = document.createElement('div');
+                    gldesc.id = 'gl-desc';
+                    gldesc.innerHTML = guideline.descriptor;
+
+                    let glref = document.createElement('div');
+                    glref.id = 'gl-ref';
+                    glref.innerHTML = guideline.references;
+
+                    let gln= document.createElement('div');
+                    gln.id = 'gln';
+                    gln.append(gltitle);
+                    gln.append(gldesc);
+                    gln.append(glref);
+
+                    guidelineShow.append(gln);
+                }
+            }
+        }
+
+        let resizeTimeout;
+        window.addEventListener('resize', function (event) {
+            if (resizeTimeout) {
+                clearTimeout(resizeTimeout);
+            }
+            resizeTimeout = setTimeout(function () {
+                items.forEach(function (el, i) {
+                    computeCirlceRadius(el);
+                    positionItem(i, items.length, el);
+                });
+                resizeTimeout = null;
+            }, 50);
+        }, true);
     });

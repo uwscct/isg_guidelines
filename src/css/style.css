@@ -16,7 +16,7 @@
     font-weight: 400;
     color: #ffffff;
     /*font-size: 300%;*/
-    font-size:calc(50% + 2vw);
+    font-size: clamp(15px, 1.5vw, 32px);/*calc(50% + 2vw);*/
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
@@ -31,7 +31,7 @@
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
     color: #b9b9b9;
-    font-size: calc(25% + 1vw);
+    font-size:  clamp(12px, 1.5vw, 32px);/*calc(25% + 1vw);*/
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
@@ -90,6 +90,7 @@
 }
 
 #text-wrapper {
+    text-align: center;
     position:absolute;
     top:50%;
     left:50%;
@@ -97,29 +98,45 @@
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
     color: #000000;
-    font-size: calc(50% + 1.5vw);
+    font-size: clamp(12px, 1.5vw, 32px);/*12px;/*calc(50% + 1.5vw);*/
     letter-spacing: 0;
     line-height: normal;
-    white-space: nowrap;
+    white-space: normal;
 }
-/* 
-@media (max-width: 900px) {
-
-    #title {
-        font-size:calc(50% + 2vw);
-    }
-    
-    #guide {
-        font-size: calc(25% + 1vw);
-    }
-    
-    #citeas{
-        font-size: calc(50% + 2vw);
-        right: 20px;
-        left: 20px;
-    }
-    
-    #diagram {
-        width: 100%;
-    }
-} */
+#gl-name{
+    color: white;
+    cursor: pointer;
+}
+#gl{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+}
+#scroll{
+    width: 50%;
+    height: 100%;
+}
+#show{
+    width:50%;
+    height: 100%;
+    background-color: gray;
+}
+#gln{
+    color: white;
+    padding: 10px;
+}
+#gl-title{
+    font-size: 25px;
+    position: absolute;
+    top: 1%;
+}
+#gl-desc{
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+}
+#gl-ref{
+    font-size: 10px;
+    position: absolute;
+    bottom: 10%;
+}
