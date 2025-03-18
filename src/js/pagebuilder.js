@@ -255,6 +255,9 @@ fetch('./assets/data.json')
                 return function () {
                     // if(document.getElementById("gln")!= undefined)
                     //     guidelineShow.remove(document.getElementById("gln"));
+                    
+                    // Clear previous guideline content
+                    guidelineShow.innerHTML = "";
 
                     let gltitle = document.createElement('div');
                     gltitle.id = 'gl-title';
