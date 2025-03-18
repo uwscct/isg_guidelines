@@ -131,6 +131,11 @@
   background-color: #004aac;
   color: white;
 }
+.gl-item.active {
+    background-color: #004aac;
+    color: white;
+    font-weight: bold;
+}
 #gl-name{
     color: white;
     cursor: pointer;
