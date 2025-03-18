@@ -15,17 +15,32 @@
                                 {
                                     "name": "Optimise ergonomics for user interface interaction",
                                     "descriptor": "Ensure that the calibration processes are ergonomically designed to accommodate players with varying physical abilities. This includes considering whether the experience can be effectively delivered in a standing, seated, or laying-down format, thereby supporting comfortable interaction for all users (Ciccarelli et al., 2022; Abeele et al., 2021).",
-                                    "references": "Ciccarelli et al., 2022\nAbeele et al., 2021"
+                                    "references": [
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547.",
+                                        "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021."
+                                    ]
                                 },
                                 {
                                     "name": "Integrate multiple sensory input modalities for flexible interaction",
                                     "descriptor": "Incorporate multiple sensory input modalities to offer players flexible interaction options. This approach not only allows players to choose their preferred method of engagement but also provides a greater sense of control, while supporting those with diminished sensory capabilities (Pfeuffer, Gellersen & Gonzalez-Franco, 2024; Ejaz et al., 2019; Ciccarelli et al., 2022; Abeele et al., 2021; Chakravorty and Rowe, 2018).",
-                                    "references": "Pfeuffer, Gellersen & Gonzalez-Franco, 2024\nEjaz et al., 2019\nCiccarelli et al., 2022\nAbeele et al., 2021\nChakravorty and Rowe, 2018"
+                                    "references": [
+                                        "K. Pfeuffer, H. Gellersen, and M. Gonzalez-Franco, “Design principles and challenges for gaze + pinch interaction in xr,” IEEE Computer Graphics and Applications, vol. 44, pp. 74–81, 5 2024.",
+                                        "A. Ejaz, S. Ali, M. Ejaz, and F. Siddiqui, “Graphic user interface design principles for designing augmented reality applications,” International Journal of Advanced Computer Science and Applications, vol. 10, pp. 209–216, 2019.",
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547.",
+                                        "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021.",
+                                        "A. Chakravorty and A. Rowe, “Ux design principles for mobile augmented reality applications,” in Proceedings of the International Conferences on Interfaces and Human Computer Interaction 2018, Game and Entertainment Technologies 2018 and Computer Graphics, Visualization, Comp, vol. 2018-July, 2018, pp. 319–323."
+                                    ]
                                 },
                                 {
                                     "name": "Adapt the experience to the physical environment",
                                     "descriptor": "Design the player experience to adapt to the player’s physical space, accounting for external factors such as lighting and sound. Addressing these environmental conditions ensures that the application remains comfortable and fully accessible, avoiding potential discomfort or strain (Chakravorty and Rowe, 2018; Ejaz et al., 2019). For players with sensory limitations, consider how assistive technologies can impact on the available play space (de Belen & Bednarz, 2019). In AR or mixed reality ISGs, design visual instructions that are sensitive to the player physical context (Jeffri and Ramblli, 2020; Rolim et al., 2015).",
-                                    "references": "Chakravorty and Rowe, 2018\nEjaz et al., 2019\nJeffri and Ramblli, 2020\nRolim et al., 2015\nde Belen & Bednarz, 2019"
+                                    "references": [
+                                        "A. Chakravorty and A. Rowe, “Ux design principles for mobile augmented reality applications,” in Proceedings of the International Conferences on Interfaces and Human Computer Interaction 2018, Game and Entertainment Technologies 2018 and Computer Graphics, Visualization, Comp, vol. 2018-July, 2018, pp. 319–323.",
+                                        "A. Ejaz, S. Ali, M. Ejaz, and F. Siddiqui, “Graphic user interface design principles for designing augmented reality applications,” International Journal of Advanced Computer Science and Applications, vol. 10, pp. 209–216, 2019.",
+                                        "R. A. D. Belen and T. Bednarz, “Mixed reality and internet of things (mriot) interface design guidelines for elderly people,” in 23rd International Conference in Information Visualization, 2019.",
+                                        "N. F. S. Jeffri and D. R. A. Rambli, “Guidelines for the interface design of ar systems for manual assembly,” in 4th International Conference on Virtual and Augmented Reality Simulations (ICVARS), 2 2020, pp. 70–77.",
+                                        "C. Rolim, D. Schmalstieg, D. Kalkofen, and V. Teichrieb, “Design guidelines for generating augmented reality instructions,” in IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 11 2015, pp. 120–123."
+                                    ]
                                 }
                             ]
                         },
@@ -55,7 +70,11 @@
                                 {
                                     "name": "Information and guidance provided should be clear and easy to find",
                                     "descriptor": "Information and guidance should be given throughout the game (Ariffin, Ahmad, & Sulaiman, 2015; Zaki, Wook & Ahmad, 2017), while the presentation of it should be clear (Zaki, Wook & Ahmad, 2017) and easy to find (Valenza, Gasparini & Hounsell, 2019). If in-game guidance is confusing to find or understand then it will negatively impact the user experience.",
-                                    "references": "Ariffin, Ahmad, & Sulaiman, 2015\nZaki, Wook & Ahmad, 2017\nValenza, Gasparini & Hounsell, 2019"
+                                    "references": [
+                                        "M. M. Ariffin, W. F. W. Ahmad, and S. Sulaiman, “Guideline for designing an effective serious game by using cultural-based game design model,” in Advances in Visual Informatics (IVIC), vol. 9429. Springer, Cham, 1 2015, pp. 111 – 118.",
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                                    ]
                                 },
                                 {
                                     "name": "Provide opportunities for the user to familiarise themselves with tasks within XR applications",
