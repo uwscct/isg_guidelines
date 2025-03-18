@@ -118,6 +118,7 @@
 
 /* Style each guideline item */
 .gl-item {
+  position: relative; /* So the pseudo-element is positioned relative to the list item */
   padding: 10px;
   margin-bottom: 5px;
   font-size: 14px;
