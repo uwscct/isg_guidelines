@@ -35,13 +35,22 @@
                             "guidelines": [
                                 {
                                     "name": "Include onboarding and training for the player",
-                                    "descriptor": "Both training and onboarding are important for the usability of an ISG (Zaki, Wook & Ahmad, 2017, de Belen & Bednarz, 2019; Farizi et al., 2021; Santos et al., 2016; Shukri, Arshad & Abidin, 2017) as the player needs to build understanding on how to use an application (Shukri, Arshad & Abidin, 2017) and its purpose (Santos et al., 2016) to achieve the ISG goals.",
-                                    "references": "Zaki, Wook & Ahmad, 2017\nde Belen & Bednarz, 2019\nFarizi et al., 2021\nSantos et al., 2016\nShukri, Arshad & Abidin, 2017"
+                                    "descriptor": "Both training and onboarding are important for the usability of an ISG (Zaki, Wook & Ahmad, 2017; de Belen & Bednarz, 2019; Farizi et al., 2021; Santos et al., 2016; Shukri, Arshad & Abidin, 2017) as the player needs to build understanding on how to use an application (Shukri, Arshad & Abidin, 2017) and its purpose (Santos et al., 2016) to achieve the ISG goals.",
+                                    "references": [
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "F. D. Farizi, T. Hoang, S. Bangay, and S. Greuter, “Developing design guidelines for virtual reality based decision-making training for team sports,” in CHI PLAY 2021 - Extended Abstracts of the 2021 Annual Symposium on Computer-Human Interaction in Play, 10 2021, pp. 61–66.",
+                                        "C. Santos, B. Miranda, T. Araujo, N. Carneiro, A. Marques, M. Mota, and et al., “Guidelines for graphical user interface design in mobile augmented reality applications,” in 8th International Conference Virtual, Augmented and Mixed Reality (VAMR). Springer International Publishing, 7 2016, pp. 71–80.",
+                                        "S. A. A. Shukri, H. Arshad, and R. Z. Abidin, “The design guidelines of mobile augmented reality for tourism in malaysia,” in 2nd International Conference on Applied Science and Technology (ICAST), vol. 1891. American Institute of Physics Inc., 10 2017."
+                                    ]
                                 },
                                 {
                                     "name": "Provide demonstrations on how to use the ISG",
                                     "descriptor": "There should be demonstrations on how to use the experience (Desurvire & Kreminski, 2018) that are clear and repeatable (Zaki, Wook & Ahmad, 2017). Gameplay within the ISG can have demonstrations of interactions delivered whilst the user is playing to allow them to practice immediately as they learn (Desurvire & Kreminski, 2018). Using demonstrations, a less tiresome user experience is achieved when promoting visuals over text (Valenza, Gasparini & Hounsell, 2019).",
-                                    "references": "Desurvire & Kreminski, 2018\nZaki, Wook & Ahmad, 2017\nValenza, Gasparini & Hounsell, 2019"
+                                    "references": [
+                                        "H. Desurvire and M. Kreminski, “Are game design and user research guidelines specific to virtual reality effective in creating a more optimal player experience? yes, vr play,” in Design, User Experience, and Usability: Theory and Practice (DUXU). Springer International Publishing, 2018, pp. 40–59.",
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                                    ]
                                 },
                                 {
                                     "name": "Information and guidance provided should be clear and easy to find",
