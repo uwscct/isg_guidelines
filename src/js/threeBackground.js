@@ -23,33 +23,51 @@ document.addEventListener("DOMContentLoaded", () => {
   
   document.body.appendChild(renderer.domElement);
 
-  // Create particles
-  const particlesCount = 500;
-  const geometry = new THREE.BufferGeometry();
-  const positions = new Float32Array(particlesCount * 3);
-  for (let i = 0; i < particlesCount * 3; i++) {
-    positions[i] = (Math.random() - 0.5) * 50;
-  }
-  geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-  const material = new THREE.PointsMaterial({ color: 0xffffff, size: 0.5 });
-  const particles = new THREE.Points(geometry, material);
-  scene.add(particles);
-
-  // Set camera position
-  camera.position.z = 30;
-
-  // Animate
+// Add a basic cube to confirm rendering
+  const geometry = new THREE.BoxGeometry();
+  const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+  const cube = new THREE.Mesh(geometry, material);
+  scene.add(cube);
+  
+  camera.position.z = 5;
+  
   function animate() {
     requestAnimationFrame(animate);
-    particles.rotation.y += 0.001;
+    cube.rotation.x += 0.01;
+    cube.rotation.y += 0.01;
     renderer.render(scene, camera);
   }
   animate();
-
-  // Responsive: update renderer and camera on window resize
-  window.addEventListener('resize', () => {
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-  });
 });
+
+  
+//   // Create particles
+//   const particlesCount = 500;
+//   const geometry = new THREE.BufferGeometry();
+//   const positions = new Float32Array(particlesCount * 3);
+//   for (let i = 0; i < particlesCount * 3; i++) {
+//     positions[i] = (Math.random() - 0.5) * 50;
+//   }
+//   geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+//   const material = new THREE.PointsMaterial({ color: 0xffffff, size: 0.5 });
+//   const particles = new THREE.Points(geometry, material);
+//   scene.add(particles);
+
+//   // Set camera position
+//   camera.position.z = 30;
+
+//   // Animate
+//   function animate() {
+//     requestAnimationFrame(animate);
+//     particles.rotation.y += 0.001;
+//     renderer.render(scene, camera);
+//   }
+//   animate();
+
+//   // Responsive: update renderer and camera on window resize
+//   window.addEventListener('resize', () => {
+//     camera.aspect = window.innerWidth / window.innerHeight;
+//     camera.updateProjectionMatrix();
+//     renderer.setSize(window.innerWidth, window.innerHeight);
+//   });
+// });
