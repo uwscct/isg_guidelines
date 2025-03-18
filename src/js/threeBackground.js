@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderer.domElement.style.left = "0";
   //renderer.domElement.style.backgroundColor = "rgba(255, 0, 0, 0.3)";
   //renderer.domElement.style.border = "2px solid yellow";
-  renderer.domElement.style.zIndex = "0"; // Make sure it's on top for testing
+  renderer.domElement.style.zIndex = "4"; // Make sure it's on top for testing
   
   // For debugging, set a semi-transparent background
   // renderer.domElement.style.backgroundColor = "rgba(255, 0, 0, 0.2)";
