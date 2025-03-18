@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     positions[i] = (Math.random() - 0.5) * 50;
   }
   geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
-  const material = new THREE.PointsMaterial({ color: 0xffffff, size: 0.5 });
+  const material = new THREE.PointsMaterial({ color: 0x000000, size: 0.5 });
   const particles = new THREE.Points(geometry, material);
   scene.add(particles);
 
