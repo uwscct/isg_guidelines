@@ -266,7 +266,13 @@ fetch('./assets/data.json')
 
                     let glref = document.createElement('div');
                     glref.id = 'gl-ref';
-                    glref.innerHTML = guideline.references;
+                    // Assuming guideline.references is an array of strings
+                    guideline.references.forEach(ref => {
+                        let refItem = document.createElement('p'); // <p> is block-level, so each will be on a new line
+                        refItem.textContent = ref;
+                        glref.appendChild(refItem);
+                    });
+                    //glref.innerHTML = guideline.references;
 
                     let gln= document.createElement('div');
                     gln.id = 'gln';
