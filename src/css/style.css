@@ -127,6 +127,7 @@
 /* Hover effect */
 .gl-item:hover {
   background-color: #004aac;
+  color: white;
 }
 #gl-name{
     color: white;
