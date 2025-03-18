@@ -120,7 +120,7 @@ var Name = "Test";
 fetch('./assets/data.json')
     .then((response) => response.json())
     .then((data) => {
-        function createItem(itemId, itemName, index, lenght) {
+        function createItem(itemId, itemName, index, length) {
             var itemDiv = document.createElement('div');
             itemDiv.id = itemId;
             itemDiv.className = 'item';
@@ -133,7 +133,7 @@ fetch('./assets/data.json')
             itemDiv.appendChild(circleDiv);
             document.getElementById("diagram").appendChild(itemDiv);
 
-            positionItem(index, lenght, itemDiv);
+            positionItem(index, length, itemDiv);
             return itemDiv;
         }
 
@@ -154,11 +154,11 @@ fetch('./assets/data.json')
                 return 0.35 * window.innerHeight;
         }
 
-        function positionItem(index, lenght, itemDiv) {
+        function positionItem(index, length, itemDiv) {
             var centreX = (itemDiv.parentElement.clientWidth - itemDiv.clientHeight) * .5;
             var centreY = (itemDiv.parentElement.clientHeight - itemDiv.clientWidth) * .5;
 
-            var angle = (2 * index / lenght + 1.5) * Math.PI;
+            var angle = (2 * index / length + 1.5) * Math.PI;
             var radius = computePosRadius();
             var X = Math.cos(angle) * radius + centreX;
             var Y = Math.sin(angle) * radius + centreY;
