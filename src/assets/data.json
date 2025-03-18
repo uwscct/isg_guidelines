@@ -79,17 +79,24 @@
                                 {
                                     "name": "Provide opportunities for the user to familiarise themselves with tasks within XR applications",
                                     "descriptor": "It is important to allow the user to gain task familiarity within VR applications as user proficiency for performing tasks improves in terms of their reaction time (Baldoni et al., 2024). The user experience is positively effected by being able to perform tasks with increased understanding and speed.",
-                                    "references": "Baldoni et al., 2024"
+                                    "references": [
+                                        "S. Baldoni, M. S. H. Sassi, M. Carli, and F. Battisti, “Definition of guidelines for virtual reality application design based on visual attention,” Multimedia Tools and Applications, vol. 83, pp. 49 615–49 640, 2023."
+                                    ]
                                 },
                                 {
                                     "name": "Provide guided exploration",
                                     "descriptor": "Guided exploration is an approach to provide additional player support and can be delivered via exogeneous and endogenous cues (Johnson-Glenberg, 2018), such as attention-grabbing object changes or signposting, respectively. Using guided exploration opposed to free exploration allows for less cognitive load, more effective learning, and increased retention of information (Kirschner et al., 2010).",
-                                    "references": "Johnson-Glenberg, 2018\nKirschner et al., 2010"
+                                    "references": [
+                                        "M. Johnson-Glenberg, “Immersive vr and education: Embodied design principles that include gesture and hand controls,” Frontiers Robotics AI, vol. 5, 2018.",
+                                        "P. A. Kirschner, J. Sweller, and R. E. Clark, “Why minimal guidance during instruction does not work: An analysis of the failure of constructivist, discovery, problem-based, experiential, and inquiry-based teaching,” Educational Psychologist, vol. 41, pp. 75–86, 3 2010."
+                                    ]
                                 },
                                 {
                                     "name": "Provide opportunities for receiving assistance in the XR experience",
                                     "descriptor": "Consideration should be given to users that are new to XR technology and how they will require help understanding how to use the technology before being able to have time to familiarise themselves with the virtual environment (Shahu, Kinzer & Michahelles, 2023).",
-                                    "references": "Shahu, Kinzer & Michahelles, 2023"
+                                    "references": [
+                                        "A. Shahu, K. Kinzer, and F. Michahelles, “Enhancing professional training with single-user virtual reality: Unveiling challenges, opportunities, and design guidelines,” in Proceedings of the 22nd International Conference on Mobile and Ubiquitous Multimedia. Association for Computing Machinery, 12 2023, pp. 244–256."
+                                    ]
                                 }
                             ]
                         },
@@ -100,7 +107,21 @@
                                 {
                                     "name": "Prioritise natural and familiar player interactions",
                                     "descriptor": "To enhance usability and reduce cognitive overload in ISGs, prefer input methods that favour natural or familiar interactions over complex schemes. Complex inputs can lead to sensory overload and hinder accessibility (Valenza, Gasparini & Hounsell, 2019; Wetzel et al., 2008; Kersting et al., 2024). Instead, employ natural input modalities — such as body movements, gestures, touch, or verbal commands — that leverage intuitive affordances and align with the constraints of the physical environment (Moore et al., 2024; Serafin et al., 2016; Shukri, Arshad & Abidin, 2017; Menck et al., 2023). For example, in AR ISG, using touch-screen interactions can provide a familiar and effective interface (Li et al., 2022), while simplified inputs help mitigate user fatigue during extended tasks (Baldoni et al., 2024). Additionally, ensure that the chosen interaction methods reflect natural constraints—such as the laws of physics and human anatomy—and provide diverse modalities that reflect the real-world environment (Ciccarelli et al., 2022; Florescu, Waschull & Emmanouilidis, 2023; Santos et al., 2016; Abeele et al., 2021).",
-                                    "references": "Valenza, Gasparini & Hounsell, 2019\nWetzel et al., 2008\nKersting et al., 2024\nMoore et al., 2024\nSerafin et al., 2016\nShukri, Arshad & Abidin, 2017\nMenck et al., 2023\nLi et al., 2022\nBaldoni et al., 2024\nCiccarelli et al., 2022\nFlorescu, Waschull & Emmanouilidis, 2023\nSantos et al., 2016\nAbeele et al., 2021"
+                                    "references": [
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019.",
+                                        "R. Wetzel, R. McCall, A.-K. Braun, and W. Broll, “Guidelines for designing augmented reality games,” in Proceedings of the 2008 Conference on Future Play: Research, Play, Share. Association for Computing Machinery, 11 2008, pp. 173–180.",
+                                        "M. Kersting, J. Bondell, R. Steier, and M. Myers, “Virtual reality in astronomy education: reflecting on design principles through a dialogue  between researchers and practitioners,” International Journal of Science Education, Part B: Communication and Public Engagement, vol. 14, pp. 157–176, 2024.",
+                                        "N. Moore, N. Ahmadpour, J. Davids, P. Poronnik, and M. Brown, “Developing a framework for the design and deployment of virtual reality (vr) in clinical education,” Studies in health technology and informatics, vol. 310, pp. 1256–1260, 1 2024.",
+                                        "S. Serafin, C. Erkut, J. Kojs, R. Nordahl, and N. C. Nilsson, “Virtual reality musical instruments: Guidelines for multisensory interaction design,” in Proceedings of the Audio Mostly 2016, vol. 04-06-October-2016. Association for Computing Machinery, 10 2016, pp. 266–271.",
+                                        "S. A. A. Shukri, H. Arshad, and R. Z. Abidin, “The design guidelines of mobile augmented reality for tourism in malaysia,” in 2nd International Conference on Applied Science and Technology (ICAST), vol. 1891. American Institute of Physics Inc., 10 2017.",
+                                        "J. Menck, H. Lechte, T.-B. Lembcke, A. Brendel, and L. Kolbe, “Towards design principles for experimental simulations in virtual reality-learning from driving simulators,” in 56th Annual Hawaii International Conference on System Sciences, vol. 2023-Janua, 2023, pp. 1303–1312.",
+                                        "J. Li, E. V. D. Spek, J. Hu, and L. Feijs, “Extracting design guidelines for augmented reality serious games for children,” IEEE Access, vol. 10, pp. 66 660–66 671, 1 2022.",
+                                        "S. Baldoni, M. S. H. Sassi, M. Carli, and F. Battisti, “Definition of guidelines for virtual reality application design based on visual attention,” Multimedia Tools and Applications, vol. 83, pp. 49 615–49 640, 2023.",
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547.",
+                                        "T. Florescu, S. Waschull, and C. Emmanouilidis, “Human-centric industrial augmented reality: Requirements and design guidelines for usability,” APMS 2023. IFIP Advances in Information and Communication Technology, vol. 689, pp. 617–632, 2023.",
+                                        "C. Santos, B. Miranda, T. Araujo, N. Carneiro, A. Marques, M. Mota, and et al., “Guidelines for graphical user interface design in mobile augmented reality applications,” in 8th International Conference Virtual, Augmented and Mixed Reality (VAMR). Springer International Publishing, 7 2016, pp. 71–80.",
+                                        "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021."
+                                    ]
                                 },
                                 {
                                     "name": "Ensure the system is responsive to interactions",
