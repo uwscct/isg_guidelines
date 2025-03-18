@@ -118,7 +118,6 @@
 
 /* Style each guideline item */
 .gl-item {
-  position: relative; /* So the pseudo-element is positioned relative to the list item */
   padding: 10px;
   margin-bottom: 5px;
   font-size: 14px;
@@ -136,17 +135,6 @@
     background-color: #004aac;
     color: white;
     font-weight: bold;
-}
-.gl-item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -20px;  /* Adjust this value to control how far the curve extends */
-  width: 40px;   /* The width of the curved area */
-  height: 100%;  /* Match the list item’s height */
-  background: black; /* Should match the background color of the container to appear “cut-out” */
-  border-top-left-radius: 20px;   /* Creates the top curved edge */
-  border-bottom-left-radius: 20px; /* Creates the bottom curved edge */
 }
 #gl-name{
     color: white;
