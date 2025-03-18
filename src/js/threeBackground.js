@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
   renderer.domElement.style.position = "absolute";
   renderer.domElement.style.top = "0";
   renderer.domElement.style.left = "0";
-  renderer.domElement.style.backgroundColor = "rgba(255, 0, 0, 0.3)";
-  renderer.domElement.style.border = "2px solid yellow";
+  //renderer.domElement.style.backgroundColor = "rgba(255, 0, 0, 0.3)";
+  //renderer.domElement.style.border = "2px solid yellow";
   renderer.domElement.style.zIndex = "1"; // Make sure it's on top for testing
   
   // For debugging, set a semi-transparent background
@@ -23,21 +23,35 @@ document.addEventListener("DOMContentLoaded", () => {
   
   document.body.appendChild(renderer.domElement);
 
-// Add a basic cube to confirm rendering
-  const geometry = new THREE.BoxGeometry();
-  const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-  const cube = new THREE.Mesh(geometry, material);
-  scene.add(cube);
-  
-  camera.position.z = 5;
-  
+// Create particles
+  const particlesCount = 500;
+  const geometry = new THREE.BufferGeometry();
+  const positions = new Float32Array(particlesCount * 3);
+
+  for (let i = 0; i < particlesCount * 3; i++) {
+    positions[i] = (Math.random() - 0.5) * 50;
+  }
+  geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+  const material = new THREE.PointsMaterial({ color: 0xffffff, size: 0.5 });
+  const particles = new THREE.Points(geometry, material);
+  scene.add(particles);
+
+  // Position the camera
+  camera.position.z = 30;
+
   function animate() {
     requestAnimationFrame(animate);
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
+    // Optional: rotate particles slowly for effect
+    particles.rotation.y += 0.001;
     renderer.render(scene, camera);
   }
   animate();
+
+  window.addEventListener("resize", () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
 });
 
   
