@@ -245,10 +245,15 @@ fetch('./assets/data.json')
             var ul = document.createElement("ul");
             guidelines.forEach(function (el, i) {
                 let gl = document.createElement('li');
-                gl.id = 'gl-name';
-                gl.innerHTML = el.name;
+                gl.className = 'gl-item';
+                gl.textContent = el.name;
                 gl.addEventListener('click', showGuideline(el));
-                ul.append(gl);
+                ul.appendChild(gl);
+                // let gl = document.createElement('li');
+                // gl.id = 'gl-name';
+                // gl.innerHTML = el.name;
+                // gl.addEventListener('click', showGuideline(el));
+                // ul.append(gl);
             });
             scrollableDiv.append(ul);
             function showGuideline(guideline) {
