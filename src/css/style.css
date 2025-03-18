@@ -137,6 +137,18 @@
     color: white;
     font-weight: bold;
 }
+.gl-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;  /* Adjust this value to control how far the curve extends */
+  width: 40px;   /* The width of the curved area */
+  height: 100%;  /* Match the list item’s height */
+  background: #f9f9f9; /* Should match the background color of the container to appear “cut-out” */
+  border-top-left-radius: 20px;   /* Creates the top curved edge */
+  border-bottom-left-radius: 20px; /* Creates the bottom curved edge */
+  z-index: -1;  /* Optionally, place the pseudo-element behind the list item’s content */
+}
 #gl-name{
     color: white;
     cursor: pointer;
