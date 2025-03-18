@@ -247,7 +247,14 @@ fetch('./assets/data.json')
                 let gl = document.createElement('li');
                 gl.className = 'gl-item';
                 gl.textContent = el.name;
-                gl.addEventListener('click', showGuideline(el));
+                gl.addEventListener('click', function () {
+                    // Remove the active class from all guideline items
+                    document.querySelectorAll('.gl-item.active').forEach(item => item.classList.remove('active'));
+                    // Add the active class to the clicked item
+                    gl.classList.add('active');
+                    // Call your function to display the guideline details
+                    showGuideline(el)();
+                });
                 ul.appendChild(gl);
                 // let gl = document.createElement('li');
                 // gl.id = 'gl-name';
