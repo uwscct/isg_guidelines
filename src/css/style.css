@@ -103,6 +103,16 @@
     line-height: normal;
     white-space: normal;
 }
+
+/* Style the container that holds the list */
+#scroll {
+  overflow-y: auto;      /* Allow scrolling if the list gets too long */
+  height: 100%;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
 /* Style each guideline item */
 .gl-item {
   padding: 10px;
