@@ -147,7 +147,6 @@
   background: black; /* Should match the background color of the container to appear “cut-out” */
   border-top-left-radius: 20px;   /* Creates the top curved edge */
   border-bottom-left-radius: 20px; /* Creates the bottom curved edge */
-  z-index: -1;  /* Optionally, place the pseudo-element behind the list item’s content */
 }
 #gl-name{
     color: white;
