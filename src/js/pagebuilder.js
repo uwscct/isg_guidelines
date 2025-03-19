@@ -1,144 +1,46 @@
-var ID = "test";
-var Name = "Test";
-
-// data = {
-//     "themes": [{
-//         "id": "test",
-//         "name": "Theme0",
-//         "subthemes": [
-//             {
-//                 "id": "test", "name": "Subtheme00",
-//                 "subsubthemes": [{
-//                     "id": "test", "name": "sububtheme000",
-//                     "guidelines": [{
-//                         "id": 'guideline0001', "descriptor": 'Lorem ipsum dolor sin amet',
-//                         "references": [{ "ref": 'reference 00' }, { "ref": 'reference 02' }, { "ref": 'reference 02' }]
-//                     }]
-//                 }]
-//             },
-//             {
-//                 "id": "test", "name": "Subtheme01",
-//                 "subsubthemes": [{
-//                     "id": "test", "name": "sububtheme010",
-//                     "guidelines": [{
-//                         "id": 'guideline0100', "descriptor": 'Lorem ipsum dolor sin amet',
-//                         "references": [{ "ref": 'reference 00' }, { "ref": 'reference 02' }, { "ref": 'reference 02' }]
-//                     }]
-//                 }, {
-//                     "id": "test", "name": "sububtheme011",
-//                     "guidelines": [{
-//                         "id": 'guideline0110', "descriptor": 'Lorem ipsum dolor sin amet',
-//                         "references": [{ "ref": 'reference 00' }, { "ref": 'reference 02' }, { "ref": 'reference 02' }]
-//                     }]
-//                 }]
-//             },
-//             {
-//                 "id": "test", "name": "Subtheme02",
-//                 "guidelines": [{
-//                     "id": 'guideline020', "descriptor": 'Lorem ipsum dolor sin amet',
-//                     "references": [{ "ref": 'reference 00' }, { "ref": 'reference 02' }, { "ref": 'reference 02' }]
-//                 },
-//                 {
-//                     "id": "test", "name": "Subtheme03",
-//                     "guidelines": [{
-//                         "id": 'guideline030', "descriptor": 'Lorem ipsum dolor sin amet',
-//                         "references": [{ "ref": 'reference 00' }, { "ref": 'reference 02' }, { "ref": 'reference 02' }]
-//                     }]
-//                 }]
-//             }]
-//     },
-//     {
-//         "id": "test",
-//         "name": "Theme1",
-//         "guidelines": [{
-//             "id": 'guideline11', "descriptor": 'Lorem ipsum dolor sin amet',
-//             "references": [{ "ref": 'reference 00' }, { "ref": 'reference 02' }, { "ref": 'reference 02' }]
-//         },
-//         {
-//             "id": "test", "name": "Subtheme03",
-//             "guidelines": [{
-//                 "id": 'guideline12', "descriptor": 'Lorem ipsum dolor sin amet',
-//                 "references": [{ "ref": 'reference 00' }, { "ref": 'reference 02' }, { "ref": 'reference 02' }]
-//             }]
-//         }]
-//     },
-//     {
-//         "id": "test",
-//         "name": "Theme2",
-//         "subthemes": [
-//             {
-//                 "id": "test", "name": "Subtheme20",
-//                 "subsubthemes": [{
-//                     "id": "test", "name": "sububtheme200",
-//                     "guidelines": [{
-//                         "id": 'guideline0001', "descriptor": 'Lorem ipsum dolor sin amet',
-//                         "references": [{ "ref": 'reference 00' }, { "ref": 'reference 02' }, { "ref": 'reference 02' }]
-//                     }]
-//                 }]
-//             },
-//             {
-//                 "id": "test", "name": "Subtheme22",
-//                 "guidelines": [{
-//                     "id": 'guideline220', "descriptor": 'Lorem ipsum dolor sin amet',
-//                     "references": [{ "ref": 'reference 00' }, { "ref": 'reference 02' }, { "ref": 'reference 02' }]
-//                 },
-//                 {
-//                     "id": "test", "name": "Subtheme23",
-//                     "guidelines": [{
-//                         "id": 'guideline230', "descriptor": 'Lorem ipsum dolor sin amet',
-//                         "references": [{ "ref": 'reference 00' }, { "ref": 'reference 02' }, { "ref": 'reference 02' }]
-//                     }]
-//                 }]
-//             }]
-//     },
-//     {
-//         "id": "test",
-//         "name": "Theme3"
-//     },
-//     {
-//         "id": "test",
-//         "name": "Theme4"
-//     },
-//     {
-//         "id": "test",
-//         "name": "Theme5"
-//     },
-//     {
-//         "id": "test",
-//         "name": "Theme6"
-//     },
-//     {
-//         "id": "test",
-//         "name": "Theme7"
-//     },
-//     {
-//         "id": "test",
-//         "name": "Theme8"
-//     }]
-// };
-
 fetch('./assets/data.json')
     .then((response) => response.json())
     .then((data) => {
+
+        function adjustTextSize(circleDiv, textDiv) {
+            // Get the available diameter of the circle
+            let diameter = circleDiv.offsetWidth;
+            // Retrieve the computed font size in pixels
+            let style = window.getComputedStyle(textDiv, null);
+            let fontSize = parseFloat(style.getPropertyValue('font-size'));
+            
+            // Decrease the font size until the text fits or reaches a minimum size (e.g., 5px)
+            while (textDiv.scrollWidth > diameter && fontSize > 5) {
+                fontSize--;
+                textDiv.style.fontSize = fontSize + "px";
+            }
+        }
+
         function createItem(itemId, itemName, index, length) {
             var itemDiv = document.createElement('div');
             itemDiv.id = itemId;
             itemDiv.className = 'item';
+            
             var circleDiv = document.createElement('div');
             circleDiv.id = 'circle';
+            
             var textDiv = document.createElement('div');
             textDiv.id = 'text-wrapper';
-            textDiv.innerHTML += itemName;
+            textDiv.innerHTML = itemName;
+            
             circleDiv.appendChild(textDiv);
             itemDiv.appendChild(circleDiv);
             document.getElementById("diagram").appendChild(itemDiv);
 
             positionItem(index, length, itemDiv);
+            
+            // Adjust text size after the element is rendered
+            adjustTextSize(circleDiv, textDiv);
+            
             return itemDiv;
         }
 
         function computeCirlceRadius(itemDiv) {
-
             if (window.innerWidth >= window.innerHeight) {
                 itemDiv.setAttribute("style", "width: 20%");
             }
@@ -155,8 +57,8 @@ fetch('./assets/data.json')
         }
 
         function positionItem(index, length, itemDiv) {
-            var centreX = (itemDiv.parentElement.clientWidth - itemDiv.clientHeight) * .5;
-            var centreY = (itemDiv.parentElement.clientHeight - itemDiv.clientWidth) * .5;
+            var centreX = (itemDiv.parentElement.clientWidth - itemDiv.clientHeight) * 0.5;
+            var centreY = (itemDiv.parentElement.clientHeight - itemDiv.clientWidth) * 0.5;
 
             var angle = (2 * index / length + 1.5) * Math.PI;
             var radius = computePosRadius();
@@ -214,7 +116,7 @@ fetch('./assets/data.json')
                             console.log('guidelines');
                         }
                     }
-                } else if (data.themes[i].subthemes != null) { //&& !urlParams.has('st')
+                } else if (data.themes[i].subthemes != null) { 
                     location.href = url + 'st=' + i;
                 }
                 else {
@@ -256,18 +158,11 @@ fetch('./assets/data.json')
                     showGuideline(el)();
                 });
                 ul.appendChild(gl);
-                // let gl = document.createElement('li');
-                // gl.id = 'gl-name';
-                // gl.innerHTML = el.name;
-                // gl.addEventListener('click', showGuideline(el));
-                // ul.append(gl);
             });
             scrollableDiv.append(ul);
+
             function showGuideline(guideline) {
                 return function () {
-                    // if(document.getElementById("gln")!= undefined)
-                    //     guidelineShow.remove(document.getElementById("gln"));
-                    
                     // Clear previous guideline content
                     guidelineShow.innerHTML = "";
 
@@ -281,15 +176,13 @@ fetch('./assets/data.json')
 
                     let glref = document.createElement('div');
                     glref.id = 'gl-ref';
-                    // Assuming guideline.references is an array of strings
                     guideline.references.forEach(ref => {
-                        let refItem = document.createElement('p'); // <p> is block-level, so each will be on a new line
+                        let refItem = document.createElement('p');
                         refItem.textContent = ref;
                         glref.appendChild(refItem);
                     });
-                    //glref.innerHTML = guideline.references;
 
-                    let gln= document.createElement('div');
+                    let gln = document.createElement('div');
                     gln.id = 'gln';
                     gln.append(gltitle);
                     gln.append(gldesc);
