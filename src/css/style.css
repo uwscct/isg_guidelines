@@ -16,7 +16,7 @@
     transform :translate(-50%,-50%);
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
-    color: #000000;
+    color: #004aac;
     /*font-size: 300%;*/
     font-size: clamp(15px, 1.5vw, 32px);/*calc(50% + 2vw);*/
     text-align: center;
