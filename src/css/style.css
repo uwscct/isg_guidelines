@@ -101,7 +101,7 @@
     transform :translate(-50%,-50%);
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
-    color: #white;
+    color: #ffffff;
     font-size: clamp(12px, 1.5vw, 32px);/*12px;/*calc(50% + 1.5vw);*/
     letter-spacing: 0;
     line-height: normal;
