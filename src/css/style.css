@@ -143,6 +143,8 @@
 #gl-name{
     color: white;
     cursor: pointer;
+    font-size: 12px;
+    font-family: "Inter-Bold", Helvetica;
 }
 #gl{
     width: 100%;
