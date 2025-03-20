@@ -124,7 +124,9 @@
 .gl-item {
   padding: 10px;
   margin-bottom: 5px;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 16px;
+  font-family: "Inter-Bold", Helvetica;
   color: black;
   cursor: pointer;
   border-bottom: 1px solid #ddd;
@@ -139,8 +141,6 @@
     background-color: #004aac;
     color: white;
     font-weight: bold;
-    font-size: 12px;
-    font-family: "Inter-Bold", Helvetica;
 }
 #gl-name{
     color: white;
