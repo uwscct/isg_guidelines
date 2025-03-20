@@ -160,16 +160,19 @@
 }
 #gl-title{
     font-size: 25px;
+    font-family: "Inter-Bold", Helvetica;
     position: absolute;
     top: 1%;
 }
 #gl-desc{
     font-size: 20px;
+    font-family: "Inter-Bold", Helvetica;
     position: absolute;
     top: 20%;
 }
 #gl-ref{
-    font-size: 10px;
+    font-size: 12px;
+    font-family: "Inter-Bold", Helvetica;
     position: absolute;
     bottom: 10%;
 }
