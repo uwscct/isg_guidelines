@@ -162,13 +162,15 @@
     font-size: 25px;
     font-family: "Inter-Bold", Helvetica;
     position: absolute;
-    top: 1%;
+    top: 5%;
 }
 #gl-desc{
     font-size: 20px;
     font-family: "Inter-Bold", Helvetica;
     position: absolute;
     top: 20%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 #gl-ref{
     font-size: 12px;
