@@ -1,0 +1,1198 @@
+{
+    "themes": [
+        {
+            "name": "UX",
+            "id": "ux",
+            "subthemes": [
+                {
+                    "name": "Usability",
+                    "id": "usability",
+                    "subsubthemes": [
+                        {
+                            "name": "Accessibility",
+                            "id": "accessibility",
+                            "guidelines": [
+                                {
+                                    "name": "Optimise ergonomics for user interface interaction",
+                                    "descriptor": "Ensure that the calibration processes are ergonomically designed to accommodate players with varying physical abilities. This includes considering whether the experience can be effectively delivered in a standing, seated, or laying-down format, thereby supporting comfortable interaction for all users (Ciccarelli et al., 2022; Abeele et al., 2021).",
+                                    "references": [
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547.",
+                                        "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021."
+                                    ]
+                                },
+                                {
+                                    "name": "Integrate multiple sensory input modalities for flexible interaction",
+                                    "descriptor": "Incorporate multiple sensory input modalities to offer players flexible interaction options. This approach not only allows players to choose their preferred method of engagement but also provides a greater sense of control, while supporting those with diminished sensory capabilities (Pfeuffer, Gellersen & Gonzalez-Franco, 2024; Ejaz et al., 2019; Ciccarelli et al., 2022; Abeele et al., 2021; Chakravorty and Rowe, 2018).",
+                                    "references": [
+                                        "K. Pfeuffer, H. Gellersen, and M. Gonzalez-Franco, “Design principles and challenges for gaze + pinch interaction in xr,” IEEE Computer Graphics and Applications, vol. 44, pp. 74–81, 5 2024.",
+                                        "A. Ejaz, S. Ali, M. Ejaz, and F. Siddiqui, “Graphic user interface design principles for designing augmented reality applications,” International Journal of Advanced Computer Science and Applications, vol. 10, pp. 209–216, 2019.",
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547.",
+                                        "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021.",
+                                        "A. Chakravorty and A. Rowe, “Ux design principles for mobile augmented reality applications,” in Proceedings of the International Conferences on Interfaces and Human Computer Interaction 2018, Game and Entertainment Technologies 2018 and Computer Graphics, Visualization, Comp, vol. 2018-July, 2018, pp. 319–323."
+                                    ]
+                                },
+                                {
+                                    "name": "Adapt the experience to the physical environment",
+                                    "descriptor": "Design the player experience to adapt to the player’s physical space, accounting for external factors such as lighting and sound. Addressing these environmental conditions ensures that the application remains comfortable and fully accessible, avoiding potential discomfort or strain (Chakravorty and Rowe, 2018; Ejaz et al., 2019). For players with sensory limitations, consider how assistive technologies can impact on the available play space (de Belen & Bednarz, 2019). In AR or mixed reality ISGs, design visual instructions that are sensitive to the player physical context (Jeffri and Ramblli, 2020; Rolim et al., 2015).",
+                                    "references": [
+                                        "A. Chakravorty and A. Rowe, “Ux design principles for mobile augmented reality applications,” in Proceedings of the International Conferences on Interfaces and Human Computer Interaction 2018, Game and Entertainment Technologies 2018 and Computer Graphics, Visualization, Comp, vol. 2018-July, 2018, pp. 319–323.",
+                                        "A. Ejaz, S. Ali, M. Ejaz, and F. Siddiqui, “Graphic user interface design principles for designing augmented reality applications,” International Journal of Advanced Computer Science and Applications, vol. 10, pp. 209–216, 2019.",
+                                        "R. A. D. Belen and T. Bednarz, “Mixed reality and internet of things (mriot) interface design guidelines for elderly people,” in 23rd International Conference in Information Visualization, 2019.",
+                                        "N. F. S. Jeffri and D. R. A. Rambli, “Guidelines for the interface design of ar systems for manual assembly,” in 4th International Conference on Virtual and Augmented Reality Simulations (ICVARS), 2 2020, pp. 70–77.",
+                                        "C. Rolim, D. Schmalstieg, D. Kalkofen, and V. Teichrieb, “Design guidelines for generating augmented reality instructions,” in IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 11 2015, pp. 120–123."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Onboarding",
+                            "id": "onboarding",
+                            "guidelines": [
+                                {
+                                    "name": "Include onboarding and training for the player",
+                                    "descriptor": "Both training and onboarding are important for the usability of an ISG (Zaki, Wook & Ahmad, 2017; de Belen & Bednarz, 2019; Farizi et al., 2021; Santos et al., 2016; Shukri, Arshad & Abidin, 2017) as the player needs to build understanding on how to use an application (Shukri, Arshad & Abidin, 2017) and its purpose (Santos et al., 2016) to achieve the ISG goals.",
+                                    "references": [
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "F. D. Farizi, T. Hoang, S. Bangay, and S. Greuter, “Developing design guidelines for virtual reality based decision-making training for team sports,” in CHI PLAY 2021 - Extended Abstracts of the 2021 Annual Symposium on Computer-Human Interaction in Play, 10 2021, pp. 61–66.",
+                                        "C. Santos, B. Miranda, T. Araujo, N. Carneiro, A. Marques, M. Mota, and et al., “Guidelines for graphical user interface design in mobile augmented reality applications,” in 8th International Conference Virtual, Augmented and Mixed Reality (VAMR). Springer International Publishing, 7 2016, pp. 71–80.",
+                                        "S. A. A. Shukri, H. Arshad, and R. Z. Abidin, “The design guidelines of mobile augmented reality for tourism in malaysia,” in 2nd International Conference on Applied Science and Technology (ICAST), vol. 1891. American Institute of Physics Inc., 10 2017."
+                                    ]
+                                },
+                                {
+                                    "name": "Provide demonstrations on how to use the ISG",
+                                    "descriptor": "There should be demonstrations on how to use the experience (Desurvire & Kreminski, 2018) that are clear and repeatable (Zaki, Wook & Ahmad, 2017). Gameplay within the ISG can have demonstrations of interactions delivered whilst the user is playing to allow them to practice immediately as they learn (Desurvire & Kreminski, 2018). Using demonstrations, a less tiresome user experience is achieved when promoting visuals over text (Valenza, Gasparini & Hounsell, 2019).",
+                                    "references": [
+                                        "H. Desurvire and M. Kreminski, “Are game design and user research guidelines specific to virtual reality effective in creating a more optimal player experience? yes, vr play,” in Design, User Experience, and Usability: Theory and Practice (DUXU). Springer International Publishing, 2018, pp. 40–59.",
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                                    ]
+                                },
+                                {
+                                    "name": "Information and guidance provided should be clear and easy to find",
+                                    "descriptor": "Information and guidance should be given throughout the game (Ariffin, Ahmad, & Sulaiman, 2015; Zaki, Wook & Ahmad, 2017), while the presentation of it should be clear (Zaki, Wook & Ahmad, 2017) and easy to find (Valenza, Gasparini & Hounsell, 2019). If in-game guidance is confusing to find or understand then it will negatively impact the user experience.",
+                                    "references": [
+                                        "M. M. Ariffin, W. F. W. Ahmad, and S. Sulaiman, “Guideline for designing an effective serious game by using cultural-based game design model,” in Advances in Visual Informatics (IVIC), vol. 9429. Springer, Cham, 1 2015, pp. 111 – 118.",
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                                    ]
+                                },
+                                {
+                                    "name": "Provide opportunities for the user to familiarise themselves with tasks within XR applications",
+                                    "descriptor": "It is important to allow the user to gain task familiarity within VR applications as user proficiency for performing tasks improves in terms of their reaction time (Baldoni et al., 2024). The user experience is positively effected by being able to perform tasks with increased understanding and speed.",
+                                    "references": [
+                                        "S. Baldoni, M. S. H. Sassi, M. Carli, and F. Battisti, “Definition of guidelines for virtual reality application design based on visual attention,” Multimedia Tools and Applications, vol. 83, pp. 49 615–49 640, 2023."
+                                    ]
+                                },
+                                {
+                                    "name": "Provide guided exploration",
+                                    "descriptor": "Guided exploration is an approach to provide additional player support and can be delivered via exogeneous and endogenous cues (Johnson-Glenberg, 2018), such as attention-grabbing object changes or signposting, respectively. Using guided exploration opposed to free exploration allows for less cognitive load, more effective learning, and increased retention of information (Kirschner et al., 2010).",
+                                    "references": [
+                                        "M. Johnson-Glenberg, “Immersive vr and education: Embodied design principles that include gesture and hand controls,” Frontiers Robotics AI, vol. 5, 2018.",
+                                        "P. A. Kirschner, J. Sweller, and R. E. Clark, “Why minimal guidance during instruction does not work: An analysis of the failure of constructivist, discovery, problem-based, experiential, and inquiry-based teaching,” Educational Psychologist, vol. 41, pp. 75–86, 3 2010."
+                                    ]
+                                },
+                                {
+                                    "name": "Provide opportunities for receiving assistance in the XR experience",
+                                    "descriptor": "Consideration should be given to users that are new to XR technology and how they will require help understanding how to use the technology before being able to have time to familiarise themselves with the virtual environment (Shahu, Kinzer & Michahelles, 2023).",
+                                    "references": [
+                                        "A. Shahu, K. Kinzer, and F. Michahelles, “Enhancing professional training with single-user virtual reality: Unveiling challenges, opportunities, and design guidelines,” in Proceedings of the 22nd International Conference on Mobile and Ubiquitous Multimedia. Association for Computing Machinery, 12 2023, pp. 244–256."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Interaction",
+                            "id": "interaction",
+                            "guidelines": [
+                                {
+                                    "name": "Prioritise natural and familiar player interactions",
+                                    "descriptor": "To enhance usability and reduce cognitive overload in ISGs, prefer input methods that favour natural or familiar interactions over complex schemes. Complex inputs can lead to sensory overload and hinder accessibility (Valenza, Gasparini & Hounsell, 2019; Wetzel et al., 2008; Kersting et al., 2024). Instead, employ natural input modalities — such as body movements, gestures, touch, or verbal commands — that leverage intuitive affordances and align with the constraints of the physical environment (Moore et al., 2024; Serafin et al., 2016; Shukri, Arshad & Abidin, 2017; Menck et al., 2023). For example, in AR ISG, using touch-screen interactions can provide a familiar and effective interface (Li et al., 2022), while simplified inputs help mitigate user fatigue during extended tasks (Baldoni et al., 2024). Additionally, ensure that the chosen interaction methods reflect natural constraints—such as the laws of physics and human anatomy—and provide diverse modalities that reflect the real-world environment (Ciccarelli et al., 2022; Florescu, Waschull & Emmanouilidis, 2023; Santos et al., 2016; Abeele et al., 2021).",
+                                    "references": [
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019.",
+                                        "R. Wetzel, R. McCall, A.-K. Braun, and W. Broll, “Guidelines for designing augmented reality games,” in Proceedings of the 2008 Conference on Future Play: Research, Play, Share. Association for Computing Machinery, 11 2008, pp. 173–180.",
+                                        "M. Kersting, J. Bondell, R. Steier, and M. Myers, “Virtual reality in astronomy education: reflecting on design principles through a dialogue  between researchers and practitioners,” International Journal of Science Education, Part B: Communication and Public Engagement, vol. 14, pp. 157–176, 2024.",
+                                        "N. Moore, N. Ahmadpour, J. Davids, P. Poronnik, and M. Brown, “Developing a framework for the design and deployment of virtual reality (vr) in clinical education,” Studies in health technology and informatics, vol. 310, pp. 1256–1260, 1 2024.",
+                                        "S. Serafin, C. Erkut, J. Kojs, R. Nordahl, and N. C. Nilsson, “Virtual reality musical instruments: Guidelines for multisensory interaction design,” in Proceedings of the Audio Mostly 2016, vol. 04-06-October-2016. Association for Computing Machinery, 10 2016, pp. 266–271.",
+                                        "S. A. A. Shukri, H. Arshad, and R. Z. Abidin, “The design guidelines of mobile augmented reality for tourism in malaysia,” in 2nd International Conference on Applied Science and Technology (ICAST), vol. 1891. American Institute of Physics Inc., 10 2017.",
+                                        "J. Menck, H. Lechte, T.-B. Lembcke, A. Brendel, and L. Kolbe, “Towards design principles for experimental simulations in virtual reality-learning from driving simulators,” in 56th Annual Hawaii International Conference on System Sciences, vol. 2023-Janua, 2023, pp. 1303–1312.",
+                                        "J. Li, E. V. D. Spek, J. Hu, and L. Feijs, “Extracting design guidelines for augmented reality serious games for children,” IEEE Access, vol. 10, pp. 66 660–66 671, 1 2022.",
+                                        "S. Baldoni, M. S. H. Sassi, M. Carli, and F. Battisti, “Definition of guidelines for virtual reality application design based on visual attention,” Multimedia Tools and Applications, vol. 83, pp. 49 615–49 640, 2023.",
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547.",
+                                        "T. Florescu, S. Waschull, and C. Emmanouilidis, “Human-centric industrial augmented reality: Requirements and design guidelines for usability,” APMS 2023. IFIP Advances in Information and Communication Technology, vol. 689, pp. 617–632, 2023.",
+                                        "C. Santos, B. Miranda, T. Araujo, N. Carneiro, A. Marques, M. Mota, and et al., “Guidelines for graphical user interface design in mobile augmented reality applications,” in 8th International Conference Virtual, Augmented and Mixed Reality (VAMR). Springer International Publishing, 7 2016, pp. 71–80.",
+                                        "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021."
+                                    ]
+                                },
+                                {
+                                    "name": "Ensure the system is responsive to interactions",
+                                    "descriptor": "User interactions within a ISG should have minimal response latency (Serafin et al., 2016; Pfeuffer, Gellersen & Gonzalez-Franco, 2024) to positively contribute to the overall usability. The reduction of any interaction response latency can help promote user engagement when performing interactions (Zaki, Wook & Ahmad, 2017).",
+                                    "references": [
+                                        "S. Serafin, C. Erkut, J. Kojs, R. Nordahl, and N. C. Nilsson, “Virtual reality musical instruments: Guidelines for multisensory interaction design,” in Proceedings of the Audio Mostly 2016, vol. 04-06-October-2016. Association for Computing Machinery, 10 2016, pp. 266–271.",
+                                        "K. Pfeuffer, H. Gellersen, and M. Gonzalez-Franco, “Design principles and challenges for gaze + pinch interaction in xr,” IEEE Computer Graphics and Applications, vol. 44, pp. 74–81, 5 2024.",
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                                    ]
+                                },
+                                {
+                                    "name": "Allow users to undo and correct mistakes within the experience",
+                                    "descriptor": "The player should be made aware of errors they make during a task, to allow them to learn from the feedback provided and correct their mistakes (Valenza, Gasparini & Hounsell, 2019; Ciccarelli et al., 2022). The user experience is positively impacted by mitigating player frustration from not being able to amend mistakes made.",
+                                    "references": [
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019.",
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547."
+                                    ]
+                                },
+                                {
+                                    "name": "Ensure visuals do not occlude interactable elements",
+                                    "descriptor": "There should not be visuals that hide or obstruct elements that are core to the ISG as this can hinder or distract the user from performing a task (Tanprasert & Yoon, 2022) and negatively impact the user experience because of reduced usability.",
+                                    "references": [
+                                        "T. Tanprasert and D. Yoon, “Ar music visualizers: Application space and design guidelines,” in CHI ’22: CHI Conference on Human Factors in Computing Systems. Association for Computing Machinery, 4 2022, pp. 1–6."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Feedback",
+                            "id": "feedback",
+                            "guidelines": [
+                                {
+                                    "name": "Use multi-modal feedback",
+                                    "descriptor": "Designing feedback mechanisms that use differing sensory modalities allows (Tsikinas & Xinogalos, 2019; Egea-Vivancos & Arias-Ferrer, 2020), such as sound, vision and touch alongside proprioception (Serafin et al., 2016) supporting retention of information (Egea-Vivancos & Arias-Ferrer, 2020). For instance, use sound and visual elements to enhance communication between the ISG and the player (Tsikinas & Xinogalos, 2019). Supplementing visuals with audio or text-based instructions can improve understanding and ensure that the information is accessible (Valenza, Gasparini & Hounsell, 2019). ",
+                                    "references": [
+                                        "S. Tsikinas and S. Xinogalos, “Design guidelines for serious games targeted to people with autism,” Smart Innovation, Systems and Technologies, vol. 144, pp. 489 – 499, 6 2019.",
+                                        "A. Egea-Vivancos and L. Arias-Ferrer, “Principles for the design of a history and heritage game based on the evaluation of immersive virtual reality video games,” E-Learning and Digital Media, vol. 18, pp. 383–402, 2020.",
+                                        "S. Serafin, C. Erkut, J. Kojs, R. Nordahl, and N. C. Nilsson, “Virtual reality musical instruments: Guidelines for multisensory interaction design,” in Proceedings of the Audio Mostly 2016, vol. 04-06-October-2016. Association for Computing Machinery, 10 2016, pp. 266–271.",
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                                    ]
+                                },
+                                {
+                                    "name": "Feedback should be accurate, fast, and clear",
+                                    "descriptor": "Regardless of the modality of feedback provided, the feedback should be clear when commencing or completing a task or activity (Moore et al., 2024; Abeele et al., 2021), for instance, sound should be audible and distinguishable so players are clear on what they represent (Zaki, Wook & Ahmad, 2017) while coupled with other feedback modalities (Florescu, Waschull & Emmanouilidis, 2023). Feedback should be delivered quickly after player actions to prevent confusion (Valenza, Gasparini & Hounsell, 2019).",
+                                    "references": [
+                                        "N. Moore, N. Ahmadpour, J. Davids, P. Poronnik, and M. Brown, “Developing a framework for the design and deployment of virtual reality (vr) in clinical education,” Studies in health technology and informatics, vol. 310, pp. 1256–1260, 1 2024.",
+                                        "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021.",
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "T. Florescu, S. Waschull, and C. Emmanouilidis, “Human-centric industrial augmented reality: Requirements and design guidelines for usability,” APMS 2023. IFIP Advances in Information and Communication Technology, vol. 689, pp. 617–632, 2023.",
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                                    ]
+                                },
+                                {
+                                    "name": "Allow for feedback to be given when an interaction occurs or event is triggered",
+                                    "descriptor": "It is important to allow for consistent feedback (Zaki, Wook & Ahmad, 2017) that is informative and effective when the user interacts with the ISG (de Belen & Bednarz, 2019; Ciccarelli et al., 2022), or if an event occurs automatically then the user will require feedback to be made aware of something taking place (Santos et al., 2016). By providing informative and effective feedback the user will better understand interactions taking place within the virtual environment, contributing to a positive user experience.",
+                                    "references": [
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "R. A. D. Belen and T. Bednarz, “Mixed reality and internet of things (mriot) interface design guidelines for elderly people,” in 23rd International Conference in Information Visualization, 2019.",
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547.",
+                                        "C. Santos, B. Miranda, T. Araujo, N. Carneiro, A. Marques, M. Mota, and et al., “Guidelines for graphical user interface design in mobile augmented reality applications,” in 8th International Conference Virtual, Augmented and Mixed Reality (VAMR). Springer International Publishing, 7 2016, pp. 71–80."
+                                    ]
+                                },
+                                {
+                                    "name": "Use attention-grabbing signals for simple tasks and context-based prompts for complex tasks",
+                                    "descriptor": "It is important to draw attention to areas or objects of focus within an AR ISG (Santos et al., 2016; Shukri, Arshad & Abidin, 2017; Chakravorty and Rowe, 2018) to mitigate uncertainty and encourage interaction of the user to improve their user experience. For simpler tasks attention-grabbing cues are recommended (Jeffri and Ramblli, 2020; Ejaz et al., 2019), such as providing visuals with high contrast or sudden movement to draw user attention. For complex tasks context-based prompts are recommend (Jeffri and Ramblli, 2020) to allow the user to be guided through visual elements such as arrows or highlights. ",
+                                    "references": [
+                                        "C. Santos, B. Miranda, T. Araujo, N. Carneiro, A. Marques, M. Mota, and et al., “Guidelines for graphical user interface design in mobile augmented reality applications,” in 8th International Conference Virtual, Augmented and Mixed Reality (VAMR). Springer International Publishing, 7 2016, pp. 71–80.",
+                                        "S. A. A. Shukri, H. Arshad, and R. Z. Abidin, “The design guidelines of mobile augmented reality for tourism in malaysia,” in 2nd International Conference on Applied Science and Technology (ICAST), vol. 1891. American Institute of Physics Inc., 10 2017.",
+                                        "A. Chakravorty and A. Rowe, “Ux design principles for mobile augmented reality applications,” in Proceedings of the International Conferences on Interfaces and Human Computer Interaction 2018, Game and Entertainment Technologies 2018 and Computer Graphics, Visualization, Comp, vol. 2018-July, 2018, pp. 319–323.",
+                                        "N. F. S. Jeffri and D. R. A. Rambli, “Guidelines for the interface design of ar systems for manual assembly,” in 4th International Conference on Virtual and Augmented Reality Simulations (ICVARS), 2 2020, pp. 70–77.",
+                                        "A. Ejaz, S. Ali, M. Ejaz, and F. Siddiqui, “Graphic user interface design principles for designing augmented reality applications,” International Journal of Advanced Computer Science and Applications, vol. 10, pp. 209–216, 2019."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Cognition",
+                            "id": "cognition",
+                            "guidelines": [
+                                {
+                                    "name": "Prefer visual representations over text descriptions",
+                                    "descriptor": "Using visuals can help reducing cognitive load (Zaki, Wook & Ahmad, 2017; de Belen & Bednarz, 2019). Visuals should have sufficient contrast to the ISG background as well as optimized positioning to help reduce cognitive load (Shukri, Arshad & Abidin, 2017). Additionally, visuals can serve as memory aids for the player and help them capitalise on prior knowledge (de Belen & Bednarz, 2019).",
+                                    "references": [
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "R. A. D. Belen and T. Bednarz, “Mixed reality and internet of things (mriot) interface design guidelines for elderly people,” in 23rd International Conference in Information Visualization, 2019.",
+                                        "S. A. A. Shukri, H. Arshad, and R. Z. Abidin, “The design guidelines of mobile augmented reality for tourism in malaysia,” in 2nd International Conference on Applied Science and Technology (ICAST), vol. 1891. American Institute of Physics Inc., 10 2017."
+                                    ]
+                                },
+                                {
+                                    "name": "Make sure that the ISG is adaptable to the player cognitive abilities",
+                                    "descriptor": "The ISG should be capable of determining the player’s cognitive ability in relation to the tasks they are performing (Zaki, Wook & Ahmad, 2017), if the player is not capable of performing a task there is potential for limited progression and a negative impact on the user experience. ",
+                                    "references": [
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                                    ]
+                                },
+                                {
+                                    "name": "Increase Tasks Complexity gradually",
+                                    "descriptor": "Task complexity can induce cognitive overload, to mitigate this, complexity of tasks should be increased gradually (Johnson-Glenberg, 2018) by providing fully worked examples followed by partially worked ones (Andersen et al., 2016).",
+                                    "references": [
+                                        "M. Johnson-Glenberg, “Immersive vr and education: Embodied design principles that include gesture and hand controls,” Frontiers Robotics AI, vol. 5, 2018.",
+                                        "S. A. W. Andersen, P. T. Mikkelsen, L. Konge, P. Cay´e-Thomasen, and M. S. Sørensen, “The effect of implementing cognitive load theory-based design principles in virtual reality simulation training of surgical skills: a randomized controlled trial,” Advances in Simulation, vol. 1, 2016."
+                                    ]
+                                },
+                                {
+                                    "name": "Limit task complexity to promote attention",
+                                    "descriptor": "The user experience is diminished if the player is not paying attention, this can be caused by tasks being too complex and fatiguing (Baldoni et al., 2024). Dependant on the needs of the ISG it is recommended to limit the quantity of complex tasks a player must perform to avoid fatigue (Baldoni et al., 2024).",
+                                    "references": [
+                                        "S. Baldoni, M. S. H. Sassi, M. Carli, and F. Battisti, “Definition of guidelines for virtual reality application design based on visual attention,” Multimedia Tools and Applications, vol. 83, pp. 49 615–49 640, 2023."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Physical Abilities",
+                            "id": "physical_abilities",
+                            "guidelines": [
+                                {
+                                    "name": "Let the player adapt the experience to their physical abilities",
+                                    "descriptor": "Design the ISG so that users' real-world movements are accurately replicated in the virtual environment (Farizi et al., 2021). Consequently, consideration will need to be given on how the user can interact based on their physical ability (Abeele et al., 2021), as the user experience can be improved if tailored to suit them (Paraskevopoulos et al., 2014).",
+                                    "references": [
+                                        "F. D. Farizi, T. Hoang, S. Bangay, and S. Greuter, “Developing design guidelines for virtual reality based decision-making training for team sports,” in CHI PLAY 2021 - Extended Abstracts of the 2021 Annual Symposium on Computer-Human Interaction in Play, 10 2021, pp. 61–66.",
+                                        "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021.",
+                                        "I. T. Paraskevopoulos, E. Tsekleves, C. Craig, C. Whyatt, and J. Cosmas, “Design guidelines for developing customised serious games for parkinson’s disease rehabilitation using bespoke game sensors,” Entertainment Computing, vol. 5, pp. 413 – 424, 12 2014."
+                                    ]
+                                },
+                                {
+                                    "name": "Keep ergonomics considerations in mind when designing the ISG",
+                                    "descriptor": "The usability of the virtual experience may be improved if the player can feel more comfortable (Serafin et al., 2016; Florescu, Waschull & Emmanouilidis, 2023). Consideration should be given to the movements and length of time a player is using the hardware, as hardware weight over extended use could induce strain on the player (Serafin et al., 2016).",
+                                    "references": [
+                                        "S. Serafin, C. Erkut, J. Kojs, R. Nordahl, and N. C. Nilsson, “Virtual reality musical instruments: Guidelines for multisensory interaction design,” in Proceedings of the Audio Mostly 2016, vol. 04-06-October-2016. Association for Computing Machinery, 10 2016, pp. 266–271.",
+                                        "T. Florescu, S. Waschull, and C. Emmanouilidis, “Human-centric industrial augmented reality: Requirements and design guidelines for usability,” APMS 2023. IFIP Advances in Information and Communication Technology, vol. 689, pp. 617–632, 2023."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Recognition",
+                            "id": "recognition",
+                            "guidelines": [
+                                {
+                                    "name": "Encourage recognition over recall",
+                                    "descriptor": "Design interfaces, objects, actions, and events so that players can easily recognize them instead of relying on memory recall. This approach helps players stay focused on their tasks rather than learning complex aspects of the interface (Ejaz et al., 2019) and prevents overwhelming cognitive load caused by memorising intricate tasks (Zaki, Wook & Ahmad, 2017). Furthermore, keeping tasks brief and easily recognisable reduces the need for lengthy memorisation, thereby enhancing usability and overall user experience (Valenza, Gasparini & Hounsell, 2019; Dabor, Longford & Walker, 2019; Ciccarelli et al., 2022).",
+                                    "references": [
+                                        "A. Ejaz, S. Ali, M. Ejaz, and F. Siddiqui, “Graphic user interface design principles for designing augmented reality applications,” International Journal of Advanced Computer Science and Applications, vol. 10, pp. 209–216, 2019.",
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019.",
+                                        "O. Dabor, E. Longford, and S. Walker, “Design guidelines for augmented reality user interface: A case study of simultaneous interpretation,” in 11th Computer Science and Electronic Engineering (CEEC). IEEE, 2019, pp. 164–166.",
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "UI",
+                    "id": "ui",
+                    "subsubthemes": [
+                        {
+                            "name": "Validity",
+                            "id": "validity",
+                            "guidelines": [
+                                {
+                                    "name": "Design a minimalistic UI",
+                                    "descriptor": "Give preference to a minimalistic UI, more complexity detracts from the player accepting the overall experience (Zaki, Wook & Ahmad, 2017).",
+                                    "references": [
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                                    ]
+                                },
+                                {
+                                    "name": "UI design should be meaningful to the player",
+                                    "descriptor": "Meaning can be applied to icons and graphical representations (Zaki, Wook & Ahmad, 2017), such meaning could be derived from the icon replacing or accompanying text within the virtual environment (Valenza, Gasparini & Hounsell, 2019). If the user interface can be more meaningful toward the player, then their user experience will be improved.",
+                                    "references": [
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                                    ]
+                                },
+                                {
+                                    "name": "Information displayed on the UI should be relevant to the context",
+                                    "descriptor": "Relevant information should only be displayed on the user interface to improve information visibility to the player (Florescu, Waschull & Emmanouilidis, 2023), contributing to their user experience. Providing the ability to toggle areas of the UI on and off would aid in achieving this (Florescu, Waschull & Emmanouilidis, 2023).",
+                                    "references": [
+                                        "T. Florescu, S. Waschull, and C. Emmanouilidis, “Human-centric industrial augmented reality: Requirements and design guidelines for usability,” APMS 2023. IFIP Advances in Information and Communication Technology, vol. 689, pp. 617–632, 2023."
+                                    ]
+                                },
+                                {
+                                    "name": "Design a visually appealing and enjoyable UI",
+                                    "descriptor": "The design of the UI should be aesthetically pleasing and fun to promote user engagement and involvement (Ciccarelli et al., 2022). This focus on visual appeal enhances the interface’s validity – ensuring it is acceptable to players.",
+                                    "references": [
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Ease of Use",
+                            "id": "ease_of_use",
+                            "guidelines": [
+                                {
+                                    "name": "The UI should be easy to use",
+                                    "descriptor": "To contribute to a positive user experience, the UI should feel familiar (Chakravorty and Rowe, 2018; Zaki, Wook & Ahmad, 2017; Valenza, Gasparini & Hounsell, 2019) and simple to use (de Belen and Bednarz, 2019; Dabor, Longford & Walker, 2019; Ciccarelli et al., 2022). ",
+                                    "references": [
+                                        "A. Chakravorty and A. Rowe, “Ux design principles for mobile augmented reality applications,” in Proceedings of the International Conferences on Interfaces and Human Computer Interaction 2018, Game and Entertainment Technologies 2018 and Computer Graphics, Visualization, Comp, vol. 2018-July, 2018, pp. 319–323.",
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019.",
+                                        "R. A. D. Belen and T. Bednarz, “Mixed reality and internet of things (mriot) interface design guidelines for elderly people,” in 23rd International Conference in Information Visualization, 2019.",
+                                        "O. Dabor, E. Longford, and S. Walker, “Design guidelines for augmented reality user interface: A case study of simultaneous interpretation,” in 11th Computer Science and Electronic Engineering (CEEC). IEEE, 2019, pp. 164–166.",
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547."
+                                    ]
+                                },
+                                {
+                                    "name": "The UI should be purposeful, functional and efficient",
+                                    "descriptor": "UI elements must have purpose, functionality (Zaki, Wook & Ahmad, 2017), and efficient interaction mechanisms (Valenza, Gasparini & Hounsell, 2019). These aspects make the interface easier to navigate, helps reduce cognitive load, and minimizes frustration for the player - resulting in a more intuitive user experience.",
+                                    "references": [
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                                    ]
+                                },
+                                {
+                                    "name": "The UI should be consistent",
+                                    "descriptor": "The UI should be consistent throughout the virtual environment to avoid confusion and frustration (Zaki, Wook & Ahmad, 2017; Ciccarelli et al., 2022). Consistency should also be maintained with UI design conventions already familiar to players (Valenza, Gasparini & Hounsell, 2019).",
+                                    "references": [
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547.",
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Clarity",
+                            "id": "clarity",
+                            "guidelines": [
+                                {
+                                    "name": "The UI should be clear",
+                                    "descriptor": "To ensure UI clarity, aspects such as: visibility (Shukri, Arshad & Abidin, 2017; Florescu, Waschull & Emmanouilidis, 2023; Ciccarelli et al., 2022), positioning and appearance (Rolim et al., 2015), and affordances (Ejaz et al., 2019) of UI elements and text should be designed to be quickly located, understood, and interacted with.",
+                                    "references": [
+                                        "S. A. A. Shukri, H. Arshad, and R. Z. Abidin, “The design guidelines of mobile augmented reality for tourism in malaysia,” in 2nd International Conference on Applied Science and Technology (ICAST), vol. 1891. American Institute of Physics Inc., 10 2017.",
+                                        "T. Florescu, S. Waschull, and C. Emmanouilidis, “Human-centric industrial augmented reality: Requirements and design guidelines for usability,” APMS 2023. IFIP Advances in Information and Communication Technology, vol. 689, pp. 617–632, 2023.",
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547.",
+                                        "C. Rolim, D. Schmalstieg, D. Kalkofen, and V. Teichrieb, “Design guidelines for generating augmented reality instructions,” in IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 11 2015, pp. 120–123.",
+                                        "A. Ejaz, S. Ali, M. Ejaz, and F. Siddiqui, “Graphic user interface design principles for designing augmented reality applications,” International Journal of Advanced Computer Science and Applications, vol. 10, pp. 209–216, 2019."
+                                    ]
+                                },
+                                {
+                                    "name": "Use persistent and taggable UI elements",
+                                    "descriptor": "To enhance clarity essential UI information should persist on the interface, whilst non-essential elements could be toggleable (Florescu, Waschull & Emmanouilidis, 2023).",
+                                    "references": [
+                                        "T. Florescu, S. Waschull, and C. Emmanouilidis, “Human-centric industrial augmented reality: Requirements and design guidelines for usability,” APMS 2023. IFIP Advances in Information and Communication Technology, vol. 689, pp. 617–632, 2023."
+                                    ]
+                                },
+                                {
+                                    "name": "Avoid cluttering",
+                                    "descriptor": "A clear UI should avoid clutter (Zaki, Wook & Ahmad, 2017) and overwhelming the user (Ciccarelli et al., 2022). Organise information hierarchically to emphasize essential content while minimizing unnecessary details. In AR ISGs UI clarity can be achieved by streamlining on-screen elements and effectively using whitespace.",
+                                    "references": [
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547."
+                                    ]
+                                },
+                                {
+                                    "name": "Provide colour contrast within the UI",
+                                    "descriptor": "Balancing colour contrasts with UI elements is important for UI visibility and clarity (Ariffin, Ahmad, & Sulaiman, 2015). Ensure sufficient contrast between foreground and background within the ISG (Zaki, Wook & Ahmad, 2017).",
+                                    "references": [
+                                        "M. M. Ariffin, W. F. W. Ahmad, and S. Sulaiman, “Guideline for designing an effective serious game by using cultural-based game design model,” in Advances in Visual Informatics (IVIC), vol. 9429. Springer, Cham, 1 2015, pp. 111 – 118.",
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Prompting",
+                            "id": "prompting",
+                            "guidelines": [
+                                {
+                                    "name": "Prompt users",
+                                    "descriptor": "The user experience can be improved by using the UI to prompt the player to engage with an in-world element (Zaki, Wook & Ahmad, 2017; Valenza, Gasparini & Hounsell, 2019). An approach to prompting would be to utilize a visual or auditory cues when the player focuses on the targeted part of the UI (Valenza, Gasparini & Hounsell, 2019).",
+                                    "references": [
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Guidance",
+                            "id": "guidance",
+                            "guidelines": [
+                                {
+                                    "name": "Guide the player interactions",
+                                    "descriptor": "A player initializing a task should have guidance provided by the UI to ensure they do not stray from the intended task focus (Zaki, Wook & Ahmad, 2017), and the overall user experience is not negatively impacted. UI prompts should be provided clearly and in an understandable format (Florescu, Waschull & Emmanouilidis, 2023).",
+                                    "references": [
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "T. Florescu, S. Waschull, and C. Emmanouilidis, “Human-centric industrial augmented reality: Requirements and design guidelines for usability,” APMS 2023. IFIP Advances in Information and Communication Technology, vol. 689, pp. 617–632, 2023."
+                                    ]
+                                },
+                                {
+                                    "name": "Show the player status and world state",
+                                    "descriptor": "Within an ISG it is important to provide and maintain information visibility regarding the current status of the player and the world (Desurvire & Kreminski, 2018), as it enables players to make informed decisions, maintain situational awareness, and feel a greater sense of control and immersion throughout the experience.",
+                                    "references": [
+                                        "H. Desurvire and M. Kreminski, “Are game design and user research guidelines specific to virtual reality effective in creating a more optimal player experience? yes, vr play,” in Design, User Experience, and Usability: Theory and Practice (DUXU). Springer International Publishing, 2018, pp. 40–59."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Presence",
+                    "id": "presence",
+                    "subsubthemes": [
+                        {
+                            "name": "Embodiment",
+                            "id": "embodiment",
+                            "guidelines": [
+                                {
+                                    "name": "Facilitate the user embodiment in the game character",
+                                    "descriptor": "The player embodying the in-game character or role allows for the user to have a sense of identity (Zaki, Wook & Ahmad, 2017), contributing to a heightened presence within the virtual environment. Character embodiment should be facilitated (Desurvire & Kreminski, 2018) by designing in-game character to mimic movements that are true to the real-world (Abeele et al., 2021).",
+                                    "references": [
+                                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                        "H. Desurvire and M. Kreminski, “Are game design and user research guidelines specific to virtual reality effective in creating a more optimal player experience? yes, vr play,” in Design, User Experience, and Usability: Theory and Practice (DUXU). Springer International Publishing, 2018, pp. 40–59.",
+                                        "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021."
+                                    ]
+                                },
+                                {
+                                    "name": "Be mindful of the real-world tracking approach taken",
+                                    "descriptor": "Depending on the real-world tracking approach taken, consideration should be given to how distracting it may be to the user, and detrimental to the user presence (Wetzel et al., 2008).",
+                                    "references": [
+                                        "R. Wetzel, R. McCall, A.-K. Braun, and W. Broll, “Guidelines for designing augmented reality games,” in Proceedings of the 2008 Conference on Future Play: Research, Play, Share. Association for Computing Machinery, 11 2008, pp. 173–180."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Environment",
+                            "id": "environment",
+                            "guidelines": [
+                                {
+                                    "name": "Shorten travel time by collapsing distances",
+                                    "descriptor": "Using real-world scales in ISG experiences can mean that there is a large distance between game elements, leading to user boredom and a break in user presence (Wetzel et al., 2008). Avoid large distances game elements when utilizing real-world scales (Wetzel et al., 2008), provide shortcuts or warp space to facilitate fast travel.",
+                                    "references": [
+                                        "R. Wetzel, R. McCall, A.-K. Braun, and W. Broll, “Guidelines for designing augmented reality games,” in Proceedings of the 2008 Conference on Future Play: Research, Play, Share. Association for Computing Machinery, 11 2008, pp. 173–180."
+                                    ]
+                                },
+                                {
+                                    "name": "Provide consistency for object behaviours and scenes",
+                                    "descriptor": "Objects, soundscapes and scene detailing should relate to the role of the player to maintain user presence (Abeele et al., 2021), this includes maintaining in-game object behaviour consistence throughout the ISG.",
+                                    "references": [
+                                        "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Sound",
+                            "id": "sound",
+                            "guidelines": [
+                                {
+                                    "name": "Provide dynamic and interactive sounds",
+                                    "descriptor": "Auditory elements such as dynamic sounds and triggerable sound cues for user interactions enhance the user experience within an ISG (Abeele et al., 2021). Sound cues could be used purposefully to reduce ambiguity or enhance the learning experience of an ISG (Ariffin, Ahmad, & Sulaiman, 2015).",
+                                    "references": [
+                                        "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021.",
+                                        "M. M. Ariffin, W. F. W. Ahmad, and S. Sulaiman, “Guideline for designing an effective serious game by using cultural-based game design model,” in Advances in Visual Informatics (IVIC), vol. 9429. Springer, Cham, 1 2015, pp. 111 – 118."
+                                    ]
+                                },
+                                {
+                                    "name": "Tailor the audio to its purpose",
+                                    "descriptor": "To avoid impacting the user experience and presence negatively realistic sounds should be included in the ISG (Kailas & Tiwari, 2023). Understanding the context of the audio within the ISG and its intended audience is important when including realistic sounds (Kailas & Tiwari, 2023).",
+                                    "references": [
+                                        "G. Kailas and N. Tiwari, “Design guidelines for an immersive auditory experience,” in Design in the Era of Industry 4.0 (ICORD 2023), vol. 1. Springer, Singapore, 2023, pp. 641–647."
+                                    ]
+                                },
+                                {
+                                    "name": "Enhance Presence with strong audio cues",
+                                    "descriptor": "Incorporate strategically exaggerated sounds within the ISG to heighten immersion of the player. Strong audio cues can accentuate key moments, making the experience feel more real and engaging (Abeele et al., 2021).",
+                                    "references": [
+                                        "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021."
+                                    ]
+                                },
+                                {
+                                    "name": "Minimise unnecessary auditory elements",
+                                    "descriptor": "Avoid adding auditory elements that do not serve a clear purpose, as unnecessary sounds can distract players and diminish the overall experience (Kailas & Tiwari, 2023). Each sound should enhance the ISG environment and contribute meaningfully to player presence.",
+                                    "references": [
+                                        "G. Kailas and N. Tiwari, “Design guidelines for an immersive auditory experience,” in Design in the Era of Industry 4.0 (ICORD 2023), vol. 1. Springer, Singapore, 2023, pp. 641–647."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Comfort",
+                            "id": "comfort",
+                            "guidelines": [
+                                {
+                                    "name": "Prevent cybersickness through familiarisation",
+                                    "descriptor": "Efforts should be made to prevent and limit any form of cybersickness (Serafin et al., 2016; Moore et al., 2024; Baldoni et al., 2024; Shahu, Kinzer & Michahelles, 2023). Let players familiarise themselves with the virtual environment to limit cybersickness as well as user stress and frustration (Shahu, Kinzer & Michahelles, 2023).",
+                                    "references": [
+                                        "S. Serafin, C. Erkut, J. Kojs, R. Nordahl, and N. C. Nilsson, “Virtual reality musical instruments: Guidelines for multisensory interaction design,” in Proceedings of the Audio Mostly 2016, vol. 04-06-October-2016. Association for Computing Machinery, 10 2016, pp. 266–271.",
+                                        "N. Moore, N. Ahmadpour, J. Davids, P. Poronnik, and M. Brown, “Developing a framework for the design and deployment of virtual reality (vr) in clinical education,” Studies in health technology and informatics, vol. 310, pp. 1256–1260, 1 2024.",
+                                        "S. Baldoni, M. S. H. Sassi, M. Carli, and F. Battisti, “Definition of guidelines for virtual reality application design based on visual attention,” Multimedia Tools and Applications, vol. 83, pp. 49 615–49 640, 2023.",
+                                        "A. Shahu, K. Kinzer, and F. Michahelles, “Enhancing professional training with single-user virtual reality: Unveiling challenges, opportunities, and design guidelines,” in Proceedings of the 22nd International Conference on Mobile and Ubiquitous Multimedia. Association for Computing Machinery, 12 2023, pp. 244–256."
+                                    ]
+                                },
+                                {
+                                    "name": "Employ low acceleration movements",
+                                    "descriptor": "High acceleration movements in VR are a major contributor to discomfort, whereas lower acceleration levels yield more comfortable experiences. To minimize sensory conflicts and reduce motion sickness, design VR experiences with gentle acceleration and deceleration (Porcino et al., 2017).",
+                                    "references": [
+                                        "T. M. Porcino, E. Clua, D. Trevisan, C. N. Vasconcelos, and L. Valente, “Minimizing cyber sickness in head mounted display systems: Design guidelines and applications,” in Proceedings of the IEEE 5th International Conference on Serious Games and Applications for Health (SeGAH). IEEE, 6 2017, pp. 1–6."
+                                    ]
+                                },
+                                {
+                                    "name": "Give full control to the player in VR ISGs",
+                                    "descriptor": "Discomfort can be avoided by giving full control to the player over their movements (Baldoni et al., 2024). Unexpected camera movements not initiated by the player can trigger discomfort and motion sickness. To minimize this, ensure that camera actions are either under the user's control or are clearly signalled so players can anticipate changes and prepare accordingly (Porcino et al., 2017).",
+                                    "references": [
+                                        "S. Baldoni, M. S. H. Sassi, M. Carli, and F. Battisti, “Definition of guidelines for virtual reality application design based on visual attention,” Multimedia Tools and Applications, vol. 83, pp. 49 615–49 640, 2023.",
+                                        "T. M. Porcino, E. Clua, D. Trevisan, C. N. Vasconcelos, and L. Valente, “Minimizing cyber sickness in head mounted display systems: Design guidelines and applications,” in Proceedings of the IEEE 5th International Conference on Serious Games and Applications for Health (SeGAH). IEEE, 6 2017, pp. 1–6."
+                                    ]
+                                },
+                                {
+                                    "name": "In VR ISG incorporate breaks",
+                                    "descriptor": "Since discomfort increases with prolonged VR usage, design the application to allow players to pause the ISG for rest and even suggest periodic breaks. This proactive approach helps mitigate discomfort symptoms and supports longer, more comfortable sessions (Porcino et al., 2017).",
+                                    "references": [
+                                        "T. M. Porcino, E. Clua, D. Trevisan, C. N. Vasconcelos, and L. Valente, “Minimizing cyber sickness in head mounted display systems: Design guidelines and applications,” in Proceedings of the IEEE 5th International Conference on Serious Games and Applications for Health (SeGAH). IEEE, 6 2017, pp. 1–6."
+                                    ]
+                                },
+                                {
+                                    "name": "Ensure vision cues and perceived movement are congruent in VR ISG",
+                                    "descriptor": "Mismatches between the player vision and their perceived movement or body configuration can lead to motion sickness (Serafin et al., 2016). VR ISGs have two FOVs: the display FOV (what's visible) and the camera FOV (the rendered area). A reduced display FOV can lessen simulator sickness but may also diminish immersion, while unnatural camera FOV adjustments can cause discomfort. Balance these settings to ensure both comfort and a rich, immersive experience (Porcino et al., 2017).",
+                                    "references": [
+                                        "S. Serafin, C. Erkut, J. Kojs, R. Nordahl, and N. C. Nilsson, “Virtual reality musical instruments: Guidelines for multisensory interaction design,” in Proceedings of the Audio Mostly 2016, vol. 04-06-October-2016. Association for Computing Machinery, 10 2016, pp. 266–271.",
+                                        "T. M. Porcino, E. Clua, D. Trevisan, C. N. Vasconcelos, and L. Valente, “Minimizing cyber sickness in head mounted display systems: Design guidelines and applications,” in Proceedings of the IEEE 5th International Conference on Serious Games and Applications for Health (SeGAH). IEEE, 6 2017, pp. 1–6."
+                                    ]
+                                },
+                                {
+                                    "name": "Incorporate discrete locomotion in VR ISGs",
+                                    "descriptor": "Continuous motion in first-person VR can create a mismatch between what players feel and see. Instead, give the option to discrete movements, such as teleportation or snap turning, to break motion into clear steps and reduce discomfort (Porcino et al., 2017).",
+                                    "references": [
+                                        "T. M. Porcino, E. Clua, D. Trevisan, C. N. Vasconcelos, and L. Valente, “Minimizing cyber sickness in head mounted display systems: Design guidelines and applications,” in Proceedings of the IEEE 5th International Conference on Serious Games and Applications for Health (SeGAH). IEEE, 6 2017, pp. 1–6."
+                                    ]
+                                },
+                                {
+                                    "name": "Optimise the environment to reduce software latency in VR ISGs",
+                                    "descriptor": "Delays can occur during complex graphics processing, which can lead to player discomfort. To avoid latency the ISG environment and content should be optimised to run at a minimum of 90 frames per second, to provide a smoother and comfortable experience (Porcino et al., 2017).",
+                                    "references": [
+                                        "T. M. Porcino, E. Clua, D. Trevisan, C. N. Vasconcelos, and L. Valente, “Minimizing cyber sickness in head mounted display systems: Design guidelines and applications,” in Proceedings of the IEEE 5th International Conference on Serious Games and Applications for Health (SeGAH). IEEE, 6 2017, pp. 1–6."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Immersion",
+                    "id": "immersion",
+                    "guidelines": [
+                        {
+                            "name": "Use storytelling to enhance immersion",
+                            "descriptor": "Develop a narrative framework as the initial step of the design process. Craft a rich, compelling story that underpins the virtual environment, ensuring that subsequent content reinforces and deepens the narrative, thereby increasing the immersion of the user experience for player on an emotional level (Kersting et al., 2024).",
+                            "references": [
+                                "M. Kersting, J. Bondell, R. Steier, and M. Myers, “Virtual reality in astronomy education: reflecting on design principles through a dialogue  between researchers and practitioners,” International Journal of Science Education, Part B: Communication and Public Engagement, vol. 14, pp. 157–176, 2024."
+                            ]
+                        },
+                        {
+                            "name": "Immerse the player by affecting their emotions and bodily actions",
+                            "descriptor": "Create immersive environments that elicit player reactions (Menck et al., 2023). The player mood and immersion can be influenced by using visuals that evoke emotional reactions. Inclusion of bodily actions within the ISG aids in enhancing immersion (Kersting et al., 2024).",
+                            "references": [
+                                "J. Menck, H. Lechte, T.-B. Lembcke, A. Brendel, and L. Kolbe, “Towards design principles for experimental simulations in virtual reality-learning from driving simulators,” in 56th Annual Hawaii International Conference on System Sciences, vol. 2023-Janua, 2023, pp. 1303–1312.",
+                                "M. Kersting, J. Bondell, R. Steier, and M. Myers, “Virtual reality in astronomy education: reflecting on design principles through a dialogue  between researchers and practitioners,” International Journal of Science Education, Part B: Communication and Public Engagement, vol. 14, pp. 157–176, 2024."
+                            ]
+                        },
+                        {
+                            "name": "Affect the player’s mood by manipulating the player real-world environment in mixed reality ISG",
+                            "descriptor": "Player’s mood can be manipulated by using the player’s real-world environment and designing components of the ISG environment around it. This could consider aspects of the real-world such as the atmosphere, structures, and objects blending with the ISG environment in mixed reality (Wetzel et al., 2008).",
+                            "references": [
+                                "R. Wetzel, R. McCall, A.-K. Braun, and W. Broll, “Guidelines for designing augmented reality games,” in Proceedings of the 2008 Conference on Future Play: Research, Play, Share. Association for Computing Machinery, 11 2008, pp. 173–180."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Navigation and Wayfinding",
+                    "id": "navigation_wayfinding",
+                    "guidelines": [
+                        {
+                            "name": "Keep pathways simple and uncluttered",
+                            "descriptor": "Design pathing layouts that avoid busy or complex designs. A clear, uncluttered pathway helps players intuitively follow directions and reduces cognitive load when navigating the ISG environment (Abeele et al., 2021).",
+                            "references": [
+                                "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021."
+                            ]
+                        },
+                        {
+                            "name": "Use landmarks with clear navigational cues",
+                            "descriptor": "Design landmarks so that their navigational purpose in immediately obvious. Players should intuitively understand that these elements guide them to new areas or scenes. By ensuring that the function of each landmark is unmistakable, this enhances wayfinding efficiency and support intuitive navigation throughout the ISG (Abeele et al., 2021).",
+                            "references": [
+                                "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021."
+                            ]
+                        },
+                        {
+                            "name": "Integrate environmental navigation cues",
+                            "descriptor": "Avoid relying on a map for wayfinding. Instead, integrate directional cues directly into the environment so that players can access the information contextually, leading to more intuitive navigation within the ISG (Abeele et al., 2021).",
+                            "references": [
+                                "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021."
+                            ]
+                        },
+                        {
+                            "name": "Allow for immediate 180 degree turns",
+                            "descriptor": "The navigation system within the ISG should be designed to allow for instant 180 degree turns. This approach supports urgency of player movement and improves overall directional control when moving within the ISG (Abeele et al., 2021).",
+                            "references": [
+                                "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021."
+                            ]
+                        },
+                        {
+                            "name": "Points of interest or landmarks should be distinct and have a clear navigational role",
+                            "descriptor": "Design distinctive landmarks so they stand out visually and serve as obvious orientation points, enabling users, especially novices, to recognize and use them for wayfinding. This clarity helps build accurate mental maps and supports more intuitive navigation within the ISG (Vinson, 1999).",
+                            "references": [
+                                "N. G. Vinson, “Design guidelines for landmarks to support navigation in virtual environments,” in Proceedings of the SIGCHI conference on Human Factors in Computing Systems. Association for Computing Machinery, 5 1999, pp. 278–285."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Usefulness",
+                    "id": "usefulness",
+                    "guidelines": [
+                        {
+                            "name": "Design the ISG to have value to the player",
+                            "descriptor": "Ensure that the ISG is designed to provide an experience that players perceive as valuable (Moore et al., 2024). When players see clear benefits - whether through enhanced learning outcomes, engaging content, or practical applications - the ISG becomes more useful, encouraging continued interaction and deeper engagement (Moore et al., 2024).",
+                            "references": [
+                                "N. Moore, N. Ahmadpour, J. Davids, P. Poronnik, and M. Brown, “Developing a framework for the design and deployment of virtual reality (vr) in clinical education,” Studies in health technology and informatics, vol. 310, pp. 1256–1260, 1 2024."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Drive",
+            "id": "drive",
+            "subthemes": [
+                {
+                    "name": "Interest and Flow",
+                    "id": "interest_flow",
+                    "guidelines": [
+                        {
+                            "name": "Maintain player interest by introducing new activities and challenges",
+                            "descriptor": "The experience should be fun (Zaki, Wook & Ahmad, 2017) and provide thought provoking activities and challenges (Valenza, Gasparini & Hounsell, 2019) that allow for the player to retain interest. Additionally, the experience should introduce new elements, challenges, and surprises to rejuvenate the player interest (Chen, 2019).",
+                            "references": [
+                                "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019.",
+                                "Y. Chen, “Exploring design guidelines of using user-centered design in gamification development: A delphi study,” International Journal of Human–Computer Interaction, vol. 35, pp. 1170–1181, 8 2019."
+                            ]
+                        },
+                        {
+                            "name": "3D game content should provide interesting visuals",
+                            "descriptor": "Designing 3D visuals that create interest and provide meaning to the player (Wetzel et al., 2008).",
+                            "references": [
+                                "R. Wetzel, R. McCall, A.-K. Braun, and W. Broll, “Guidelines for designing augmented reality games,” in Proceedings of the 2008 Conference on Future Play: Research, Play, Share. Association for Computing Machinery, 11 2008, pp. 173–180."
+                            ]
+                        },
+                        {
+                            "name": "Stimulate imagination by using challenging activities",
+                            "descriptor": "Stimulating the player imagination within the ISG can be achieved through relevant activities that challenge the player (Zaki, Wook & Ahmad, 2017) or by facilitating creative inspiration (Desurvire & Kreminski, 2018).",
+                            "references": [
+                                "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                "H. Desurvire and M. Kreminski, “Are game design and user research guidelines specific to virtual reality effective in creating a more optimal player experience? yes, vr play,” in Design, User Experience, and Usability: Theory and Practice (DUXU). Springer International Publishing, 2018, pp. 40–59."
+                            ]
+                        },
+                        {
+                            "name": "Design for a user state of flow",
+                            "descriptor": "The design of the ISG should allow for the user to enter a psychological state of flow (Zaki, Wook & Ahmad, 2017), to allow for the user to be completely focused on a task or activity. By designing the layout of the virtual environment to be simplistic, user concentration can be increased (Zaki, Wook & Ahmad, 2017).",
+                            "references": [
+                                "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Engagement",
+                    "id": "engagement",
+                    "guidelines": [
+                        {
+                            "name": "Design engaging interactions",
+                            "descriptor": "Design interactions that provide immediate, engaging feedback in response to natural user input, encouraging exploration and deeper engagement within the ISG (Desurvire & Kreminski, 2018).",
+                            "references": [
+                                "H. Desurvire and M. Kreminski, “Are game design and user research guidelines specific to virtual reality effective in creating a more optimal player experience? yes, vr play,” in Design, User Experience, and Usability: Theory and Practice (DUXU). Springer International Publishing, 2018, pp. 40–59."
+                            ]
+                        },
+                        {
+                            "name": "Use the ISG aesthetic to encourage engagement",
+                            "descriptor": "The ISG aesthetic should engage the player (Chen, 2019), for instance, using detailed visual cues that have realism during training will effectively impact the player engagement (Shahu, Kinzer & Michahelles, 2023). However, for younger audiences the opposite is recommended, use an animated character to guide, encourage and entertain the player within the virtual environment to promote engagement (Zaki, Wook & Ahmad, 2017).",
+                            "references": [
+                                "Y. Chen, “Exploring design guidelines of using user-centered design in gamification development: A delphi study,” International Journal of Human–Computer Interaction, vol. 35, pp. 1170–1181, 8 2019.",
+                                "A. Shahu, K. Kinzer, and F. Michahelles, “Enhancing professional training with single-user virtual reality: Unveiling challenges, opportunities, and design guidelines,” in Proceedings of the 22nd International Conference on Mobile and Ubiquitous Multimedia. Association for Computing Machinery, 12 2023, pp. 244–256.",
+                                "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                            ]
+                        },
+                        {
+                            "name": "Fun from within moments of starting",
+                            "descriptor": "Within the moments from entering the ISG, the gameplay should be fun to provide the payer with immediate enjoyment and immersion, broadening appeal of the ISG and keeping it engaging (King, 2021).",
+                            "references": [
+                                "D. King, “Integrating serious and casual game design approaches: A framework for activist-casual game design,” in 16th International Conference on the Foundations of Digital Games. Association for Computing Machinery, 8 2021, pp. 1–9."
+                            ]
+                        },
+                        {
+                            "name": "Provide clear goals",
+                            "descriptor": "Goals should be provided to engage players and to maintain focus throughout the ISG (Zaki, Wook & Ahmad, 2017). Keeping the user focused through goals aids the user to enter a flow state, which positively influences the player drive.",
+                            "references": [
+                                "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Motivation",
+                    "id": "motivation",
+                    "guidelines": [
+                        {
+                            "name": "Use participatory design",
+                            "descriptor": "Involve potential players early in the design process so they can contribute to shaping the experience. This collaborative approach ensures that the system reflects players’ needs, potentially boosting their initial motivation and investment in the experience (Chen, 2019).",
+                            "references": [
+                                "Y. Chen, “Exploring design guidelines of using user-centered design in gamification development: A delphi study,” International Journal of Human–Computer Interaction, vol. 35, pp. 1170–1181, 8 2019."
+                            ]
+                        },
+                        {
+                            "name": "Challenge the player",
+                            "descriptor": "Stimulate the player intrinsic motivation by driving them to overcome the presented challenges (Tsikinas & Xinogalos, 2019). Maintain the motivation of the player by adapting the difficulty of the challenges presented in the ISG, based on the player ability (Paraskevopoulos et al., 2014; Tsikinas & Xinogalos, 2019). Adapting the difficulty can be achieved through in-game competition with other users or computer agents (Paraskevopoulos et al., 2014). Additionally, to avoid eroding intrinsic motivation of the player, game mechanics should limit their reliance on extrinsic incentives that may undermine the player’s inherent drive (Chen, 2019).",
+                            "references": [
+                                "S. Tsikinas and S. Xinogalos, “Design guidelines for serious games targeted to people with autism,” Smart Innovation, Systems and Technologies, vol. 144, pp. 489 – 499, 6 2019.",
+                                "I. T. Paraskevopoulos, E. Tsekleves, C. Craig, C. Whyatt, and J. Cosmas, “Design guidelines for developing customised serious games for parkinson’s disease rehabilitation using bespoke game sensors,” Entertainment Computing, vol. 5, pp. 413 – 424, 12 2014.",
+                                "Y. Chen, “Exploring design guidelines of using user-centered design in gamification development: A delphi study,” International Journal of Human–Computer Interaction, vol. 35, pp. 1170–1181, 8 2019."
+                            ]
+                        },
+                        {
+                            "name": "Give challenging but achievable goals",
+                            "descriptor": "Goals given to the player should be challenging but achievable, to allow them to be motivated (Paraskevopoulos et al., 2014) positively impacting their drive. Moreover, the challenges should be clear, brief, and understandable by the player (Valenza, Gasparini & Hounsell, 2019).",
+                            "references": [
+                                "I. T. Paraskevopoulos, E. Tsekleves, C. Craig, C. Whyatt, and J. Cosmas, “Design guidelines for developing customised serious games for parkinson’s disease rehabilitation using bespoke game sensors,” Entertainment Computing, vol. 5, pp. 413 – 424, 12 2014.",
+                                "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                            ]
+                        },
+                        {
+                            "name": "Reveal the experience content gradually",
+                            "descriptor": "As the player progresses through the ISG, the content should be delivered gradually to maintain the player motivation and avoid overwhelming them (Valenza, Gasparini & Hounsell, 2019). This allows for the player’s overall drive to be positively impacted.",
+                            "references": [
+                                "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Rewards",
+                    "id": "rewards",
+                    "guidelines": [
+                        {
+                            "name": "Provide rewards to stimulate interest",
+                            "descriptor": "Providing rewards is an approach to stimulate user interest (Chen, 2019) and it is a players’ initial incentive to play the game.",
+                            "references": [
+                                "Y. Chen, “Exploring design guidelines of using user-centered design in gamification development: A delphi study,” International Journal of Human–Computer Interaction, vol. 35, pp. 1170–1181, 8 2019."
+                            ]
+                        },
+                        {
+                            "name": "Provide rewards based on performance",
+                            "descriptor": "The rewards obtainable by the player should be based on their performance in the game (King, 2021; Valenza, Gasparini & Hounsell, 2019).",
+                            "references": [
+                                "D. King, “Integrating serious and casual game design approaches: A framework for activist-casual game design,” in 16th International Conference on the Foundations of Digital Games. Association for Computing Machinery, 8 2021, pp. 1–9.",
+                                "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                            ]
+                        },
+                        {
+                            "name": "Personalise player rewards",
+                            "descriptor": "Personalising the reward provides the user with something that is more meaningful to them – the design of the game should allow for the reward to be provided immediately after fulfilling the criteria to achieve it (Zaki, Wook & Ahmad, 2017).",
+                            "references": [
+                                "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Learning",
+            "id": "learning",
+            "subthemes": [
+                {
+                    "name": "Effectiveness",
+                    "id": "effectiveness",
+                    "guidelines": [
+                        {
+                            "name": "Use relevant content",
+                            "descriptor": "To make learning effective for players, it is encouraged to use relevant content in an ISG that is applicable alongside traditional in-person learning (Egea-Vivancos & Arias-Ferrer, 2020).",
+                            "references": [
+                                "A. Egea-Vivancos and L. Arias-Ferrer, “Principles for the design of a history and heritage game based on the evaluation of immersive virtual reality video games,” E-Learning and Digital Media, vol. 18, pp. 383–402, 2020."
+                            ]
+                        },
+                        {
+                            "name": "Incorporate multiple sensory modalities",
+                            "descriptor": "Enhance the learning experience by integrating different sensory modalities—such as auditory and visual elements—in tandem (Zaki, Wook & Ahmad, 2017). This multi-sensory approach can help provide the player with a greater stimuli, thereby increasing the effectiveness of learning.",
+                            "references": [
+                                "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                            ]
+                        },
+                        {
+                            "name": "Promote active interaction",
+                            "descriptor": "To foster effective learning promote active interactions throughout the ISG (Shahu, Kinzer & Michahelles, 2023). Active learning is concerned with the player’s ability to engage with and influence the ISG with actions such as, selection, manipulation, locomotion, and social interaction.",
+                            "references": [
+                                "A. Shahu, K. Kinzer, and F. Michahelles, “Enhancing professional training with single-user virtual reality: Unveiling challenges, opportunities, and design guidelines,” in Proceedings of the 22nd International Conference on Mobile and Ubiquitous Multimedia. Association for Computing Machinery, 12 2023, pp. 244–256."
+                            ]
+                        },
+                        {
+                            "name": "Limit information and choices",
+                            "descriptor": "As the ISG progresses and the quantity of information presented to players increases, the amount of choices presented to the player should be limited to reduce cognitive overload (Li et al., 2022). Limiting the quantity of choices aids players to process and retain information more effectively, which positively impacts on their learning effectiveness.",
+                            "references": [
+                                "J. Li, E. V. D. Spek, J. Hu, and L. Feijs, “Extracting design guidelines for augmented reality serious games for children,” IEEE Access, vol. 10, pp. 66 660 – 66 671, 1 2022."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Balance",
+                    "id": "balance",
+                    "guidelines": [
+                        {
+                            "name": "Apply adaptive difficulty",
+                            "descriptor": "Designing the difficulty of the game so that it adapts to the player, allows for content to be altered as the user’s needs change as they gain knowledge through the ISG (Chen, 2019; Shahu, Kinzer & Michahelles, 2023; Egea-Vivancos & Arias-Ferrer, 2020).",
+                            "references": [
+                                "Y. Chen, “Exploring design guidelines of using user-centered design in gamification development: A delphi study,” International Journal of Human–Computer Interaction, vol. 35, pp. 1170–1181, 8 2019.",
+                                "A. Shahu, K. Kinzer, and F. Michahelles, “Enhancing professional training with single-user virtual reality: Unveiling challenges, opportunities, and design guidelines,” in Proceedings of the 22nd International Conference on Mobile and Ubiquitous Multimedia. Association for Computing Machinery, 12 2023, pp. 244–256.",
+                                "A. Egea-Vivancos and L. Arias-Ferrer, “Principles for the design of a history and heritage game based on the evaluation of immersive virtual reality video games,” E-Learning and Digital Media, vol. 18, pp. 383–402, 2020."
+                            ]
+                        },
+                        {
+                            "name": "Gradually scale game difficulty",
+                            "descriptor": "Scaling game difficulty gradually prevents players from being overwhelmed and promotes enhanced learning, interest, creativity, and social interaction (Desurvire & Kreminski, 2018; King, 2021).",
+                            "references": [
+                                "H. Desurvire and M. Kreminski, “Are game design and user research guidelines specific to virtual reality effective in creating a more optimal player experience? yes, vr play,” in Design, User Experience, and Usability: Theory and Practice (DUXU). Springer International Publishing, 2018, pp. 40–59.",
+                                "D. King, “Integrating serious and casual game design approaches: A framework for activist-casual game design,” in 16th International Conference on the Foundations of Digital Games. Association for Computing Machinery, 8 2021, pp. 1–9."
+                            ]
+                        },
+                        {
+                            "name": "Allow for game difficulty to be balanced based on player performance",
+                            "descriptor": "The game pacing and difficulty should be balanced based on the player performance (Zaki, Wook & Ahmad, 2017; Valenza, Gasparini & Hounsell, 2019; King, 2021), as adaptive difficulty aids in mitigating player frustration while enhancing their learning (King, 2021; Valenza, Gasparini & Hounsell, 2019).",
+                            "references": [
+                                "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                                "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019.",
+                                "D. King, “Integrating serious and casual game design approaches: A framework for activist-casual game design,” in 16th International Conference on the Foundations of Digital Games. Association for Computing Machinery, 8 2021, pp. 1–9."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Assessment and Feedback",
+                    "id": "assessment_feedback",
+                    "guidelines": [
+                        {
+                            "name": "Provide a variety of clear tasks that have goals",
+                            "descriptor": "To maintain player engagement combine tests of knowledge with applications of technical skills (Egea-Vivancos & Arias-Ferrer, 2020) and provide a variety of fun tasks with clear goals (Zaki, Wook & Ahmad, 2017).",
+                            "references": [
+                                "A. Egea-Vivancos and L. Arias-Ferrer, “Principles for the design of a history and heritage game based on the evaluation of immersive virtual reality video games,” E-Learning and Digital Media, vol. 18, pp. 383–402, 2020.",
+                                "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                            ]
+                        },
+                        {
+                            "name": "Use the ISG as a form of formative and summative assessment",
+                            "descriptor": "Immersive elements of the ISG, such as gestures, should be used as formative assessment (Johnson-Glenberg, 2018). This improves the players task comprehension by feeding back about the correctness of their current task completion. Summative assessment should be provided after the task to further assess player achievement of the learning objectives (Johnson-Glenberg, 2018).",
+                            "references": [
+                                "M. Johnson-Glenberg, “Immersive vr and education: Embodied design principles that include gesture and hand controls,” Frontiers Robotics AI, vol. 5, 2018."
+                            ]
+                        },
+                        {
+                            "name": "Present clear, immediate, and reflective feedback",
+                            "descriptor": "The player should be presented with clear feedback on their performance as they progress within the serious game (Valenza, Gasparini & Hounsell, 2019), as well as having a more detailed overview of their performance at the end of the game – giving comparison to previous game sessions if applicable (Paraskevopoulos et al., 2014). Providing immediate, actionable feedback throughout gameplay (Johnson-Glenberg, 2018) and offering methods for player reflection on their tasks (Haj-Bolouri and Rossi, 2022) is crucial for improving performance in real-time and promoting deeper understanding. Interactive cues within the ISG environment should enhance feedback by delivering additional information when necessary (Haj-Bolouri and Rossi, 2022). Performance feedback is essential for aiding the player in understanding their current ability levels, identifying areas for improvement, and supporting more effective learning.",
+                            "references": [
+                                "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019.",
+                                "I. T. Paraskevopoulos, E. Tsekleves, C. Craig, C. Whyatt, and J. Cosmas, “Design guidelines for developing customised serious games for parkinson’s disease rehabilitation using bespoke game sensors,” Entertainment Computing, vol. 5, pp. 413 – 424, 12 2014.",
+                                "M. Johnson-Glenberg, “Immersive vr and education: Embodied design principles that include gesture and hand controls,” Frontiers Robotics AI, vol. 5, 2018.",
+                                "A. Haj-Bolouri and M. Rossi, “Proposing design principles for sustainable fire safety training in immersive virtual reality,” in 55th Annual Hawaii International Conference on System Sciences (HICSS), vol. 2022-Janua, 2022, pp. 5837–5846."
+                            ]
+                        },
+                        {
+                            "name": "Provide comprehensive feedback for complex tasks",
+                            "descriptor": "For complex tasks, provide comprehensive feedback. When possible, in-person assistance and guidance may be necessary when the player encounters challenges (Shahu, Kinzer & Michahelles, 2023).",
+                            "references": [
+                                "A. Shahu, K. Kinzer, and F. Michahelles, “Enhancing professional training with single-user virtual reality: Unveiling challenges, opportunities, and design guidelines,” in Proceedings of the 22nd International Conference on Mobile and Ubiquitous Multimedia. Association for Computing Machinery, 12 2023, pp. 244–256."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Consolidation",
+                    "id": "consolidation",
+                    "guidelines": [
+                        {
+                            "name": "Provide opportunities for repetition and practice",
+                            "descriptor": "Learning consolidation can be achieved through repetition and practice of the learning content, while there should also be opportunity to apply new skills when the user faces challenges that they cannot overcome (Zaki, Wook & Ahmad, 2017).",
+                            "references": [
+                                "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                            ]
+                        },
+                        {
+                            "name": "Provide opportunities for making mistakes",
+                            "descriptor": "Enabling users to make mistakes through challenging trial-and-error scenarios reinforces learning by allowing them to learn from errors and make better decisions (Haj-Bolouri and Rossi, 2022).",
+                            "references": [
+                                "A. Haj-Bolouri and M. Rossi, “Proposing design principles for sustainable fire safety training in immersive virtual reality,” in 55th Annual Hawaii International Conference on System Sciences (HICSS), vol. 2022-Janua, 2022, pp. 5837–5846."
+                            ]
+                        },
+                        {
+                            "name": "Provide opportunities for reflection",
+                            "descriptor": "Incorporating opportunities for reflection, whether through short quizzes, discussions, or self-assessment, can solidify cognitive understanding and promote deeper learning (Johnson-Glenberg, 2018).",
+                            "references": [
+                                "M. Johnson-Glenberg, “Immersive vr and education: Embodied design principles that include gesture and hand controls,” Frontiers Robotics AI, vol. 5, 2018."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Facilitation",
+                    "id": "facilitation",
+                    "guidelines": [
+                        {
+                            "name": "Match in-games tasks with real-world tasks",
+                            "descriptor": "Facilitate transfer of learning from the ISG to the real-world by mimicking real-world tasks in the ISG, this also aids the development of problem-solving skills (Zaki, Wook & Ahmad, 2017).",
+                            "references": [
+                                "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                            ]
+                        },
+                        {
+                            "name": "Design meaningful and accurate learning content",
+                            "descriptor": "Develop game content that offers users purposeful choices and clearly distinguishes between scientifically accurate information and artistic interpretations (Chen, 2019; Kersting et al., 2024).",
+                            "references": [
+                                "Y. Chen, “Exploring design guidelines of using user-centered design in gamification development: A delphi study,” International Journal of Human–Computer Interaction, vol. 35, pp. 1170–1181, 8 2019.",
+                                "M. Kersting, J. Bondell, R. Steier, and M. Myers, “Virtual reality in astronomy education: reflecting on design principles through a dialogue  between researchers and practitioners,” International Journal of Science Education, Part B: Communication and Public Engagement, vol. 14, pp. 157–176, 2024."
+                            ]
+                        },
+                        {
+                            "name": "Enable learning by using engaging and natural interactions",
+                            "descriptor": "Foster a dynamic learning environment by incorporating high-level player interaction. Utilize visual cues - such as lighting and depth - to invite exploration, and integrate natural gestures to boost player agency and reduce simulator sickness (Kim & Song, 1997; Chakravorty and Rowe, 2018; Johnson-Glenberg, 2018).",
+                            "references": [
+                                "J. Kim and Y. S. Song, “Instructional design guidelines for virtual reality in classroom applications,” 1997.",
+                                "A. Chakravorty and A. Rowe, “Ux design principles for mobile augmented reality applications,” in Proceedings of the International Conferences on Interfaces and Human Computer Interaction 2018, Game and Entertainment Technologies 2018 and Computer Graphics, Visualization, Comp, vol. 2018-July, 2018, pp. 319–323.",
+                                "M. Johnson-Glenberg, “Immersive vr and education: Embodied design principles that include gesture and hand controls,” Frontiers Robotics AI, vol. 5, 2018."
+                            ]
+                        },
+                        {
+                            "name": "Provide players with training on technology usage and it's maintenance for sustainable learning",
+                            "descriptor": "Ensure ongoing learning by training users in hardware maintenance and by employing the latest XR technology. These practices help sustain immersion and presence across multiple learning sessions (Shahu, Kinzer & Michahelles, 2023).",
+                            "references": [
+                                "A. Shahu, K. Kinzer, and F. Michahelles, “Enhancing professional training with single-user virtual reality: Unveiling challenges, opportunities, and design guidelines,” in Proceedings of the 22nd International Conference on Mobile and Ubiquitous Multimedia. Association for Computing Machinery, 12 2023, pp. 244–256."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Storytelling",
+            "id": "storytelling",
+            "subthemes": [
+                {
+                    "name": "Theme",
+                    "id": "theme",
+                    "guidelines": [
+                        {
+                            "name": "Maintain the theme of the experience consistently through the design",
+                            "descriptor": "Throughout the ISG the theming of the content should be clear (King, 2021) and remain consistent (Wetzel et al., 2008), content such as visual attributes of objects or text to indicate similarity in their meaning to the user (Zaki, Wook & Ahmad, 2017).",
+                            "references": [
+                                "D. King, “Integrating serious and casual game design approaches: A framework for activist-casual game design,” in 16th International Conference on the Foundations of Digital Games. Association for Computing Machinery, 8 2021, pp. 1–9.",
+                                "R. Wetzel, R. McCall, A.-K. Braun, and W. Broll, “Guidelines for designing augmented reality games,” in Proceedings of the 2008 Conference on Future Play: Research, Play, Share. Association for Computing Machinery, 11 2008, pp. 173–180.",
+                                "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                            ]
+                        },
+                        {
+                            "name": "The mechanics should support and link to the theme of the experience",
+                            "descriptor": "The experience mechanics should also consistently link toward the theme of the game (King, 2021).",
+                            "references": [
+                                "D. King, “Integrating serious and casual game design approaches: A framework for activist-casual game design,” in 16th International Conference on the Foundations of Digital Games. Association for Computing Machinery, 8 2021, pp. 1–9."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Narrative",
+                    "id": "narrative",
+                    "guidelines": [
+                        {
+                            "name": "Present the core narrative of the experience to the player",
+                            "descriptor": "The narrative of the experience should be clear to the player (King, 2021; Paraskevopoulos et al., 2014) and engaging (Chen, 2019), which can be achieved by immediately presenting them with a core part of the narrative (Valenza, Gasparini & Hounsell, 2019).",
+                            "references": [
+                                "D. King, “Integrating serious and casual game design approaches: A framework for activist-casual game design,” in 16th International Conference on the Foundations of Digital Games. Association for Computing Machinery, 8 2021, pp. 1–9.",
+                                "I. T. Paraskevopoulos, E. Tsekleves, C. Craig, C. Whyatt, and J. Cosmas, “Design guidelines for developing customised serious games for parkinson’s disease rehabilitation using bespoke game sensors,” Entertainment Computing, vol. 5, pp. 413 – 424, 12 2014.",
+                                "Y. Chen, “Exploring design guidelines of using user-centered design in gamification development: A delphi study,” International Journal of Human–Computer Interaction, vol. 35, pp. 1170–1181, 8 2019.",
+                                "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                            ]
+                        },
+                        {
+                            "name": "Consider visual and auditory stimuli to maintain an engaging narrative",
+                            "descriptor": "Improving the player enjoyment of the experience narrative engages the player. Considering design elements such as visual stimuli and audio output within the experience (Paraskevopoulos et al., 2014) can help achieve the narrative enjoyment.",
+                            "references": [
+                                "I. T. Paraskevopoulos, E. Tsekleves, C. Craig, C. Whyatt, and J. Cosmas, “Design guidelines for developing customised serious games for parkinson’s disease rehabilitation using bespoke game sensors,” Entertainment Computing, vol. 5, pp. 413 – 424, 12 2014."
+                            ]
+                        },
+                        {
+                            "name": "Integrate the game narrative into real-world in AR ISG",
+                            "descriptor": "Designing an AR ISG experience that can augment objects in the physical environment with elements that relate to the narrative of the experience aids the player with a sense of accomplishment (Li et al., 2022). By doing so, the user gains a greater connection with the experience (Li et al., 2022), positively contributing player engagement with the narrative and allowing for more effective storytelling.",
+                            "references": [
+                                "J. Li, E. V. D. Spek, J. Hu, and L. Feijs, “Extracting design guidelines for augmented reality serious games for children,” IEEE Access, vol. 10, pp. 66 660 – 66 671, 1 2022."
+                            ]
+                        },
+                        {
+                            "name": "Consider the type of player that will interact with the experience when designing experience dialogue",
+                            "descriptor": "The design of the game dialogue should be considered in terms of the formality, encouragement, and how related the dialogue is to the content of the experience (Ariffin, Ahmad, & Sulaiman, 2015). Designing the dialogue without understanding of the intended player can potentially deter engagement through ineffective storytelling.",
+                            "references": [
+                                "M. M. Ariffin, W. F. W. Ahmad, and S. Sulaiman, “Guideline for designing an effective serious game by using cultural-based game design model,” in Advances in Visual Informatics (IVIC), vol. 9429. Springer, Cham, 1 2015, pp. 111 – 118."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Collaboration",
+            "id": "collaboration",
+            "guidelines": [
+                {
+                    "name": "Facilitate shared experiences within the ISG",
+                    "descriptor": "Shared experiences can be between the players and trainers or experts (Abeele et al., 2021), or other players (Serafin et al., 2016; Wetzel et al., 2008). Facilitating shared experiences allows the player to gain insight and guidance from discussions and interactions that take place between the multiple parties within the ISG (Abeele et al., 2021).",
+                    "references": [
+                        "V. V. Abeele, B. Schraepen, H. Huygelier, C. Gillebert, K. Gerling, and R. V. Ee, “Immersive virtual reality for older adults: Empirically grounded design guidelines,” ACM Transactions on Accessible Computing (TACCESS), vol. 14, pp. 1–30, 9 2021.",
+                        "S. Serafin, C. Erkut, J. Kojs, R. Nordahl, and N. C. Nilsson, “Virtual reality musical instruments: Guidelines for multisensory interaction design,” in Proceedings of the Audio Mostly 2016, vol. 04-06-October-2016. Association for Computing Machinery, 10 2016, pp. 266–271.",
+                        "R. Wetzel, R. McCall, A.-K. Braun, and W. Broll, “Guidelines for designing augmented reality games,” in Proceedings of the 2008 Conference on Future Play: Research, Play, Share. Association for Computing Machinery, 11 2008, pp. 173–180."
+                    ]
+                },
+                {
+                    "name": "Promote collaboration between players in multi-player ISGs",
+                    "descriptor": "Designing an ISG to incorporate social interactions can enhance the learning experience of the player (Zaki, Wook & Ahmad, 2017; Li et al., 2022). Collaboration amongst players is a form of social interaction and can create the opportunity for players to help one another in the game with difficulties, in-turn allowing for improved player understanding of the game and enhancing their learning experience (Li et al., 2022; Kersting et al., 2024).",
+                    "references": [
+                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017.",
+                        "J. Li, E. V. D. Spek, J. Hu, and L. Feijs, “Extracting design guidelines for augmented reality serious games for children,” IEEE Access, vol. 10, pp. 66 660 – 66 671, 1 2022.",
+                        "M. Kersting, J. Bondell, R. Steier, and M. Myers, “Virtual reality in astronomy education: reflecting on design principles through a dialogue  between researchers and practitioners,” International Journal of Science Education, Part B: Communication and Public Engagement, vol. 14, pp. 157–176, 2024."
+                    ]
+                },
+                {
+                    "name": "Provide the player with personal and shared goals in multi-player ISGs",
+                    "descriptor": "To promote motivation, high levels of collectivism (that is, how much the players should work as a group rather than as individuals), can be used within the experience by designing the ISG to incorporate shared goals for players (Ariffin, Ahmad, & Sulaiman, 2015). If the ISG requires low levels of collectivism, focus on player’s personal goals to increase motivation (Ariffin, Ahmad, & Sulaiman, 2015).",
+                    "references": [
+                        "M. M. Ariffin, W. F. W. Ahmad, and S. Sulaiman, “Guideline for designing an effective serious game by using cultural-based game design model,” in Advances in Visual Informatics (IVIC), vol. 9429. Springer, Cham, 1 2015, pp. 111 – 118."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Privacy and Safety",
+            "id": "privacy_safety",
+            "guidelines": [
+                {
+                    "name": "Maintain the user’s privacy",
+                    "descriptor": "The user’s privacy should be maintained to keep details of the user confidential and align with privacy regulations (Moore et al., 2024). Therefore, any user data that is collected should be stored in a secure place and not be distributed elsewhere (King, 2021). The implication of maintaining privacy of the user and their related data is that it allows for user confidence in the application to also be maintained.",
+                    "references": [
+                        "N. Moore, N. Ahmadpour, J. Davids, P. Poronnik, and M. Brown, “Developing a framework for the design and deployment of virtual reality (vr) in clinical education,” Studies in health technology and informatics, vol. 310, pp. 1256–1260, 1 2024.",
+                        "D. King, “Integrating serious and casual game design approaches: A framework for activist-casual game design,” in 16th International Conference on the Foundations of Digital Games. Association for Computing Machinery, 8 2021, pp. 1–9."
+                    ]
+                },
+                {
+                    "name": "Provide a safe virtual environment",
+                    "descriptor": "Design the ISG so that players feel secure while learning. This includes features such as an escape area (if applicable) and measures that prevent overwhelmingly negative consequences, thereby ensuring that players can comfortably engage with learning content (Desurvire & Kreminski, 2018; Kersting et al., 2024).",
+                    "references": [
+                        "H. Desurvire and M. Kreminski, “Are game design and user research guidelines specific to virtual reality effective in creating a more optimal player experience? yes, vr play,” in Design, User Experience, and Usability: Theory and Practice (DUXU). Springer International Publishing, 2018, pp. 40–59.",
+                        "M. Kersting, J. Bondell, R. Steier, and M. Myers, “Virtual reality in astronomy education: reflecting on design principles through a dialogue  between researchers and practitioners,” International Journal of Science Education, Part B: Communication and Public Engagement, vol. 14, pp. 157–176, 2024."
+                    ]
+                },
+                {
+                    "name": "Aid player safety within their physical environment",
+                    "descriptor": "Ensure that players operate XR technology in a physically safe space. Players should be aware of surrounding hazards, and the system should provide feedback within the ISG, such as prompts, to guide safe movement in the physical space (Desurvire & Kreminski, 2018; de Belen & Bednarz, 2019).",
+                    "references": [
+                        "H. Desurvire and M. Kreminski, “Are game design and user research guidelines specific to virtual reality effective in creating a more optimal player experience? yes, vr play,” in Design, User Experience, and Usability: Theory and Practice (DUXU). Springer International Publishing, 2018, pp. 40–59.",
+                        "R. A. D. Belen and T. Bednarz, “Mixed reality and internet of things (mriot) interface design guidelines for elderly people,” in 23rd International Conference in Information Visualization, 2019."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Realism",
+            "id": "realism",
+            "guidelines": [
+                {
+                    "name": "Design the ISG to be realistic to the task",
+                    "descriptor": "Designing ISGs to closely resemble real-world objects or behaviours aids to enhance player understanding and engagement (Valenza, Gasparini & Hounsell, 2019). Specifically, ensure that virtual objects and environments closely mimic their real-world appearance (Farizi et al., 2021), that common tasks are performed in a manner consistent with real-world methods (Moore et al., 2024), and that interfaces are designed to look and behave as naturally as possible (Valenza, Gasparini & Hounsell, 2019).",
+                    "references": [
+                        "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019.",
+                        "F. D. Farizi, T. Hoang, S. Bangay, and S. Greuter, “Developing design guidelines for virtual reality based decision-making training for team sports,” in CHI PLAY 2021 - Extended Abstracts of the 2021 Annual Symposium on Computer-Human Interaction in Play, 10 2021, pp. 61–66.",
+                        "N. Moore, N. Ahmadpour, J. Davids, P. Poronnik, and M. Brown, “Developing a framework for the design and deployment of virtual reality (vr) in clinical education,” Studies in health technology and informatics, vol. 310, pp. 1256–1260, 1 2024."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Equality, Diversity and Inclusion",
+            "id": "equality_diversity_inclusion",
+            "guidelines": [
+                {
+                    "name": "Design for inclusive Accessibility",
+                    "descriptor": "Ensure that the ISG accommodates players with a range of abilities by integrating adaptive features and accessible design elements, thereby promoting full participation (Desurvire & Kreminski, 2018).",
+                    "references": [
+                        "H. Desurvire and M. Kreminski, “Are game design and user research guidelines specific to virtual reality effective in creating a more optimal player experience? yes, vr play,” in Design, User Experience, and Usability: Theory and Practice (DUXU). Springer International Publishing, 2018, pp. 40–59."
+                    ]
+                },
+                {
+                    "name": "Promote ethnic representation",
+                    "descriptor": "Incorporate diverse ethnic representations within the ISG to foster cultural understanding and respect, ensuring that the ISG reflects the multicultural background of its users (Ariffin, Ahmad, & Sulaiman, 2015).",
+                    "references": [
+                        "M. M. Ariffin, W. F. W. Ahmad, and S. Sulaiman, “Guideline for designing an effective serious game by using cultural-based game design model,” in Advances in Visual Informatics (IVIC), vol. 9429. Springer, Cham, 1 2015, pp. 111 – 118."
+                    ]
+                },
+                {
+                    "name": "Provide Multilingual Access",
+                    "descriptor": "Ensure that the ISG is accessible in players’ native languages. This supports equality by providing equal access and enhances inclusivity by recognizing and respecting linguistic diversity (Zaki, Wook & Ahmad, 2017).",
+                    "references": [
+                        "N. A. A. Zaki, T. S. M. T. Wook, and K. Ahmad, “Therapeutic serious game design guidelines for stimulating cognitive abilities of children with speech and language delay,” Journal of Information and Communication Technology, vol. 16, pp. 284 – 312, 12 2017."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Individualisation",
+            "id": "individualisation",
+            "subthemes": [
+                {
+                    "name": "Customisation",
+                    "id": "customisation",
+                    "guidelines": [
+                        {
+                            "name": "Let players customize their learning experiences",
+                            "descriptor": "In virtual learning environments, designers should provide learners with control to tailor the experience to their individual needs, interests, and backgrounds. This approach acknowledges the constructivist view that learners interpret information based on their unique experiences, allowing them to construct personal meaning rather than receiving a non-customisable ISG trying to tailor itself to everyone (Kim & Song, 1997).",
+                            "references": [
+                                "J. Kim and Y. S. Song, “Instructional design guidelines for virtual reality in classroom applications,” 1997."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Personalisation",
+                    "id": "personalisation",
+                    "guidelines": [
+                        {
+                            "name": "Present information based on player ability",
+                            "descriptor": "The level of information presented to the player will need to be in-line with the player abilities (Valenza, Gasparini & Hounsell, 2019).",
+                            "references": [
+                                "M. V. Valenza, I. Gasparini, and M. da S. Hounsell, “Serious game design for children: A set of guidelines and their validation.” Educational Technology & Society, vol. 22, pp. 19–31, 7 2019."
+                            ]
+                        },
+                        {
+                            "name": "Allow for UI personalisation",
+                            "descriptor": "Allowing for toggleable elements of the UI within MR experiences will let the user customize the interface so that it is more aligned with their preference (Dabor, Longford & Walker, 2019), allowing for a positive contribution toward the user experience as a result of the adaptability of the UI based on the needs of the user or the context of use (Ciccarelli et al., 2022).",
+                            "references": [
+                                "O. Dabor, E. Longford, and S. Walker, “Design guidelines for augmented reality user interface: A case study of simultaneous interpretation,” in 11th Computer Science and Electronic Engineering (CEEC). IEEE, 2019, pp. 164–166.",
+                                "M. Ciccarelli, A. Brunzini, A. Papetti, and M. Germani, “Interface and interaction design principles for mixed reality applications: The case of operator training in wire harness activities,” in Procedia Computer Science, vol. 204, 2022, pp. 540–547."
+                            ]
+                        },
+                        {
+                            "name": "Allow user customisation of the experience to improve user engagement",
+                            "descriptor": "Allow users to tailor game settings, visuals, and mechanics to their preferences. This personalisation not only minimises discomfort but also significantly boosts engagement by aligning the ISG with individual needs and motivations (Paraskevopoulos et al., 2014).",
+                            "references": [
+                                "I. T. Paraskevopoulos, E. Tsekleves, C. Craig, C. Whyatt, and J. Cosmas, “Design guidelines for developing customised serious games for parkinson’s disease rehabilitation using bespoke game sensors,” Entertainment Computing, vol. 5, pp. 413 – 424, 12 2014."
+                            ]
+                        },
+                        {
+                            "name": "Use personalisation to enhance immersion",
+                            "descriptor": "Empower players to customise key elements of the experience—such as the virtual environment, gameplay elements, or characters—to foster a personal connection with the game. This customization heightens the sense of control and immersion, ultimately enhancing overall user experience (Tsikinas & Xinogalos, 2019).",
+                            "references": [
+                                "S. Tsikinas and S. Xinogalos, “Design guidelines for serious games targeted to people with autism,” Smart Innovation, Systems and Technologies, vol. 144, pp. 489 – 499, 6 2019."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
