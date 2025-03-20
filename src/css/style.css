@@ -75,11 +75,12 @@
     position: absolute;
     width: 20%;
     aspect-ratio: 1;
-    transition: all 0.2s ease;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .item:hover {
     transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* A soft dark glow */
 }
 
 #circle {
