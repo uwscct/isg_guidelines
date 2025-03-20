@@ -79,8 +79,7 @@
 }
 
 .item:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* A soft dark glow */
+    transform: scale(1.2);    
 }
 
 #circle {
