@@ -139,12 +139,12 @@
     background-color: #004aac;
     color: white;
     font-weight: bold;
+    font-size: 12px;
+    font-family: "Inter-Bold", Helvetica;
 }
 #gl-name{
     color: white;
     cursor: pointer;
-    font-size: 12px;
-    font-family: "Inter-Bold", Helvetica;
 }
 #gl{
     width: 100%;
