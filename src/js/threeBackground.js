@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     context.clearRect(0, 0, size, size);
 
     // Draw a thin vertical line (the "strand")
-    context.strokeStyle = "white"; // Color of the strand
+    context.strokeStyle = "#014aad"; // Color of the strand
     context.lineWidth = 2; // Thickness of the strand (adjust as needed)
     context.beginPath();
     context.moveTo(size / 2, 0); // Start at the top center of the canvas
