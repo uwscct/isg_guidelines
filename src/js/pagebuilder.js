@@ -173,21 +173,7 @@ fetch('./assets/data.json')
                 }
             }
             return ''; // fallback if missing
-        }
-        
-        // Attach hover listeners to each circle item
-        items.forEach(itemDiv => {
-            itemDiv.addEventListener('mouseenter', () => {
-                const text = getInfoTextById(itemDiv.id);
-                if (text) {
-                    infoContent.textContent = text;
-                    infoBox.classList.add('visible');
-                }
-            });
-            itemDiv.addEventListener('mouseleave', () => {
-                infoBox.classList.remove('visible');
-            });
-        });
+        }  
 
         
         if (urlParams.has('st') && urlParams.has('sst')) {
@@ -206,6 +192,20 @@ fetch('./assets/data.json')
         for (var i = 0; i < items.length; i++) {
             items[i].addEventListener('click', newPage(i));
         }
+
+        // Attach hover listeners to each circle item
+        items.forEach(itemDiv => {
+            itemDiv.addEventListener('mouseenter', () => {
+                const text = getInfoTextById(itemDiv.id);
+                if (text) {
+                    infoContent.textContent = text;
+                    infoBox.classList.add('visible');
+                }
+            });
+            itemDiv.addEventListener('mouseleave', () => {
+                infoBox.classList.remove('visible');
+            });
+        });
 
         var url = './?';
         function newPage(i) {
