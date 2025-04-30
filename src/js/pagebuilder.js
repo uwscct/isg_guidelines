@@ -102,7 +102,7 @@ fetch('./assets/data.json')
             if (currentLabel) {
                 parts.push({
                     name: currentLabel,
-                    //href: window.location.href
+                    href: window.location.href
                 });
             }
         
@@ -156,12 +156,12 @@ fetch('./assets/data.json')
                         createGuidelinesPage(subsub.guidelines, subsub.name);
                     } else {
                         var st = urlParams.get('st');
-                        if (data.themes[st].subthemes[i].subsubthemes != null) {
+                        const sub = data.themes[st].subthemes[i];
+                        if (sub.subsubthemes != null) {
                             location.href = url + 'st=' + st + '&sst=' + i;
-                        }
-                        else {
-                            createGuidelinesPage(data.themes[st].subthemes[i].guidelines);
-                            // console.log('guidelines');
+                        } else {
+                            // pass the sub-theme’s name as currentLabel
+                            createGuidelinesPage(sub.guidelines, sub.name)
                         }
                     }
                 } else if (data.themes[i].subthemes != null) { 
