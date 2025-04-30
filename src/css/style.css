@@ -227,9 +227,14 @@
 /* ───────────── Info Box ───────────── */
 #info-box {
     position: absolute;
-    top: 50%;
+
+    /* Logo sits at top:8px with height:86px → bottom edge is 8px + 86px = 94px */
+    /* Then add 5% of viewport height (5vh) for the gap */
+    top: calc(94px + 5vh);
     left: 0;
-    transform: translate(-100%, -50%);
+    
+    /*transform: translate(-100%, -50%);*/
+    transform: translateX(-100%);   /* only hide off-screen horizontally */
     width: 200px;
     padding: 24px 12px;
     /*background: #014aad;*/
