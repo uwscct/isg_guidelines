@@ -101,7 +101,7 @@ fetch('./assets/data.json')
 
             // Gather each part of the trail
             const parts = [];
-            const base = './';
+            const base = './?';
 
             // 0) Home always first
             parts.push({ name: 'Home', href: base });
