@@ -246,7 +246,7 @@
     z-index: 6;
 }
 #info-box.visible {
-    transform: translate(0, -50%);
+    transform: translateX(0);
 }
 #info-content {
     font-size: 14px;
