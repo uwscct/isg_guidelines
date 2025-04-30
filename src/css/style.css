@@ -190,3 +190,31 @@
     padding-left: 1%;
     padding-right: 1%;
 }
+
+/* ────────────── Breadcrumb ────────────── */
+#breadcrumb {
+  position: absolute;
+  top: 8px;        /* align with your logo */
+  left: 110px;     /* adjust to sit just right of #CCTLogo */
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  color: #ffffff;
+  white-space: nowrap;
+  z-index: 5;
+}
+
+#breadcrumb a {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+#breadcrumb a:hover {
+  opacity: 1;
+}
+
+#breadcrumb .sep {
+  margin: 0 6px;
+  opacity: 0.6;
+}
+/* ───────────────────────────────────────── */
