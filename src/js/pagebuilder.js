@@ -98,13 +98,13 @@ fetch('./assets/data.json')
                 }
             }
 
-            // // 3) Sub-sub-theme link back to itself
-            // if (currentLabel) {
-            //     parts.push({
-            //         name: currentLabel,
-            //         href: window.location.href
-            //     });
-            // }
+            // 3) Sub-sub-theme link back to itself
+            if (currentLabel) {
+                parts.push({
+                    name: currentLabel,
+                    //href: window.location.href
+                });
+            }
         
             // Build the inner HTML: each part is an <a>, separated by “>”
             bc.innerHTML = parts.map((p, i) => {
