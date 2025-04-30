@@ -205,6 +205,9 @@ fetch('./assets/data.json')
         }
 
         function createGuidelinesPage(guidelines, currentLabel) {
+            // inject or update the breadcrumb trail using the passed-in label
+            renderBreadcrumb(data, currentLabel);
+            
             document.getElementById("home").removeChild(document.getElementById("diagram"));
 
             var guidDiv = document.createElement('div');
