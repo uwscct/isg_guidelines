@@ -193,57 +193,59 @@
 
 /* ────────────── Breadcrumb ────────────── */
 #breadcrumb {
-  position: absolute;
-  top: 8px;                       /* same vertical offset as logo */
-  left: 110px;                    /* adjust so it sits just right of logo */
-  height: 86px;                   /* match logo’s height */
-  display: flex;                  /* use flex to center content vertically */
-  align-items: center;            /* vertical centering */
-  font-family: "Inter-Regular", Helvetica;
-  font-size: clamp(16px, 2vw, 24px); /* responsive: min 16px, ideal 2vw, max 24px */
-  color: #014aad;
-  white-space: nowrap;
-  z-index: 5;
+    position: absolute;
+    top: 8px;                       /* same vertical offset as logo */
+    left: 110px;                    /* adjust so it sits just right of logo */
+    height: 86px;                   /* match logo’s height */
+    display: flex;                  /* use flex to center content vertically */
+    align-items: center;            /* vertical centering */
+    font-family: "Inter-Regular", Helvetica;
+    font-size: clamp(16px, 2vw, 24px); /* responsive: min 16px, ideal 2vw, max 24px */
+    color: #014aad;
+    white-space: nowrap;
+    z-index: 5;
 }
 
 /* Link styles */
 #breadcrumb a {
-  color: #014aad;
-  text-decoration: none;
-  opacity: 0.8;
-  transition: opacity 0.2s;
+    color: #014aad;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
 }
 #breadcrumb a:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* Separator style */
 #breadcrumb .sep {
-  margin: 0 6px;
-  opacity: 0.6;
-  /* inherit font-size so the “>” scales too */
+    margin: 0 6px;
+    opacity: 0.6;
+/* inherit font-size so the “>” scales too */
 }
 /* ───────────────────────────────────────── */
 /* ───────────── Info Box ───────────── */
 #info-box {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-100%, -50%);
-  width: 200px;
-  padding: 24px 12px;
-  background: #014aad;
-  color: #fff;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  transition: transform 0.3s ease;
-  z-index: 6;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    width: 200px;
+    padding: 24px 12px;
+    /*background: #014aad;*/
+    background: rgba(1, 74, 173, 0.85);
+    color: #fff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transition: transform 0.3s ease;
+    z-index: 6;
 }
 #info-box.visible {
-  transform: translate(0, -50%);
+    transform: translate(0, -50%);
 }
 #info-content {
-  font-size: 14px;
-  line-height: 1.4;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: "Inter-Regular", Helvetica;
 }
 /* ───────────────────────────────────── */
