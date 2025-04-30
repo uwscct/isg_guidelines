@@ -194,15 +194,19 @@
 /* ────────────── Breadcrumb ────────────── */
 #breadcrumb {
   position: absolute;
-  top: 8px;        /* align with your logo */
-  left: 110px;     /* adjust to sit just right of #CCTLogo */
+  top: 8px;                       /* same vertical offset as logo */
+  left: 110px;                    /* adjust so it sits just right of logo */
+  height: 86px;                   /* match logo’s height */
+  display: flex;                  /* use flex to center content vertically */
+  align-items: center;            /* vertical centering */
   font-family: "Inter-Regular", Helvetica;
-  font-size: 14px;
+  font-size: clamp(16px, 2vw, 24px); /* responsive: min 16px, ideal 2vw, max 24px */
   color: #014aad;
   white-space: nowrap;
   z-index: 5;
 }
 
+/* Link styles */
 #breadcrumb a {
   color: #014aad;
   text-decoration: none;
@@ -213,8 +217,10 @@
   opacity: 1;
 }
 
+/* Separator style */
 #breadcrumb .sep {
   margin: 0 6px;
   opacity: 0.6;
+  /* inherit font-size so the “>” scales too */
 }
 /* ───────────────────────────────────────── */
