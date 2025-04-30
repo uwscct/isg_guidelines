@@ -4,6 +4,7 @@
         {
             "name": "UX",
             "id": "ux",
+            "info": "In this analysis, UX includes navigation, presence, immersion, user interface (UI), usefulness, and usability. The UX theme is important for the ISG as it ensures that players' expectations for the ISG are met and a well-crafted UX is able to increase players' engagement and retention.",
             "subthemes": [
                 {
                     "name": "Usability",
