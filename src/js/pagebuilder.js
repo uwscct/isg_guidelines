@@ -72,7 +72,28 @@ fetch('./assets/data.json')
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
 
+        if (urlParams.has('st')) {
+            // Determine if you have a sub-theme selected
+            const st = urlParams.get('st');
+            let currentLabel = null;
+        
+            if (urlParams.has('sst')) {
+                // On a sub-theme overview before drilling to guidelines
+                const sst = urlParams.get('sst');
+                currentLabel = data.themes[st].subthemes[sst].name;
+            } else {
+                // On a theme overview
+                currentLabel = data.themes[st].name;
+            }            
+                // Render a two‐ or three‐level breadcrumb
+                renderBreadcrumb(data, currentLabel);
+            }
+        
         function renderBreadcrumb(data, currentLabel) {
+            // Remove any existing breadcrumb
+            const existing = document.getElementById('breadcrumb');
+            if (existing) existing.remove();
+            
             const bc = document.createElement('div');
             bc.id = 'breadcrumb';
 
@@ -176,9 +197,6 @@ fetch('./assets/data.json')
         }
 
         function createGuidelinesPage(guidelines, currentLabel) {
-            // inject breadcrumb
-            renderBreadcrumb(data, currentLabel);
-            
             document.getElementById("home").removeChild(document.getElementById("diagram"));
 
             var guidDiv = document.createElement('div');
