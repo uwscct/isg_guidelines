@@ -198,13 +198,13 @@
   left: 110px;     /* adjust to sit just right of #CCTLogo */
   font-family: "Inter-Regular", Helvetica;
   font-size: 14px;
-  color: #ffffff;
+  color: #014aad;
   white-space: nowrap;
   z-index: 5;
 }
 
 #breadcrumb a {
-  color: #ffffff;
+  color: #014aad;
   text-decoration: none;
   opacity: 0.8;
   transition: opacity 0.2s;
