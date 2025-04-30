@@ -72,14 +72,15 @@ fetch('./assets/data.json')
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
 
-        function renderBreadcrumb(data) {
+        function renderBreadcrumb(data, currentLabel) {
             const bc = document.createElement('div');
             bc.id = 'breadcrumb';
-        
+
+            // Gather each part of the trail
             const parts = [];
             const base = './?';
         
-            // Theme level
+            // 1) Theme level
             if (urlParams.has('st')) {
                 const st = urlParams.get('st');
                 parts.push({
@@ -87,7 +88,7 @@ fetch('./assets/data.json')
                     href: `${base}st=${st}`
                 });
         
-                // Sub-theme level
+                // 2) Sub-theme level
                 if (urlParams.has('sst')) {
                     const sst = urlParams.get('sst');
                     parts.push({
@@ -96,8 +97,16 @@ fetch('./assets/data.json')
                     });      
                 }
             }
+
+            // 3) Sub-sub-theme link back to itself
+            if (currentLabel) {
+                parts.push({
+                    name: currentLabel,
+                    href: window.location.href
+                });
+            }
         
-            // Turn them into HTML links + separators
+            // Build the inner HTML: each part is an <a>, separated by “>”
             bc.innerHTML = parts.map((p, i) => {
                 const link = `<a href="${p.href}">${p.name}</a>`;
                 const sep = (i < parts.length - 1) ? `<span class="sep">&gt;</span>` : '';
@@ -141,8 +150,10 @@ fetch('./assets/data.json')
                     if (urlParams.has('sst')) {
                         var st = urlParams.get('st');
                         var sst = urlParams.get('sst');
-                        createGuidelinesPage(data.themes[st].subthemes[sst].subsubthemes[i].guidelines);
-                        // console.log('guidelines');
+                        // Grab the clicked sub-sub object
+                        const subsub = data.themes[st].subthemes[sst].subsubthemes[i];
+                        // Pass its guidelines *and* its name
+                        createGuidelinesPage(subsub.guidelines, subsub.name);
                     } else {
                         var st = urlParams.get('st');
                         if (data.themes[st].subthemes[i].subsubthemes != null) {
@@ -163,9 +174,9 @@ fetch('./assets/data.json')
             }
         }
 
-        function createGuidelinesPage(guidelines) {
+        function createGuidelinesPage(guidelines, currentLabel) {
             // inject breadcrumb
-            renderBreadcrumb(data);
+            renderBreadcrumb(data, currentLabel);
             
             document.getElementById("home").removeChild(document.getElementById("diagram"));
 
