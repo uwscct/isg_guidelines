@@ -72,6 +72,15 @@ fetch('./assets/data.json')
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
 
+        // Inject the info‐box container
+        const infoBox = document.createElement('div');
+        infoBox.id = 'info-box';
+        infoBox.innerHTML = '<div id="info-content"></div>';
+        document.getElementById('home').appendChild(infoBox);
+        
+        // Cache the content area
+        const infoContent = infoBox.querySelector('#info-content');
+
         if (urlParams.has('st')) {
             // Determine if you have a sub-theme selected
             const st = urlParams.get('st');
@@ -152,6 +161,35 @@ fetch('./assets/data.json')
             });
         }
 
+        // Helper: look up info text by circle ID in your data.json
+        function getInfoTextById(id) {
+            for (const theme of data.themes) {
+                if (theme.id === id) return theme.info;
+                for (const sub of theme.subthemes || []) {
+                    if (sub.id === id) return sub.info;
+                    for (const subsub of sub.subsubthemes || []) {
+                        if (subsub.id === id) return subsub.info;
+                    }
+                }
+            }
+            return ''; // fallback if missing
+        }
+        
+        // Attach hover listeners to each circle item
+        items.forEach(itemDiv => {
+            itemDiv.addEventListener('mouseenter', () => {
+                const text = getInfoTextById(itemDiv.id);
+                if (text) {
+                    infoContent.textContent = text;
+                    infoBox.classList.add('visible');
+                }
+            });
+            itemDiv.addEventListener('mouseleave', () => {
+                infoBox.classList.remove('visible');
+            });
+        });
+
+        
         if (urlParams.has('st') && urlParams.has('sst')) {
             var st = urlParams.get('st');
             var sst = urlParams.get('sst');
