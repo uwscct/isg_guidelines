@@ -72,6 +72,43 @@ fetch('./assets/data.json')
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
 
+        function renderBreadcrumb(data) {
+            const bc = document.createElement('div');
+            bc.id = 'breadcrumb';
+        
+            const parts = [];
+            const base = './?';
+        
+            // Theme level
+            if (urlParams.has('st')) {
+                const st = urlParams.get('st');
+                parts.push({
+                    name: data.themes[st].name,
+                    href: `${base}st=${st}`
+                });
+        
+                // Sub-theme level
+                if (urlParams.has('sst')) {
+                    const sst = urlParams.get('sst');
+                    parts.push({
+                        name: data.themes[st].subthemes[sst].name,
+                        href: `${base}st=${st}&sst=${sst}`
+                    });      
+                }
+            }
+        
+            // Turn them into HTML links + separators
+            bc.innerHTML = parts.map((p, i) => {
+                const link = `<a href="${p.href}">${p.name}</a>`;
+                const sep = (i < parts.length - 1) ? `<span class="sep">&gt;</span>` : '';
+                return link + sep;
+            }).join('');
+        
+            // Finally, append it into #home, before the rest of the content
+            const home = document.getElementById('home');
+            home.insertBefore(bc, home.firstChild);
+        }
+        
         var items = [];
         function createItems(itemsArray) {
             items = [];
@@ -127,6 +164,9 @@ fetch('./assets/data.json')
         }
 
         function createGuidelinesPage(guidelines) {
+            // inject breadcrumb
+            renderBreadcrumb(data);
+            
             document.getElementById("home").removeChild(document.getElementById("diagram"));
 
             var guidDiv = document.createElement('div');
