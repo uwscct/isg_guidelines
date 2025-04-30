@@ -104,10 +104,7 @@ fetch('./assets/data.json')
             const base = './';
 
             // 0) Home always first
-            parts.push({
-                name: 'Home',
-                href: base
-            });
+            parts.push({ name: 'Home', href: base });
             
             // 1) Theme level
             if (urlParams.has('st')) {
@@ -128,7 +125,7 @@ fetch('./assets/data.json')
             }
 
             // 3) Sub-sub-theme link back to itself
-            if (currentLabel) {
+            if (currentLabel && parts[parts.length - 1].name !== currentLabel) {
                 parts.push({
                     name: currentLabel,
                     href: window.location.href
