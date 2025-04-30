@@ -168,8 +168,9 @@ fetch('./assets/data.json')
                     location.href = url + 'st=' + i;
                 }
                 else {
-                    createGuidelinesPage(data.themes[i].guidelines);
-                    // console.log('guidelines');
+                    // Theme has no sub‐themes → go straight to its guidelines, 
+                    // and pass the theme's name so it shows in the breadcrumb:
+                    createGuidelinesPage(data.themes[i].guidelines, data.themes[i].name);
                 }
             }
         }
