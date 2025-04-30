@@ -75,12 +75,11 @@
     position: absolute;
     width: 20%;
     aspect-ratio: 1;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .item:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* A soft dark glow */
+    transform: scale(1.2);    
 }
 
 #circle {
@@ -91,6 +90,12 @@
     background-color: #014aad;
     /*background-color: #d9d9d9;*/
     border-radius: 100%;
+    box-shadow: 0.3s ease;
+}
+
+/* When the parent .item is hovered, add a circular glow to #circle */
+.item:hover #circle {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 #text-wrapper {
@@ -125,7 +130,9 @@
 .gl-item {
   padding: 10px;
   margin-bottom: 5px;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 16px;
+  font-family: "Inter-Bold", Helvetica;
   color: black;
   cursor: pointer;
   border-bottom: 1px solid #ddd;
@@ -161,16 +168,25 @@
 }
 #gl-title{
     font-size: 25px;
+    font-family: "Inter-Bold", Helvetica;
     position: absolute;
-    top: 1%;
+    top: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 #gl-desc{
     font-size: 20px;
+    font-family: "Inter-Bold", Helvetica;
     position: absolute;
     top: 20%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 #gl-ref{
-    font-size: 10px;
+    font-size: 12px;
+    font-family: "Inter-Bold", Helvetica;
     position: absolute;
     bottom: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
