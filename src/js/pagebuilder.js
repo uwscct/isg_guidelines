@@ -75,18 +75,20 @@ fetch('./assets/data.json')
         if (urlParams.has('st')) {
             // Determine if you have a sub-theme selected
             const st = urlParams.get('st');
-            let currentLabel = null;
+            let currentLabel = data.themes[st].name;
         
             if (urlParams.has('sst')) {
-                // On a sub-theme overview before drilling to guidelines
+                // On a sub-theme overview
                 const sst = urlParams.get('sst');
                 currentLabel = data.themes[st].subthemes[sst].name;
-            } else {
-                // On a theme overview
-                currentLabel = data.themes[st].name;
-            }            
-                // Render a two‐ or three‐level breadcrumb
-                renderBreadcrumb(data, currentLabel);
+            } 
+            // else {
+            //     // On a theme overview
+            //     currentLabel = data.themes[st].name;
+            // }
+            
+            // Render a two‐ or three‐level breadcrumb
+            renderBreadcrumb(data, currentLabel);
             }
         
         function renderBreadcrumb(data, currentLabel) {
@@ -99,8 +101,14 @@ fetch('./assets/data.json')
 
             // Gather each part of the trail
             const parts = [];
-            const base = './?';
-        
+            const base = './';
+
+            // 0) Home always first
+            parts.push({
+                name: 'Home',
+                href: base
+            });
+            
             // 1) Theme level
             if (urlParams.has('st')) {
                 const st = urlParams.get('st');
