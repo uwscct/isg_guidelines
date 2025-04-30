@@ -105,7 +105,7 @@ fetch('./assets/data.json')
                         var st = urlParams.get('st');
                         var sst = urlParams.get('sst');
                         createGuidelinesPage(data.themes[st].subthemes[sst].subsubthemes[i].guidelines);
-                        console.log('guidelines');
+                        // console.log('guidelines');
                     } else {
                         var st = urlParams.get('st');
                         if (data.themes[st].subthemes[i].subsubthemes != null) {
@@ -113,7 +113,7 @@ fetch('./assets/data.json')
                         }
                         else {
                             createGuidelinesPage(data.themes[st].subthemes[i].guidelines);
-                            console.log('guidelines');
+                            // console.log('guidelines');
                         }
                     }
                 } else if (data.themes[i].subthemes != null) { 
@@ -121,7 +121,7 @@ fetch('./assets/data.json')
                 }
                 else {
                     createGuidelinesPage(data.themes[i].guidelines);
-                    console.log('guidelines');
+                    // console.log('guidelines');
                 }
             }
         }
