@@ -224,3 +224,26 @@
   /* inherit font-size so the “>” scales too */
 }
 /* ───────────────────────────────────────── */
+/* ───────────── Info Box ───────────── */
+#info-box {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  width: 200px;
+  padding: 24px 12px;
+  background: #014aad;
+  color: #fff;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  transition: transform 0.3s ease;
+  z-index: 6;
+}
+#info-box.visible {
+  transform: translate(0, -50%);
+}
+#info-content {
+  font-size: 14px;
+  line-height: 1.4;
+}
+/* ───────────────────────────────────── */
