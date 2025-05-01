@@ -294,7 +294,7 @@
                         {
                             "name": "Validity",
                             "id": "validity",
-                            "info": "",
+                            "info": "Validity refers to how accepted, meaningful, and relevant the UI appears to the user. Acceptance influences whether users perceive the UI as appropriate, while meaningfulness can be supported by using intuitive graphical elements and icons. Relevance ensures that displayed content is purposeful and contextually aligned with the learning goals.",
 
                             "guidelines": [
                                 {
@@ -331,6 +331,7 @@
                         {
                             "name": "Ease of Use",
                             "id": "ease_of_use",
+                            "info": "Ease of use encompasses UI complexity, consistency, functionality, and the player’s familiarity with interface elements. A user-friendly interface reduces cognitive load and allows players to focus on learning content rather than figuring out how to use the system.",
                             "guidelines": [
                                 {
                                     "name": "The UI should be easy to use",
@@ -366,6 +367,7 @@
                         {
                             "name": "Clarity",
                             "id": "clarity",
+                            "info": "Clarity involves making UI elements easily perceivable through appropriate visibility, contrast, size, and minimal clutter. Clear UI design enhances player comprehension and minimizes confusion or misinterpretation.",
                             "guidelines": [
                                 {
                                     "name": "The UI should be clear",
@@ -406,6 +408,7 @@
                         {
                             "name": "Prompting",
                             "id": "prompting",
+                            "info": "Prompting refers to cues or signals within the UI that encourage players to interact with specific elements. These prompts aid exploration and help guide the player through the virtual environment or tasks.",
                             "guidelines": [
                                 {
                                     "name": "Prompt users",
@@ -420,6 +423,7 @@
                         {
                             "name": "Guidance",
                             "id": "guidance",
+                            "info": "Guidance involves offering direction to help players understand how to use the UI and navigate within the ISG. Effective guidance supports player autonomy and contributes to a smoother learning experience.",
                             "guidelines": [
                                 {
                                     "name": "Guide the player interactions",
@@ -443,10 +447,12 @@
                 {
                     "name": "Presence",
                     "id": "presence",
+                    "info": "",
                     "subsubthemes": [
                         {
                             "name": "Embodiment",
                             "id": "embodiment",
+                            "info": "",
                             "guidelines": [
                                 {
                                     "name": "Facilitate the user embodiment in the game character",
@@ -469,6 +475,7 @@
                         {
                             "name": "Environment",
                             "id": "environment",
+                            "info": "",
                             "guidelines": [
                                 {
                                     "name": "Shorten travel time by collapsing distances",
@@ -489,6 +496,7 @@
                         {
                             "name": "Sound",
                             "id": "sound",
+                            "info": "",
                             "guidelines": [
                                 {
                                     "name": "Provide dynamic and interactive sounds",
@@ -524,6 +532,7 @@
                         {
                             "name": "Comfort",
                             "id": "comfort",
+                            "info": "",
                             "guidelines": [
                                 {
                                     "name": "Prevent cybersickness through familiarisation",
@@ -586,6 +595,7 @@
                 {
                     "name": "Immersion",
                     "id": "immersion",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Use storytelling to enhance immersion",
@@ -614,6 +624,7 @@
                 {
                     "name": "Navigation and Wayfinding",
                     "id": "navigation_wayfinding",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Keep pathways simple and uncluttered",
@@ -655,6 +666,7 @@
                 {
                     "name": "Usefulness",
                     "id": "usefulness",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Design the ISG to have value to the player",
@@ -670,10 +682,12 @@
         {
             "name": "Drive",
             "id": "drive",
+            "info": "",
             "subthemes": [
                 {
                     "name": "Interest and Flow",
                     "id": "interest_flow",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Maintain player interest by introducing new activities and challenges",
@@ -711,6 +725,7 @@
                 {
                     "name": "Engagement",
                     "id": "engagement",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Design engaging interactions",
@@ -747,6 +762,7 @@
                 {
                     "name": "Motivation",
                     "id": "motivation",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Use participatory design",
@@ -784,6 +800,7 @@
                 {
                     "name": "Rewards",
                     "id": "rewards",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Provide rewards to stimulate interest",
@@ -814,6 +831,7 @@
         {
             "name": "Learning",
             "id": "learning",
+            "info": "",
             "subthemes": [
                 {
                     "name": "Effectiveness",
@@ -852,6 +870,7 @@
                 {
                     "name": "Balance",
                     "id": "balance",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Apply adaptive difficulty",
@@ -884,6 +903,7 @@
                 {
                     "name": "Assessment and Feedback",
                     "id": "assessment_feedback",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Provide a variety of clear tasks that have goals",
@@ -922,6 +942,7 @@
                 {
                     "name": "Consolidation",
                     "id": "consolidation",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Provide opportunities for repetition and practice",
@@ -949,6 +970,7 @@
                 {
                     "name": "Facilitation",
                     "id": "facilitation",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Match in-games tasks with real-world tasks",
@@ -988,10 +1010,12 @@
         {
             "name": "Storytelling",
             "id": "storytelling",
+            "info": "",
             "subthemes": [
                 {
                     "name": "Theme",
                     "id": "theme",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Maintain the theme of the experience consistently through the design",
@@ -1014,6 +1038,7 @@
                 {
                     "name": "Narrative",
                     "id": "narrative",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Present the core narrative of the experience to the player",
@@ -1053,6 +1078,7 @@
         {
             "name": "Collaboration",
             "id": "collaboration",
+            "info": "",
             "guidelines": [
                 {
                     "name": "Facilitate shared experiences within the ISG",
@@ -1084,6 +1110,7 @@
         {
             "name": "Privacy and Safety",
             "id": "privacy_safety",
+            "info": "",
             "guidelines": [
                 {
                     "name": "Maintain the user’s privacy",
@@ -1114,6 +1141,7 @@
         {
             "name": "Realism",
             "id": "realism",
+            "info": "",
             "guidelines": [
                 {
                     "name": "Design the ISG to be realistic to the task",
@@ -1129,6 +1157,7 @@
         {
             "name": "Equality, Diversity and Inclusion",
             "id": "equality_diversity_inclusion",
+            "info": "",
             "guidelines": [
                 {
                     "name": "Design for inclusive Accessibility",
@@ -1156,10 +1185,12 @@
         {
             "name": "Individualisation",
             "id": "individualisation",
+            "info": "",
             "subthemes": [
                 {
                     "name": "Customisation",
                     "id": "customisation",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Let players customize their learning experiences",
@@ -1173,6 +1204,7 @@
                 {
                     "name": "Personalisation",
                     "id": "personalisation",
+                    "info": "",
                     "guidelines": [
                         {
                             "name": "Present information based on player ability",
