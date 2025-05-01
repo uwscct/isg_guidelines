@@ -9,10 +9,12 @@
                 {
                     "name": "Usability",
                     "id": "usability",
+                    "info": "Usability directly impacts the effectiveness of the learning experience. Ensuring that the ISG is usable help the learner focus on learning the content rather than learning how to use the ISG.",
                     "subsubthemes": [
                         {
                             "name": "Accessibility",
                             "id": "accessibility",
+                            "info": "",
                             "guidelines": [
                                 {
                                     "name": "Optimise ergonomics for user interface interaction",
