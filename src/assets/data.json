@@ -14,7 +14,7 @@
                         {
                             "name": "Accessibility",
                             "id": "accessibility",
-                            "info": "",
+                            "info": "Accessibility elements need to be embedded within the ISG considering hardware, ISG functions, and how physical and cognitive limitations of the player could impact their access to the ISG.",
                             "guidelines": [
                                 {
                                     "name": "Optimise ergonomics for user interface interaction",
@@ -51,6 +51,7 @@
                         {
                             "name": "Onboarding",
                             "id": "onboarding",
+                            "info": "Usability can be affected by the onboarding experience, the timing of when to present information, and the medium through which it is delivered will affect how the player learns to use the application.",
                             "guidelines": [
                                 {
                                     "name": "Include onboarding and training for the player",
@@ -107,6 +108,7 @@
                         {
                             "name": "Interaction",
                             "id": "interaction",
+                            "info": "Interaction design is important for usability as it is firmly associated with the functionality of the ISG, design considerations must be given to interaction complexity, responsiveness, spatial positioning, player inputs, and interaction with objects and the virtual environment.",
                             "guidelines": [
                                 {
                                     "name": "Prioritise natural and familiar player interactions",
@@ -156,6 +158,7 @@
                         {
                             "name": "Feedback",
                             "id": "feedback",
+                            "info": "Feedback supports usability by relaying information to the player, such as instructions and task performance, by providing visual cues. Clarity, modality, timing, and accuracy should be considered when providing feedback.",
                             "guidelines": [
                                 {
                                     "name": "Use multi-modal feedback",
@@ -204,6 +207,7 @@
                         {
                             "name": "Cognition",
                             "id": "cognition",
+                            "info": "The player’s cognitive ability and cognitive load (cognition) and attention should be considered during design, maintain the focus of the player on the task and enabling continued use of the ISG.",
                             "guidelines": [
                                 {
                                     "name": "Prefer visual representations over text descriptions",
@@ -241,6 +245,7 @@
                         {
                             "name": "Physical Abilities",
                             "id": "physical_abilities",
+                            "info": "The physical abilities of the player are fundamental design factors for ISG, designers should understand the limits of the physical abilities of players, and spatial restrictions in the players’ environment.",
                             "guidelines": [
                                 {
                                     "name": "Let the player adapt the experience to their physical abilities",
@@ -264,6 +269,7 @@
                         {
                             "name": "Recognition",
                             "id": "recognition",
+                            "info": "The fundamental rule of recognition over recall applies to ISG, ensuring that the ISG elements are memorable facilitates the player ability to interact with the ISG.",
                             "guidelines": [
                                 {
                                     "name": "Encourage recognition over recall",
@@ -283,10 +289,13 @@
                 {
                     "name": "UI",
                     "id": "ui",
+                    "info": "The user interface (UI) is a crucial element to consider when designing an ISG as it influences engagement, comprehension, and the learning experience. Design elements to consider for the UI are: validity, ease of use, clarity, prompting, and guidance.",
                     "subsubthemes": [
                         {
                             "name": "Validity",
                             "id": "validity",
+                            "info": "",
+
                             "guidelines": [
                                 {
                                     "name": "Design a minimalistic UI",
