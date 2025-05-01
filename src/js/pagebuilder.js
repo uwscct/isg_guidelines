@@ -282,16 +282,13 @@ fetch('./assets/data.json')
 
             var scrollableDiv = document.createElement('div');
             scrollableDiv.id = 'scroll';
-            scrollableDiv.className = 'scroll';
+            scrollableDiv.className = 'scroll';            
 
             // Re‐position the citeas for guidelines mode
             const cite = document.getElementById('citeas');
-            cite.classList.add('guidelines');
-
-            // Make scrollableDiv position:relative so absolute children work
-            scrollableDiv.style.position = 'relative';
+            cite.classList.add('guidelines');  
             
-            // Move it into the left panel
+            // Move cite into the left panel
             scrollableDiv.appendChild(cite);
 
             var guidelineShow = document.createElement('div');

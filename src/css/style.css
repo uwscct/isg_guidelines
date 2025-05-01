@@ -133,6 +133,7 @@
 #scroll {
   width: 50%;
   height: 100%;
+  position: relative;
   overflow-y: auto;      /* Allow scrolling if the list gets too long */
   height: 100%;
   /*border-right: 1px solid #ccc;*/
