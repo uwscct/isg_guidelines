@@ -275,3 +275,28 @@
     font-family: "Inter-Regular", Helvetica;
 }
 /* ───────────────────────────────────── */
+/* ────────────── Welcome Box ────────────── */
+#welcome-box {
+    position: absolute;
+    /* same vertical position as info-box */
+    top: calc(94px + 5vh);
+    right: 0;
+  
+    width: 20%;
+    padding: 24px 12px;
+    height: fit-content;
+    overflow-y: auto;
+  
+    background: rgba(1, 74, 173, 0.85);
+    color: #fff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 16px;
+    line-height: 1.4;
+  
+    /* rounded on the left side */
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  
+    z-index: 6;
+  }
+  /* ───────────────────────────────────────── */

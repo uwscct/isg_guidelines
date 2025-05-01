@@ -88,6 +88,14 @@ fetch('./assets/data.json')
         // Cache the content area
         const infoContent = infoBox.querySelector('#info-content');
 
+        if (!urlParams.has('st')) {
+            // Only on the root (diagram) page:
+            const welcome = document.createElement('div');
+            welcome.id = 'welcome-box';
+            welcome.innerHTML = '<h2>Welcome!</h2><p>This site presents a structured overview of key themes and associated design guidelines for Immersive Serious Games (ISGs). Each theme reflects insights from research and practice to inform thoughtful, purposeful ISG development.</p>';
+            document.getElementById('home').appendChild(welcome);
+        }
+
         if (urlParams.has('st')) {
             // Determine if you have a sub-theme selected
             const st = urlParams.get('st');
