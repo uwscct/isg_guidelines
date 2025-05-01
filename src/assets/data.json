@@ -447,12 +447,12 @@
                 {
                     "name": "Presence",
                     "id": "presence",
-                    "info": "",
+                    "info": "Presence refers to the player's psychological state of feeling as though they are truly situated within the virtual environment. It is a critical aspect of immersive serious games (ISGs), as it supports engagement, realism, and the effectiveness of the experience. Presence is shaped through design elements that foster embodiment, simulate believable environments, incorporate immersive audio, and maintain player comfort.",
                     "subsubthemes": [
                         {
                             "name": "Embodiment",
                             "id": "embodiment",
-                            "info": "",
+                            "info": "Embodiment is the extent to which players feel as if they inhabit the virtual avatar or role assigned to them. It establishes a sense of self within the virtual world, allowing players to feel integrated with the game's narrative and tasks.",
                             "guidelines": [
                                 {
                                     "name": "Facilitate the user embodiment in the game character",
@@ -475,7 +475,7 @@
                         {
                             "name": "Environment",
                             "id": "environment",
-                            "info": "",
+                            "info": "The environment contributes to presence through its visual design, realism, and environmental storytelling. Key design elements include believable world-building, consistent behavior of virtual elements, and immersive spatial cues that reinforce the illusion of being in a real place.",
                             "guidelines": [
                                 {
                                     "name": "Shorten travel time by collapsing distances",
@@ -496,7 +496,7 @@
                         {
                             "name": "Sound",
                             "id": "sound",
-                            "info": "",
+                            "info": "Sound design plays a vital role in altering the player's psychological state and reinforcing presence. Spatial audio, ambient noise, and sound effects contribute to realism and enhance the emotional and cognitive immersion of the player.",
                             "guidelines": [
                                 {
                                     "name": "Provide dynamic and interactive sounds",
@@ -532,7 +532,7 @@
                         {
                             "name": "Comfort",
                             "id": "comfort",
-                            "info": "",
+                            "info": "Comfort is essential for sustaining presence, as negative physical or emotional responses can break immersion. Design considerations should include minimizing cybersickness, reducing stress, and preventing frustration to ensure the player remains engaged and focused.",
                             "guidelines": [
                                 {
                                     "name": "Prevent cybersickness through familiarisation",
@@ -1185,12 +1185,12 @@
         {
             "name": "Individualisation",
             "id": "individualisation",
-            "info": "",
+            "info": "Individualisation in ISGs refers to adapting the game experience to suit individual player preferences, needs, and behaviours. By allowing users to modify aspects such as the interface, difficulty level, and rewards, ISGs can offer a more meaningful and motivating experience that supports sustained engagement and personal relevance.",
             "subthemes": [
                 {
                     "name": "Customisation",
                     "id": "customisation",
-                    "info": "",
+                    "info": "Customisation allows players to modify game elements, such as UI aesthetics, to reflect their personal preferences. This visual and functional tailoring contributes to a more engaging and player-centered experience, reinforcing the user’s sense of ownership and comfort within the ISG environment.",
                     "guidelines": [
                         {
                             "name": "Let players customize their learning experiences",
@@ -1204,7 +1204,7 @@
                 {
                     "name": "Personalisation",
                     "id": "personalisation",
-                    "info": "",
+                    "info": "Personalisation involves adjusting in-game parameters like difficulty and rewards based on the player's specific needs and progression. This targeted adaptation enhances motivation by keeping challenges appropriate and rewarding, thereby sustaining engagement and supporting individual learning trajectories.",
                     "guidelines": [
                         {
                             "name": "Present information based on player ability",
