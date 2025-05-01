@@ -46,7 +46,7 @@
     left: 43px;
     font-family: "Inter-Bold", Helvetica;
     font-weight: 400;
-    color: #014aad;
+    color: #000000;
     font-size: calc(50% + .25vw);
     letter-spacing: 0;
     line-height: normal;
@@ -235,7 +235,11 @@
     
     /*transform: translate(-100%, -50%);*/
     transform: translateX(-100%);   /* only hide off-screen horizontally */
-    width: 200px;
+
+    width: 20%;
+    height: fit-content;
+    /* max-height: 60vh;       cap at 60% of viewport height */
+    overflow-y: auto;       /* scroll if content is taller */
     padding: 24px 12px;
     /*background: #014aad;*/
     background: rgba(1, 74, 173, 0.85);
@@ -249,7 +253,8 @@
     transform: translateX(0);
 }
 #info-content {
-    font-size: 14px;
+    /* font-size: clamp(14px, 2vw, 20px);  */
+    font-size: 16px;
     line-height: 1.4;
     font-family: "Inter-Regular", Helvetica;
 }

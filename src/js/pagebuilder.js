@@ -72,6 +72,9 @@ fetch('./assets/data.json')
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
 
+        // Declare the timeout handle *before* you use it
+        let infoHideTimeout = null;
+
         // Inject the info‐box container
         const infoBox = document.createElement('div');
         infoBox.id = 'info-box';
@@ -193,6 +196,21 @@ fetch('./assets/data.json')
             items[i].addEventListener('click', newPage(i));
         }
 
+        // Clear any hide‐timer when entering either the circle or the box
+        function clearInfoBoxHide() {
+            clearTimeout(infoHideTimeout);
+        }
+
+        // Start a 0.5s hide‐timer when leaving either the circle or the box
+        function scheduleInfoBoxHide() {
+            // Clear any existing hide timer...
+            clearInfoBoxHide();
+            // …then schedule it to hide after 0.5 seconds
+            infoHideTimeout = setTimeout(() => {
+                infoBox.classList.remove('visible');
+            }, 500);
+        }
+
         // Attach hover listeners to each circle item
         items.forEach(itemDiv => {
             itemDiv.addEventListener('mouseenter', () => {
@@ -200,11 +218,18 @@ fetch('./assets/data.json')
                 if (text) {
                     infoContent.textContent = text;
                     infoBox.classList.add('visible');
+                    clearInfoBoxHide();     // Keep info box visable while inside the circle               
                 }
             });
-            itemDiv.addEventListener('mouseleave', () => {
-                infoBox.classList.remove('visible');
-            });
+            itemDiv.addEventListener('mouseleave', scheduleInfoBoxHide);  // start timer when leaving circle
+        });   
+        
+        // Keep visible while the pointer is over the box itself
+        infoBox.addEventListener('mouseover', () => {
+            clearInfoBoxHide();
+        });
+          infoBox.addEventListener('mouseout', () => {
+            scheduleInfoBoxHide();
         });
 
         var url = './?';
@@ -240,7 +265,8 @@ fetch('./assets/data.json')
         }
 
         function createGuidelinesPage(guidelines, currentLabel) {
-            // Hide the info-box when we switch to guidelines
+            // Clear infobox timer and hide the info-box when we switch to guidelines
+            clearTimeout(infoHideTimeout);
             document.getElementById('info-box').classList.remove('visible');
             
             // inject or update the breadcrumb trail using the passed-in label
