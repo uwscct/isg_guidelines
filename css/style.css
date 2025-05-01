@@ -52,6 +52,20 @@
     line-height: normal;
 }
 
+/* When we’re in guidelines mode, pin it to the bottom of the right panel */
+#citeas.guidelines {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;       /* match panel padding */
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: normal; /* allow wrapping */
+    color: #000000;   
+}
+
 #CCTLogo {
     position: absolute;
     width: 86px;
@@ -59,6 +73,7 @@
     top: 8px;
     left: 11px;
     object-fit: cover;
+    z-index: 10;
 }
 
 #diagram {
@@ -118,6 +133,7 @@
 #scroll {
   width: 50%;
   height: 100%;
+  position: relative;
   overflow-y: auto;      /* Allow scrolling if the list gets too long */
   height: 100%;
   /*border-right: 1px solid #ccc;*/
@@ -259,3 +275,41 @@
     font-family: "Inter-Regular", Helvetica;
 }
 /* ───────────────────────────────────── */
+/* ────────────── Welcome Box ────────────── */
+#welcome-box {
+    position: absolute;
+    /* same vertical position as info-box */
+    top: calc(94px + 5vh);
+    right: 0;
+  
+    width: 20%;
+    padding: 24px 12px;
+    height: fit-content;
+    overflow-y: auto;
+  
+    background: rgba(1, 74, 173, 0.85);
+    color: #fff;
+    font-family: "Inter-Regular", Helvetica;
+    line-height: 1.4;
+  
+    /* rounded on the left side */
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  
+    z-index: 6;
+  }
+  #welcome-box h2 {
+    margin: 0 0 0.5em;      /* space below the heading */
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+  
+  /* Welcome box paragraph*/
+  #welcome-box p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  /* ───────────────────────────────────────── */
