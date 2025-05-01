@@ -70,7 +70,11 @@ fetch('./assets/data.json')
         }
 
         const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
+        const urlParams = new URLSearchParams(queryString); 
+        
+        // Always start with #citeas in its default position
+        const cite = document.getElementById('citeas');
+        cite.classList.remove('guidelines');
 
         // Declare the timeout handle *before* you use it
         let infoHideTimeout = null;
@@ -264,14 +268,13 @@ fetch('./assets/data.json')
             }
         }
 
-        function createGuidelinesPage(guidelines, currentLabel) {
+        function createGuidelinesPage(guidelines, currentLabel) {                       
             // Clear infobox timer and hide the info-box when we switch to guidelines
             clearTimeout(infoHideTimeout);
             document.getElementById('info-box').classList.remove('visible');
             
             // inject or update the breadcrumb trail using the passed-in label
-            renderBreadcrumb(data, currentLabel);
-            
+            renderBreadcrumb(data, currentLabel);            
             document.getElementById("home").removeChild(document.getElementById("diagram"));
 
             var guidDiv = document.createElement('div');
@@ -280,6 +283,16 @@ fetch('./assets/data.json')
             var scrollableDiv = document.createElement('div');
             scrollableDiv.id = 'scroll';
             scrollableDiv.className = 'scroll';
+
+            // Re‐position the citeas for guidelines mode
+            const cite = document.getElementById('citeas');
+            cite.classList.add('guidelines');
+
+            // Make scrollableDiv position:relative so absolute children work
+            scrollableDiv.style.position = 'relative';
+            
+            // Move it into the left panel
+            scrollableDiv.appendChild(cite);
 
             var guidelineShow = document.createElement('div');
             guidelineShow.id = 'show';
