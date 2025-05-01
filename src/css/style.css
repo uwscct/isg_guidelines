@@ -290,7 +290,6 @@
     background: rgba(1, 74, 173, 0.85);
     color: #fff;
     font-family: "Inter-Regular", Helvetica;
-    font-size: 16px;
     line-height: 1.4;
   
     /* rounded on the left side */
@@ -298,5 +297,19 @@
     border-bottom-left-radius: 6px;
   
     z-index: 6;
+  }
+  #welcome-box h2 {
+    margin: 0 0 0.5em;                    /* space below the heading */
+    font-size: 20px;
+    font-weight: bold;                    /* stand out */
+    line-height: 1.2;                     /* tighter line height */
+    color: #ffffff;                       /* ensure good contrast */
+  }
+  
+  /* Welcome box paragraph (if you want to adjust it too) */
+  #welcome-box p {
+    margin: 0;                            /* remove extra margins */
+    font-size: 16px;
+    line-height: 1.4;
   }
   /* ───────────────────────────────────────── */
