@@ -46,7 +46,7 @@
     left: 43px;
     font-family: "Inter-Bold", Helvetica;
     font-weight: 400;
-    color: #b9b9b9;
+    color: #000000;
     font-size: calc(50% + .25vw);
     letter-spacing: 0;
     line-height: normal;
@@ -190,3 +190,72 @@
     padding-left: 1%;
     padding-right: 1%;
 }
+
+/* ────────────── Breadcrumb ────────────── */
+#breadcrumb {
+    position: absolute;
+    top: 8px;                       /* same vertical offset as logo */
+    left: 110px;                    /* adjust so it sits just right of logo */
+    height: 86px;                   /* match logo’s height */
+    display: flex;                  /* use flex to center content vertically */
+    align-items: center;            /* vertical centering */
+    font-family: "Inter-Regular", Helvetica;
+    font-size: clamp(16px, 2vw, 24px); /* responsive: min 16px, ideal 2vw, max 24px */
+    color: #014aad;
+    white-space: nowrap;
+    z-index: 5;
+}
+
+/* Link styles */
+#breadcrumb a {
+    color: #014aad;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+#breadcrumb a:hover {
+    opacity: 1;
+}
+
+/* Separator style */
+#breadcrumb .sep {
+    margin: 0 6px;
+    opacity: 0.6;
+/* inherit font-size so the “>” scales too */
+}
+/* ───────────────────────────────────────── */
+/* ───────────── Info Box ───────────── */
+#info-box {
+    position: absolute;
+
+    /* Logo sits at top:8px with height:86px → bottom edge is 8px + 86px = 94px */
+    /* Then add 5% of viewport height (5vh) for the gap */
+    top: calc(94px + 5vh);
+    left: 0;
+    
+    /*transform: translate(-100%, -50%);*/
+    transform: translateX(-100%);   /* only hide off-screen horizontally */
+
+    width: 20%;
+    height: fit-content;
+    /* max-height: 60vh;       cap at 60% of viewport height */
+    overflow-y: auto;       /* scroll if content is taller */
+    padding: 24px 12px;
+    /*background: #014aad;*/
+    background: rgba(1, 74, 173, 0.85);
+    color: #fff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transition: transform 0.3s ease;
+    z-index: 6;
+}
+#info-box.visible {
+    transform: translateX(0);
+}
+#info-content {
+    /* font-size: clamp(14px, 2vw, 20px);  */
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: "Inter-Regular", Helvetica;
+}
+/* ───────────────────────────────────── */

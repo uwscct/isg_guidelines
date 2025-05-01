@@ -72,6 +72,90 @@ fetch('./assets/data.json')
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
 
+        // Declare the timeout handle *before* you use it
+        let infoHideTimeout = null;
+
+        // Inject the info‐box container
+        const infoBox = document.createElement('div');
+        infoBox.id = 'info-box';
+        infoBox.innerHTML = '<div id="info-content"></div>';
+        document.getElementById('home').appendChild(infoBox);
+        
+        // Cache the content area
+        const infoContent = infoBox.querySelector('#info-content');
+
+        if (urlParams.has('st')) {
+            // Determine if you have a sub-theme selected
+            const st = urlParams.get('st');
+            let currentLabel = data.themes[st].name;
+        
+            if (urlParams.has('sst')) {
+                // On a sub-theme overview
+                const sst = urlParams.get('sst');
+                currentLabel = data.themes[st].subthemes[sst].name;
+            } 
+            // else {
+            //     // On a theme overview
+            //     currentLabel = data.themes[st].name;
+            // }
+            
+            // Render a two‐ or three‐level breadcrumb
+            renderBreadcrumb(data, currentLabel);
+            }
+        
+        function renderBreadcrumb(data, currentLabel) {
+            // Remove any existing breadcrumb
+            const existing = document.getElementById('breadcrumb');
+            if (existing) existing.remove();
+            
+            const bc = document.createElement('div');
+            bc.id = 'breadcrumb';
+
+            // Gather each part of the trail
+            const parts = [];
+            const base = './?';
+
+            // 0) Home always first
+            parts.push({ name: 'Home', href: base });
+            
+            // 1) Theme level
+            if (urlParams.has('st')) {
+                const st = urlParams.get('st');
+                parts.push({
+                    name: data.themes[st].name,
+                    href: `${base}st=${st}`
+                });
+        
+                // 2) Sub-theme level
+                if (urlParams.has('sst')) {
+                    const sst = urlParams.get('sst');
+                    parts.push({
+                        name: data.themes[st].subthemes[sst].name,
+                        href: `${base}st=${st}&sst=${sst}`
+                    });      
+                }
+            }
+
+            // 3) Sub-sub-theme link back to itself
+            if (currentLabel && parts[parts.length - 1].name !== currentLabel) {
+                parts.push({
+                    name: currentLabel,
+                    href: window.location.href
+                });
+            }
+        
+            // Build the inner HTML: each part is an <a>, separated by “>”
+            bc.innerHTML = parts.map((p, i) => {
+                const link = `<a href="${p.href}">${p.name}</a>`;
+                const sep = (i < parts.length - 1) ? `<span class="sep">&gt;</span>` : '';
+                return link + sep;
+            }).join('');
+        
+            // Finally, append it into #home, before the rest of the content
+            const home = document.getElementById('home');
+            home.insertBefore(bc, home.firstChild);
+        }
+        
         var items = [];
         function createItems(itemsArray) {
             items = [];
@@ -80,6 +164,21 @@ fetch('./assets/data.json')
             });
         }
 
+        // Helper: look up info text by circle ID in your data.json
+        function getInfoTextById(id) {
+            for (const theme of data.themes) {
+                if (theme.id === id) return theme.info;
+                for (const sub of theme.subthemes || []) {
+                    if (sub.id === id) return sub.info;
+                    for (const subsub of sub.subsubthemes || []) {
+                        if (subsub.id === id) return subsub.info;
+                    }
+                }
+            }
+            return ''; // fallback if missing
+        }  
+
+        
         if (urlParams.has('st') && urlParams.has('sst')) {
             var st = urlParams.get('st');
             var sst = urlParams.get('sst');
@@ -97,6 +196,42 @@ fetch('./assets/data.json')
             items[i].addEventListener('click', newPage(i));
         }
 
+        // Clear any hide‐timer when entering either the circle or the box
+        function clearInfoBoxHide() {
+            clearTimeout(infoHideTimeout);
+        }
+
+        // Start a 0.5s hide‐timer when leaving either the circle or the box
+        function scheduleInfoBoxHide() {
+            // Clear any existing hide timer...
+            clearInfoBoxHide();
+            // …then schedule it to hide after 0.5 seconds
+            infoHideTimeout = setTimeout(() => {
+                infoBox.classList.remove('visible');
+            }, 500);
+        }
+
+        // Attach hover listeners to each circle item
+        items.forEach(itemDiv => {
+            itemDiv.addEventListener('mouseenter', () => {
+                const text = getInfoTextById(itemDiv.id);
+                if (text) {
+                    infoContent.textContent = text;
+                    infoBox.classList.add('visible');
+                    clearInfoBoxHide();     // Keep info box visable while inside the circle               
+                }
+            });
+            itemDiv.addEventListener('mouseleave', scheduleInfoBoxHide);  // start timer when leaving circle
+        });   
+        
+        // Keep visible while the pointer is over the box itself
+        infoBox.addEventListener('mouseover', () => {
+            clearInfoBoxHide();
+        });
+          infoBox.addEventListener('mouseout', () => {
+            scheduleInfoBoxHide();
+        });
+
         var url = './?';
         function newPage(i) {
             return function (event) {
@@ -104,29 +239,39 @@ fetch('./assets/data.json')
                     if (urlParams.has('sst')) {
                         var st = urlParams.get('st');
                         var sst = urlParams.get('sst');
-                        createGuidelinesPage(data.themes[st].subthemes[sst].subsubthemes[i].guidelines);
-                        // console.log('guidelines');
+                        // Grab the clicked sub-sub object
+                        const subsub = data.themes[st].subthemes[sst].subsubthemes[i];
+                        // Pass its guidelines *and* its name
+                        createGuidelinesPage(subsub.guidelines, subsub.name);
                     } else {
                         var st = urlParams.get('st');
-                        if (data.themes[st].subthemes[i].subsubthemes != null) {
+                        const sub = data.themes[st].subthemes[i];
+                        if (sub.subsubthemes != null) {
                             location.href = url + 'st=' + st + '&sst=' + i;
-                        }
-                        else {
-                            createGuidelinesPage(data.themes[st].subthemes[i].guidelines);
-                            // console.log('guidelines');
+                        } else {
+                            // pass the sub-theme’s name as currentLabel
+                            createGuidelinesPage(sub.guidelines, sub.name)
                         }
                     }
                 } else if (data.themes[i].subthemes != null) { 
                     location.href = url + 'st=' + i;
                 }
                 else {
-                    createGuidelinesPage(data.themes[i].guidelines);
-                    // console.log('guidelines');
+                    // Theme has no sub‐themes → go straight to its guidelines, 
+                    // and pass the theme's name so it shows in the breadcrumb:
+                    createGuidelinesPage(data.themes[i].guidelines, data.themes[i].name);
                 }
             }
         }
 
-        function createGuidelinesPage(guidelines) {
+        function createGuidelinesPage(guidelines, currentLabel) {
+            // Clear infobox timer and hide the info-box when we switch to guidelines
+            clearTimeout(infoHideTimeout);
+            document.getElementById('info-box').classList.remove('visible');
+            
+            // inject or update the breadcrumb trail using the passed-in label
+            renderBreadcrumb(data, currentLabel);
+            
             document.getElementById("home").removeChild(document.getElementById("diagram"));
 
             var guidDiv = document.createElement('div');
