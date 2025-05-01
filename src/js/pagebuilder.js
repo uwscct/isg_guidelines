@@ -92,7 +92,7 @@ fetch('./assets/data.json')
             // Only on the root (diagram) page:
             const welcome = document.createElement('div');
             welcome.id = 'welcome-box';
-            welcome.innerHTML = '<h2>Welcome!</h2><p>This site presents a structured overview of key themes and associated design guidelines for Immersive Serious Games (ISGs). Each theme reflects insights from research and practice to inform thoughtful, purposeful ISG development.</p>';
+            welcome.innerHTML = '<h2>Welcome!</h2><br><p>This site presents a structured overview of key themes and associated design guidelines for Immersive Serious Games (ISGs). Each theme reflects insights from research and practice to inform thoughtful, purposeful ISG development.</p><br><p>Click on one of the nine core themes to start exploring. Some themes include sub-themes, and a few go even further into sub-sub-themes. As you navigate, you’ll progressively narrow in on specific design guidelines tailored to the area you’ve chosen. This structure is designed to help you move from broad concepts to clear, practical insights.</p>';
             document.getElementById('home').appendChild(welcome);
         }
 
