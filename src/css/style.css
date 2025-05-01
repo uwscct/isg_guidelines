@@ -299,16 +299,16 @@
     z-index: 6;
   }
   #welcome-box h2 {
-    margin: 0 0 0.5em;                    /* space below the heading */
+    margin: 0 0 0.5em;      /* space below the heading */
     font-size: 20px;
-    font-weight: bold;                    /* stand out */
-    line-height: 1.2;                     /* tighter line height */
-    color: #ffffff;                       /* ensure good contrast */
+    font-weight: bold;
+    line-height: 1.2;
+    color: #ffffff;
   }
   
-  /* Welcome box paragraph (if you want to adjust it too) */
+  /* Welcome box paragraph*/
   #welcome-box p {
-    margin: 0;                            /* remove extra margins */
+    margin: 0;
     font-size: 16px;
     line-height: 1.4;
   }
