@@ -240,6 +240,9 @@ fetch('./assets/data.json')
         }
 
         function createGuidelinesPage(guidelines, currentLabel) {
+            // Hide the info-box when we switch to guidelines
+            document.getElementById('info-box').classList.remove('visible');
+            
             // inject or update the breadcrumb trail using the passed-in label
             renderBreadcrumb(data, currentLabel);
             
