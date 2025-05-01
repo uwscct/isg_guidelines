@@ -595,7 +595,7 @@
                 {
                     "name": "Immersion",
                     "id": "immersion",
-                    "info": "",
+                    "info": "Immersion refers to the extent to which a technology is capable of engaging the player’s senses and drawing them into the virtual experience. In the context of ISGs, immersion is influenced by the chosen immersive technology (e.g., VR, AR) and its ability to create a convincing and engaging environment that sustains attention and involvement.",
                     "guidelines": [
                         {
                             "name": "Use storytelling to enhance immersion",
@@ -624,7 +624,7 @@
                 {
                     "name": "Navigation and Wayfinding",
                     "id": "navigation_wayfinding",
-                    "info": "",
+                    "info": "Navigation and Wayfinding focus on how easily players can move through and orient themselves within the ISG. Effective design in this area supports spatial awareness and decision-making by providing intuitive cues, landmarks, or guidance systems to help players find their way and understand the spatial layout of the virtual environment.",
                     "guidelines": [
                         {
                             "name": "Keep pathways simple and uncluttered",
@@ -666,7 +666,7 @@
                 {
                     "name": "Usefulness",
                     "id": "usefulness",
-                    "info": "",
+                    "info": "Usefulness refers to the player’s perception of the ISG’s value and relevance to their goals. A useful ISG is seen as beneficial for developing skills or knowledge, which in turn increases player motivation and engagement. Designing for usefulness means aligning the game’s content and mechanics with meaningful, real-world outcomes.",
                     "guidelines": [
                         {
                             "name": "Design the ISG to have value to the player",
@@ -682,12 +682,12 @@
         {
             "name": "Drive",
             "id": "drive",
-            "info": "",
+            "info": "Drive refers to the player’s motivation and desire to engage with the ISG. It encompasses intrinsic and extrinsic factors that influence a player’s willingness to participate, explore, and invest effort in the experience. Designing for drive involves creating elements that foster curiosity, challenge, and a sense of accomplishment.",
             "subthemes": [
                 {
                     "name": "Interest and Flow",
                     "id": "interest_flow",
-                    "info": "",
+                    "info": "Interest is cultivated by offering players consistent challenges and entertainment, which helps maintain attention and enthusiasm. Flow is the optimal psychological state where players are fully immersed and focused on tasks. Together, interest and flow create a positive feedback loop that enhances learning, enjoyment, and performance within the ISG.",
                     "guidelines": [
                         {
                             "name": "Maintain player interest by introducing new activities and challenges",
@@ -725,7 +725,7 @@
                 {
                     "name": "Engagement",
                     "id": "engagement",
-                    "info": "",
+                    "info": "Engagement emerges from well-designed virtual environments, appealing visuals, responsive feedback, and meaningful player goals. Aesthetics, interactivity, and the ability to customize the experience all contribute to keeping players emotionally and cognitively invested in the ISG.",
                     "guidelines": [
                         {
                             "name": "Design engaging interactions",
@@ -762,7 +762,7 @@
                 {
                     "name": "Motivation",
                     "id": "motivation",
-                    "info": "",
+                    "info": "Motivation is shaped by the pacing of content and the player’s intrinsic desire to participate. To maintain motivation, ISGs should provide stimulating experiences aligned with personal and game-based goals, supporting a sense of progress, purpose, and enjoyment.",
                     "guidelines": [
                         {
                             "name": "Use participatory design",
@@ -800,7 +800,7 @@
                 {
                     "name": "Rewards",
                     "id": "rewards",
-                    "info": "",
+                    "info": "Rewards serve as incentives that reinforce desirable actions or achievements. When delivered meaningfully and at appropriate moments - such as task completion - they can stimulate motivation, reinforce behaviours, and give players a sense of accomplishment and progression.",
                     "guidelines": [
                         {
                             "name": "Provide rewards to stimulate interest",
@@ -831,11 +831,12 @@
         {
             "name": "Learning",
             "id": "learning",
-            "info": "",
+            "info": "Learning is the core intended outcome of an ISG and is shaped by design elements that support comprehension, retention, and application of knowledge. Through thoughtful integration of educational principles, ISGs can effectively guide users through structured, purposeful, and engaging learning experiences.",
             "subthemes": [
                 {
                     "name": "Effectiveness",
                     "id": "effectiveness",
+                    "info": "Effectiveness relates to how well an ISG delivers its educational objectives. This can be enhanced through the use of multiple modalities (e.g., visual, auditory, kinesthetic) and interactive elements that encourage active participation and deeper cognitive engagement.",
                     "guidelines": [
                         {
                             "name": "Use relevant content",
@@ -870,7 +871,7 @@
                 {
                     "name": "Balance",
                     "id": "balance",
-                    "info": "",
+                    "info": "Balance ensures that the difficulty and complexity of game content evolve alongside the player’s growing knowledge. It involves designing progressively challenging levels or concepts that align with the player’s learning curve, maintaining motivation and cognitive engagement.",
                     "guidelines": [
                         {
                             "name": "Apply adaptive difficulty",
@@ -903,7 +904,7 @@
                 {
                     "name": "Assessment and Feedback",
                     "id": "assessment_feedback",
-                    "info": "",
+                    "info": "Assessment and Feedback should be embedded in the ISG to offer players clear, actionable tasks and insights into their performance. These design elements help reinforce learning by guiding improvement, clarifying misunderstandings, and supporting goal achievement.",
                     "guidelines": [
                         {
                             "name": "Provide a variety of clear tasks that have goals",
@@ -942,7 +943,7 @@
                 {
                     "name": "Consolidation",
                     "id": "consolidation",
-                    "info": "",
+                    "info": "Consolidation supports long-term retention by enabling repetition, rehearsal, and the application of learned content. It encourages players to revisit concepts and practice skills, reinforcing understanding and facilitating deeper learning.",
                     "guidelines": [
                         {
                             "name": "Provide opportunities for repetition and practice",
@@ -970,7 +971,7 @@
                 {
                     "name": "Facilitation",
                     "id": "facilitation",
-                    "info": "",
+                    "info": "Facilitation involves presenting learning content in a purposeful and meaningful way, while giving players autonomy and relevance in their choices. It also includes helping users understand the ISG’s technology to ensure sustained engagement and effective learning throughout the experience.",
                     "guidelines": [
                         {
                             "name": "Match in-games tasks with real-world tasks",
@@ -1010,12 +1011,12 @@
         {
             "name": "Storytelling",
             "id": "storytelling",
-            "info": "",
+            "info": "Storytelling enriches the player experience in an ISG by providing context, structure, and emotional engagement. A compelling narrative framework enhances immersion, guides comprehension, and can support learning by making content relatable and memorable.",
             "subthemes": [
                 {
                     "name": "Theme",
                     "id": "theme",
-                    "info": "",
+                    "info": "The theme defines the overarching message or context of the ISG. It should be clearly established, consistently applied throughout the game, and integrated with the core mechanics to ensure coherence and reinforce the learning or training objectives.",
                     "guidelines": [
                         {
                             "name": "Maintain the theme of the experience consistently through the design",
@@ -1038,7 +1039,7 @@
                 {
                     "name": "Narrative",
                     "id": "narrative",
-                    "info": "",
+                    "info": "Narrative refers to the structured storyline and progression within the ISG. A well-crafted narrative immerses players, supports learning progression, and can be enhanced through branching choices and meaningful consequences that reflect real-world relevance.",
                     "guidelines": [
                         {
                             "name": "Present the core narrative of the experience to the player",
@@ -1078,7 +1079,7 @@
         {
             "name": "Collaboration",
             "id": "collaboration",
-            "info": "",
+            "info": "Collaboration in ISG design emphasizes the facilitation of social interaction and player-to-player connection. By enabling cooperative or communicative play, ISGs can enhance engagement, support shared learning experiences, and foster a sense of community within the virtual environment.",
             "guidelines": [
                 {
                     "name": "Facilitate shared experiences within the ISG",
@@ -1110,7 +1111,7 @@
         {
             "name": "Privacy and Safety",
             "id": "privacy_safety",
-            "info": "",
+            "info": "Privacy and Safety in ISG design ensure that players are protected both physically and psychologically while engaging with XR technologies. These considerations foster trust, reduce risk, and support a secure, inclusive, and respectful learning environment.",
             "guidelines": [
                 {
                     "name": "Maintain the user’s privacy",
@@ -1141,7 +1142,7 @@
         {
             "name": "Realism",
             "id": "realism",
-            "info": "",
+            "info": "Realism in ISG design refers to the integration of authentic and credible virtual elements - such as environments, tasks, and objects - to create a believable and immersive experience. Realism enhances player engagement and strengthens the educational or training impact of the game by mirroring real-world contexts and expectations.",
             "guidelines": [
                 {
                     "name": "Design the ISG to be realistic to the task",
@@ -1157,7 +1158,7 @@
         {
             "name": "Equality, Diversity and Inclusion",
             "id": "equality_diversity_inclusion",
-            "info": "",
+            "info": "Equality, diversity, and inclusion (EDI) in ISG design involves making intentional choices to ensure inclusivity, cultural representation, and accessibility. This includes offering diverse character options, culturally respectful content, and support for players' native languages - ensuring all users feel seen, respected, and able to fully participate in the ISG experience.",
             "guidelines": [
                 {
                     "name": "Design for inclusive Accessibility",
