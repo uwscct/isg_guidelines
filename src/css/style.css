@@ -312,6 +312,9 @@
     font-size: 16px;
     line-height: 1.4;
   }
+  #welcome-continue {
+    display: none;
+    }
   /* ───────────────────────────────────────── */
 
 /* ────────────── Mobile Styles ────────────── */
@@ -325,6 +328,11 @@
       max-height: 60vh;                     
     } */
 
+    /* Make them scrollable if content overflows */
+    #info-box {
+        display: none;          /* hide on mobile */
+    }
+
     #welcome-box {
         /* span most of the width, with small side padding */
         width: 90%;
@@ -334,12 +342,8 @@
         top: calc(94px + 5vh);
         transform: translateX(0) !important; /* always visible */
         max-height: 60vh;                     /* constrain vertical space */
-      }
-  
-    /* Make them scrollable if content overflows */
-    #info-box {
-        display: none;          /* hide on mobile */
-    }
+      }  
+    
     #welcome-box {
       overflow-y: auto;
     }
@@ -356,10 +360,16 @@
         border-radius: 4px;
         cursor: pointer;
     }
+
+    #citeas{
+        left: 11px !important;
+    }
   
     /* ────── Guidelines Page Panels ────── */
     /* Stack the two panels vertically instead of side-by-side */
-    #gl {
+    #gl {    
+        position: absolute;    
+        margin-top: calc(94px + 5vh);
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -389,7 +399,7 @@
     /* Make both panels full-width, one after the other */
     #scroll {
         margin: 0; /* remove any leftover margins */
-        margin-top: calc(94px + 5vh);
+        /* margin-top: calc(94px + 5vh); */
         width: 100% !important;
         flex: 0 0 auto;
         max-height: 30vh;      /* adjust as needed */
@@ -412,7 +422,7 @@
         margin-top: 1em;
         padding: 0.5em 0;
         color: #fff;
-      }
+    }
   
     /* ────── Breadcrumb under logo & wrap ────── */
     #breadcrumb {
