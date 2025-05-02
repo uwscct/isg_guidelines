@@ -427,7 +427,8 @@
     /* ────── Breadcrumb under logo & wrap ────── */
     #breadcrumb {
       position: absolute;
-      top: calc(94px + 2vh); /* just below logo + small gap */
+      height: auto;  
+      top: calc(94px + 1vh); /* just below logo + small gap */
       left: 50%;
       transform: translateX(-50%);
       width: 90%;            /* almost full width */
@@ -445,7 +446,7 @@
   
     /* And push the list down so breadcrumb sits above it */
     #scroll ul {
-      margin-top: 3em; /* adjust as needed to clear the breadcrumb */
+      margin-top: 2em; /* adjust as needed to clear the breadcrumb */
     }
 
 }
