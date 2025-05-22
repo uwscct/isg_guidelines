@@ -290,6 +290,10 @@ fetch('./assets/data.json')
         }
 
         function createGuidelinesPage(guidelines, currentLabel) {                       
+            // Remove the welcome box if it still exists
+            const welcome = document.getElementById('welcome-box');   
+            if (welcome) welcome.remove();
+            
             // Clear infobox timer and hide the info-box when we switch to guidelines
             clearTimeout(infoHideTimeout);
             document.getElementById('info-box').classList.remove('visible');
