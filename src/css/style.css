@@ -337,6 +337,13 @@
     #info-box {
         display: none;          /* hide on mobile */
     }
+    #info-content {
+        /* font-size: clamp(14px, 2vw, 20px);  */
+        /* font-size: 16px; */
+        font-size: 1.8vh;
+        line-height: 1.4;
+        font-family: "Inter-Regular", Helvetica;
+    }
 
     #welcome-box {
         /* span most of the width, with small side padding */
