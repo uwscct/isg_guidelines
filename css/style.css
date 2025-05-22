@@ -311,8 +311,8 @@
   /* Welcome box paragraph*/
   #welcome-box p {
     margin: 0;
-    font-size: 16px;
-    /* font-size: 1.65vmin; */
+    /* font-size: 16px; */
+    font-size: 1.65vmin;
     line-height: 1.4;
   }
   #welcome-continue {
