@@ -285,6 +285,7 @@
     width: 20%;
     padding: 24px 12px;
     height: fit-content;
+    max-height: 90vh;
     overflow-y: auto;
   
     background: rgba(1, 74, 173, 0.85);
@@ -300,7 +301,8 @@
   }
   #welcome-box h2 {
     margin: 0 0 0.5em;      /* space below the heading */
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 2vmin;
     font-weight: bold;
     line-height: 1.2;
     color: #ffffff;
@@ -310,6 +312,7 @@
   #welcome-box p {
     margin: 0;
     font-size: 16px;
+    /* font-size: 1.65vmin; */
     line-height: 1.4;
   }
   #welcome-continue {
@@ -346,6 +349,22 @@
     
     #welcome-box {
       overflow-y: auto;
+    }
+
+    #welcome-box h2 {
+        margin: 0 0 0.5em;      /* space below the heading */
+        /* font-size: 20px; */
+        font-size: 2vh;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #ffffff;
+    }
+
+    #welcome-box p {
+        margin: 0;
+        /* font-size: 16px; */
+        font-size: 1.8vh;
+        line-height: 1.4;
     }
 
     /* Style the Continue button in the welcome box */
